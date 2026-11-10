@@ -9,38 +9,44 @@ importers:
   .:
     dependencies:
       '@softmax-universe/console':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-console-0.4.0-alpha.1.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-console-0.4.0-alpha.1.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-console-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-console-0.5.0-alpha.1.tgz
+      '@softmax-universe/distribution':
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-distribution-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-distribution-0.5.0-alpha.1.tgz
       '@softmax-universe/foundation':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-foundation-0.4.0-alpha.1.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-foundation-0.4.0-alpha.1.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-foundation-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-foundation-0.5.0-alpha.1.tgz
       '@softmax-universe/inspector':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-inspector-0.4.0-alpha.1.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-inspector-0.4.0-alpha.1.tgz(react@19.3.0)
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-inspector-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-inspector-0.5.0-alpha.1.tgz(react@19.3.0)
+      '@softmax-universe/installation':
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-installation-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-installation-0.5.0-alpha.1.tgz
       '@softmax-universe/local-cli':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-local-cli-0.4.0-alpha.1.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-local-cli-0.4.0-alpha.1.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-local-cli-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-local-cli-0.5.0-alpha.1.tgz
       '@softmax-universe/model-policy':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-model-policy-0.4.0-alpha.1.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-model-policy-0.4.0-alpha.1.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-model-policy-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-model-policy-0.5.0-alpha.1.tgz
       '@softmax-universe/protocol':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
       '@softmax-universe/reversi-game':
         specifier: workspace:*
         version: link:packages/game
       '@softmax-universe/runner':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runner-0.4.0-alpha.1.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runner-0.4.0-alpha.1.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runner-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runner-0.5.0-alpha.1.tgz
       '@softmax-universe/runtime':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-0.4.0-alpha.1.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-0.4.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@babel/core@8.1.0)(@babel/runtime@7.29.13)(@earendil-works/pi-schema@1.5.1)(@modelcontextprotocol/client@2.4.0)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.3.1)(zod@4.6.7)
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-0.5.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@babel/core@8.1.0)(@babel/runtime@7.29.13)(@earendil-works/pi-schema@1.5.1)(@modelcontextprotocol/client@2.4.0)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.3.1)(zod@4.6.7)
       '@softmax-universe/runtime-client':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-client-0.4.0-alpha.1.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-client-0.4.0-alpha.1.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-client-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-client-0.5.0-alpha.1.tgz
       '@softmax-universe/sdk':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-sdk-0.4.0-alpha.1.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-sdk-0.4.0-alpha.1.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-sdk-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-sdk-0.5.0-alpha.1.tgz
       effect:
         specifier: 4.0.7
         version: 4.0.7
@@ -51,6 +57,12 @@ importers:
         specifier: 19.3.0
         version: 19.3.0(react@19.3.0)
     devDependencies:
+      '@ast-grep/cli':
+        specifier: 0.51.0
+        version: 0.51.0
+      '@softmax-universe/environment-tools':
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-environment-tools-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-environment-tools-0.5.0-alpha.1.tgz
       '@types/node':
         specifier: 24.13.6
         version: 24.13.6
@@ -63,12 +75,18 @@ importers:
       esbuild:
         specifier: 0.28.2
         version: 0.28.2
+      eslint-import-resolver-typescript:
+        specifier: 4.4.5
+        version: 4.4.5(eslint@10.14.0)
+      eslint-plugin-boundaries:
+        specifier: 7.3.0
+        version: 7.3.0(eslint-import-resolver-typescript@4.4.5(eslint@10.14.0))(eslint@10.14.0)
       oxfmt:
         specifier: 0.65.0
         version: 0.65.0
       oxlint:
-        specifier: 1.80.0
-        version: 1.80.0
+        specifier: 1.90.0
+        version: 1.90.0
       tsx:
         specifier: 4.23.1
         version: 4.23.1
@@ -79,8 +97,8 @@ importers:
   packages/game:
     dependencies:
       '@softmax-universe/protocol':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
       reversi:
         specifier: 3.0.0
         version: 3.0.0
@@ -95,6 +113,55 @@ packages:
     peerDependenciesMeta:
       zod:
         optional: true
+
+  '@ast-grep/cli-darwin-arm64@0.51.0':
+    resolution: {integrity: sha512-LYh8du1Qd1xFMi15Lh6xnWgHBZGbdCVyQVHOsaqEbICXvd8oAdEIex8ywTt2PwODYAMt6TD7p94S2/kt5dJ1tQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@ast-grep/cli-darwin-x64@0.51.0':
+    resolution: {integrity: sha512-RF3FsO3XsGt+qLqpqbHiKKhly9/Pd08mVnvxx86Qli3DokvIFRAR8KlsTDnql4hsNgAbacp4vyDJsf/pBhh8iw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@ast-grep/cli-linux-arm64-gnu@0.51.0':
+    resolution: {integrity: sha512-aYT07uAVSA3nfoofdVXJuL44DGt1lIOj/GGSNy9mrIiD3TeBv5wxNNXHjMw96bkACdOp8pFMwiuCLY8pMtCT7Q==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@ast-grep/cli-linux-x64-gnu@0.51.0':
+    resolution: {integrity: sha512-ljsdvSrmnmQZaB/lrtLuOP3k3AYCb+TNpPCMi4OQuF1vRBFwMdsES0xrL9iUpJ8ioyIy1h5qTM1T4z5OeoGIvw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@ast-grep/cli-win32-arm64-msvc@0.51.0':
+    resolution: {integrity: sha512-G0eb9EmwWvsaJSZI929PCcJhBBeFiB7oAndml5weI1iDjDVn7f5u8jb4wEsovA9W5wy70MjYfH7/H59ogQr8Nw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@ast-grep/cli-win32-ia32-msvc@0.51.0':
+    resolution: {integrity: sha512-68oC9L73Nq7Wi34aEqcUSIhIYaaM4PpVrrlcbobn4cAKSlUEMIC/9aKsKo6pknQYwSNr9dyIFX92zXIoTRNbcg==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+
+  '@ast-grep/cli-win32-x64-msvc@0.51.0':
+    resolution: {integrity: sha512-lYsKBG0Wn/vk8Zbeo60l+Lms317mL1xpW6Dvv68k3F57vqlMHkWR2tuNcyWC3OVJXbas8dFMoe1R+6wkofIC+g==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@ast-grep/cli@0.51.0':
+    resolution: {integrity: sha512-sIZEt4L4iQJRM2QDKQnbltQxddIsxzt9nmguw3/X7eP3cFwBopsZtFRvaEVht/3/6C1xe3Opn/pbsxSFVJDvpA==}
+    engines: {node: '>= 12.0.0'}
+    hasBin: true
 
   '@aws-sdk/client-bedrock-runtime@3.1127.0':
     resolution: {integrity: sha512-IDl/lrPb90aH+pZFHGNDmgH9nAUQj5PlZH1sJ3w7RikctyjHSnY3oNjZhrLoaBoQn/rNK0zsP6OHEqEhj2tdLA==}
@@ -286,6 +353,16 @@ packages:
   '@babel/types@8.1.0':
     resolution: {integrity: sha512-8V8aSTDx012YPmDQF30vrokyxVFdRAU2YBS2VzrnfLAGkP8floVnjckwgFcD0Jrvf6GWMSRdCrYVsk3tyMwZRg==}
     engines: {node: ^22.18.0 || >=24.11.0}
+
+  '@boundaries/elements@3.2.0':
+    resolution: {integrity: sha512-c6wtVWptH+IXouw4/Kq8+/Fovp6XVNK3lBHS0YCQqLRFIEUstb2KFv61KSqpQavyw22ivz7oE45gj0i3Mbq4Fg==}
+    engines: {node: '>=18.18'}
+
+  '@cacheable/memory@2.2.0':
+    resolution: {integrity: sha512-CTLKqLItRCEixEAewD3/j9DB3/o96gpTPD4eJ1v+DGOlxZRZncRQkGYqqnAGCscYd6RNeXfGeiuCphsPtqyIfQ==}
+
+  '@cacheable/utils@2.5.0':
+    resolution: {integrity: sha512-buipgOVDkkPXNR5+xBpDw7Zk2n1EvU7qBJCNUcL7rhQ//kfpOXPAvQ511Os0vpLYJ1pZnvudNytkQt2hst3wqA==}
 
   '@cfworker/json-schema@4.1.6':
     resolution: {integrity: sha512-YzVGTHXf4bzlyAL5KAvHYCdNbbt6zM5cYkAgxqxQPDQM6aZ4ShIIN5yJ+6q7YeonnevxT8k/LmD2tJi/jOiKkg==}
@@ -491,6 +568,36 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@eslint-community/eslint-utils@4.10.1':
+    resolution: {integrity: sha512-cuadcxVFE8sDK6iWJbs8Sn0av2Nrh2QSGQhVlBW9AaAHqHwjWsZHT8LJ4hFGPh7ASBV2deFdM7H/DPjulmh8rg==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
+
+  '@eslint-community/regexpp@4.12.3':
+    resolution: {integrity: sha512-R76UKbvsqI68DJJVTVyqFKqU98CN4+B+acxNfEA2IFarSzP0SjtKf/3+fFiXzTyv5Fj3PxLkGHe2wnVWWMxobQ==}
+    engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
+
+  '@eslint/config-array@0.23.5':
+    resolution: {integrity: sha512-Y3kKLvC1dvTOT+oGlqNQ1XLqK6D1HU2YXPc52NmAlJZbMMWDzGYXMiPRJ8TYD39muD/OTjlZmNJ4ib7dvSrMBA==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
+  '@eslint/config-helpers@0.7.0':
+    resolution: {integrity: sha512-DObd/KKUsU+FaFv4PLxSRenpXfQWmPXXP3pPZ6/K1PCrMu2vQpMDMuQe/BqYeoLcz8ro0bVDF1RxOJgfVEdhUw==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
+  '@eslint/core@1.2.1':
+    resolution: {integrity: sha512-MwcE1P+AZ4C6DWlpin/OmOA54mmIZ/+xZuJiQd4SyB29oAJjN30UW9wkKNptW2ctp4cEsvhlLY/CsQ1uoHDloQ==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
+  '@eslint/object-schema@3.0.5':
+    resolution: {integrity: sha512-vqTaUEgxzm+YDSdElad6PiRoX4t8VGDjCtt05zn4nU810UIx/uNEV7/lZJ6KwFThKZOzOxzXy48da+No7HZaMw==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
+  '@eslint/plugin-kit@0.7.3':
+    resolution: {integrity: sha512-IkO+/KEUvwbVpiURZg+P7zF74z5Jxe0UgJxVni+RtoHQ6IZieXaO02kmadomap/q+l6bc/jdPGGqTjhuZnuz1Q==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
   '@google/genai@2.21.0':
     resolution: {integrity: sha512-+PDtco2/Z0ONdzCGekCoCT+O1VJS9xJQNN4XzQpXG/t3El/SWWMkCWlFRO1KmivOHPa4Q0VjUYu1HBKCZ/v33Q==}
     engines: {node: '>=20.0.0'}
@@ -499,6 +606,26 @@ packages:
     peerDependenciesMeta:
       '@modelcontextprotocol/sdk':
         optional: true
+
+  '@humanfs/core@0.19.2':
+    resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
+    engines: {node: '>=18.18.0'}
+
+  '@humanfs/node@0.16.8':
+    resolution: {integrity: sha512-gE1eQNZ3R++kTzFUpdGlpmy8kDZD/MLyHqDwqjkVQI0JMdI1D51sy1H958PNXYkM2rAac7e5/CnIKZrHtPh3BQ==}
+    engines: {node: '>=18.18.0'}
+
+  '@humanfs/types@0.15.0':
+    resolution: {integrity: sha512-ZZ1w0aoQkwuUuC7Yf+7sdeaNfqQiiLcSRbfI08oAxqLtpXQr9AIVX7Ay7HLDuiLYAaFPu8oBYNq/QIi9URHJ3Q==}
+    engines: {node: '>=18.18.0'}
+
+  '@humanwhocodes/module-importer@1.0.1':
+    resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
+    engines: {node: '>=12.22'}
+
+  '@humanwhocodes/retry@0.4.3':
+    resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
+    engines: {node: '>=18.18'}
 
   '@jridgewell/gen-mapping@0.4.0-beta.0':
     resolution: {integrity: sha512-JdGNkbE4GlNPYQhM0L95fBQr7ctLZJ276QXQLTad4t1oSdnnCI3fDq9DW3BqYAWv8Wc3+HS+4Gsii1oPMCfz1w==}
@@ -512,6 +639,15 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@keyv/bigmap@1.3.1':
+    resolution: {integrity: sha512-WbzE9sdmQtKy8vrNPa9BRnwZh5UF4s1KTmSK0KUVLo3eff5BlQNNWDnFOouNpKfPKDnms9xynJjsMYjMaT/aFQ==}
+    engines: {node: '>= 18'}
+    peerDependencies:
+      keyv: ^5.6.0
+
+  '@keyv/serialize@1.1.1':
+    resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
   '@modelcontextprotocol/client@2.4.0':
     resolution: {integrity: sha512-LgrD2OphHuG12vfKFKz6SOnq7bKHQmhGJIAYdD+MZBn2npHEyry6uD8zvktodtl5CQM85MO0anUyD9JwmUmxww==}
@@ -661,124 +797,124 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@oxlint/binding-android-arm-eabi@1.80.0':
-    resolution: {integrity: sha512-RM3Plj+biQpxa5d1GOOX6ciDlcUROmm4OZ/pLTpitkQt2mJv4jhtY4cbgaetOm5UKWZe05/TGQ6o1Vl8EOHkrA==}
+  '@oxlint/binding-android-arm-eabi@1.90.0':
+    resolution: {integrity: sha512-sgfalb1HuxYjiAa4wESZ626z1FGusqNcXYHyB5oIOEprS2sbPg0UYEfo83uF1GNG70DIfZxHkXuE6KFrlSdn8Q==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [android]
 
-  '@oxlint/binding-android-arm64@1.80.0':
-    resolution: {integrity: sha512-YlO5JEf0Yr2bUUlu8O8daVcUxtcGGbcSmyV7E7nSbJbfAdxTE0PFPwgnIlw7wXJaTYjb+qs5hI5q3jxUkI7cAw==}
+  '@oxlint/binding-android-arm64@1.90.0':
+    resolution: {integrity: sha512-RcKhz1ETMq+fazE9TKS2+5NIRGwigm/nW8egqF0LI+A8Yw2iW5r0E/C3XAPRiwIm/vcPiutIRIa6IQCIKhZsTQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [android]
 
-  '@oxlint/binding-darwin-arm64@1.80.0':
-    resolution: {integrity: sha512-BULDOyO3AhsmdWfQeIUCykDt3dd7XZBGLhp1eIh56skRv01O+cNjNPwXMIbeW1x4+pxcln5if72wcRgViVo7PA==}
+  '@oxlint/binding-darwin-arm64@1.90.0':
+    resolution: {integrity: sha512-PSrxMvP6mx+p1karZcUxLdy9lpaP+JWQPti4al9FgTaPhxE+pT/BjhGExloVVSWgZgIfOlLOjVyyq8BXlodhLQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [darwin]
 
-  '@oxlint/binding-darwin-x64@1.80.0':
-    resolution: {integrity: sha512-YJ4JzLw7N5TDSQFlA0hAQGHvnDZgyypm1yunObVWcWiF9KM7eGCJKYKLgTC2Fi/57OdnBhbj4OkzPGdFQJ6HyA==}
+  '@oxlint/binding-darwin-x64@1.90.0':
+    resolution: {integrity: sha512-OLbU9qsrV2Q8QxT2OEzOPdO8zCCpyI8qB+hDI8yr6RsYELtkf0FAZhJdfjM/RnLHKzt44HWwAPnk92vBtKofvw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [darwin]
 
-  '@oxlint/binding-freebsd-x64@1.80.0':
-    resolution: {integrity: sha512-AYUIk5QnL0s8oWAYsREZwkRYy1SupJTXALo93J1TgzHywxQtdM99FecRMQ87MXEdPQ0j1TmEpeeq3fGNkpvMqg==}
+  '@oxlint/binding-freebsd-x64@1.90.0':
+    resolution: {integrity: sha512-fBA4pWyVDARmNucQqpyFuPC49xYf1r+sX7dxPL5fNPQrSMLum39Sn56tZ9JPleWC7FzLPwSQ7plYYfirYBHF8A==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [freebsd]
 
-  '@oxlint/binding-linux-arm-gnueabihf@1.80.0':
-    resolution: {integrity: sha512-9hBZVANupQ89W9dXyE0n8doCyaW5pDyGn3y6XlIMPZ+rIKuyqkr3SNUXmVJIhuvUq0NBU3RBiSXXE69l4XI6KA==}
+  '@oxlint/binding-linux-arm-gnueabihf@1.90.0':
+    resolution: {integrity: sha512-zhxH78eP2nR6/pGdhBc7MIfjhhcgATeu8fkmkFJbuzfk6Cj0FzBxyEhL85yDqrCybjx+G2YDzZGsxIO9kvO4Iw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@oxlint/binding-linux-arm-musleabihf@1.80.0':
-    resolution: {integrity: sha512-SvS2uKqzY+pbfuvAHzH4338R6Zwo805GAwrIMVvK1KxoOWCIjZUdfzTCvilD7z6JK91v011+zYMryabhDo2AsQ==}
+  '@oxlint/binding-linux-arm-musleabihf@1.90.0':
+    resolution: {integrity: sha512-MvYmpHyJqUJjEvkZbJHdwfdL45cGn8EVBkYmoXFiaYFW9suoD3dbJl5mBdpy0DVgdjlyddmldbRtk3cCgETadQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@oxlint/binding-linux-arm64-gnu@1.80.0':
-    resolution: {integrity: sha512-tCLadyqRVL3pQTRPNg7cjXKvcvS4fbyXeQHhKk5BTJ1oftQln5/yIIWbu/Xom/DX41zv2P9QGt6+D/TtQVtY3A==}
+  '@oxlint/binding-linux-arm64-gnu@1.90.0':
+    resolution: {integrity: sha512-L13Sy+Kg0nZhwTsToniqjUFPA2TuM6962qCZ5Wp5KeB517Tw7ApdLTTtlb+bF86fcZZa2EtvCVvAJxk4Dya/MQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-arm64-musl@1.80.0':
-    resolution: {integrity: sha512-XfpCNRlOPcLlJl4Bn/FUhjqlR6BVavEykERBf/MV7YA9VZDa5g5znVqYhyviMafcxS9Pe/i/kPvHNO0U6svEHQ==}
+  '@oxlint/binding-linux-arm64-musl@1.90.0':
+    resolution: {integrity: sha512-wFDdZWGpzIPFdJFjSLWnKB0TGzFriTKUIrl04iMqMyM9BBIJTuerfCHYa0WpDSjr5x3lcW/CHLyacSt886WpGg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-linux-ppc64-gnu@1.80.0':
-    resolution: {integrity: sha512-3I4yMwcFG9NeO8ioY6JBBuKsIm5GL/x7MATt1S4tVWaxPu5HcJ+XnLUbcVBTxG8q2Wu56HSj+NmXQiVYb1lp6A==}
+  '@oxlint/binding-linux-ppc64-gnu@1.90.0':
+    resolution: {integrity: sha512-FRywfn+MoKn8xpBSzgNwNVliSKRI2QXkxi/iF7o6FEQs8Bh8z2RpVTaFAcO3pchXjvB2eGNFIoLLQABIQ+u7VA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-riscv64-gnu@1.80.0':
-    resolution: {integrity: sha512-E1wAKymkpe1/E8helzBKdm81OBOF+ezxRyXRMEuik3ZpWDER5CPOKZwF66RsdwW98uwZv8UTFremUQtC1CzdJA==}
+  '@oxlint/binding-linux-riscv64-gnu@1.90.0':
+    resolution: {integrity: sha512-IS2PaUgpc/qeLADTyhUNmdx3x4ijs9pjJdPKBYHaT+mAE7k3FsjnHPTjhpsak1b++h6CIPhv6WX9Z+y7Pw0voQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [riscv64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-riscv64-musl@1.80.0':
-    resolution: {integrity: sha512-+gLRGD4sIo3+VA++iham5UxD9tKSoJ/VOrROCEXIcknrYtQg6iIQgvjN0cpiRF7N6UYC7pJbvHJlDnMge5LRpQ==}
+  '@oxlint/binding-linux-riscv64-musl@1.90.0':
+    resolution: {integrity: sha512-s7JFKRkGS8O7i2ZVODfuO++NC7sH6HDqpMn8lYxw91w0SXJOxnAVjQ8utvmDwLMMT0jaSkuOKuUYJDGDtu4sHQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [riscv64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-linux-s390x-gnu@1.80.0':
-    resolution: {integrity: sha512-aR0PrzHj9leW3NmzBAAP4EzdoBNoJcs9sjnIQPIwyRnBGYrRbXUIpEB5Q39AqK3PLY5JK5uEhDQDiUa1QSAstw==}
+  '@oxlint/binding-linux-s390x-gnu@1.90.0':
+    resolution: {integrity: sha512-b0GxrOQr5VONCkd7KLSqmP6b6nqZuTpuS8QPQHzltmqdXP5bY0Jl0CZ0QmlCTrS3ExaLYbioFYOARzNbYvcApQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-x64-gnu@1.80.0':
-    resolution: {integrity: sha512-vSVh5cSo3Xxs6ghBCcFJlpbkbENzDog1qXtoXLa/HC3aCrR4XO76GZbXmQoCPHnu99nQpdCeC3H9tdNICfDh7A==}
+  '@oxlint/binding-linux-x64-gnu@1.90.0':
+    resolution: {integrity: sha512-iaJeShJtgUp8rZbt9YUdTAGOpmX5KogCLba17Jp1tWdJ3F4M3D2g2TKUyI1FMTHxKH9NNHuQcuC2kZRg6IV7yQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-x64-musl@1.80.0':
-    resolution: {integrity: sha512-FfzBXpNQ8u7/ZI/p8bl73MeZ508Ax3hxWp3SiJpEFiC+BB9XcXy5FAZHTLKDPSzrUpxQZSZJAVdDmuJp/+HDBQ==}
+  '@oxlint/binding-linux-x64-musl@1.90.0':
+    resolution: {integrity: sha512-/aZoXnL5WBLCXuzfHqvEFXcm4iwYmr/cYByHDTXzLFzJdE5DC7bm6phpWqHv6BeqpVgY9IpBAxGDv2WEkl5JCg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-openharmony-arm64@1.80.0':
-    resolution: {integrity: sha512-zMzbkumtmprCgRwoYNzcB3iC39fXdJIMLMU33KdCjEGLlJGOEt1+LwQ4LF8ndLzAEKVz4BR0y3V6Xrkk3Nm3yA==}
+  '@oxlint/binding-openharmony-arm64@1.90.0':
+    resolution: {integrity: sha512-SMhk7ozwoxYDKfYqGZCQEfULOKDneF9uhaoIf2neoDLWvNtjY9yVeL7YHmE5L9WdKvMpWNwwZxhenxBu6AgfOg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [openharmony]
 
-  '@oxlint/binding-win32-arm64-msvc@1.80.0':
-    resolution: {integrity: sha512-ib6iRcrXsk4t1fm3iKcwksyWh1ZkZXC/2mEzakl0ai2+6HZunf1WWMZ/xP9EJAvw9g9K4UVTC3NF/+G2qLrbTQ==}
+  '@oxlint/binding-win32-arm64-msvc@1.90.0':
+    resolution: {integrity: sha512-KBvR3A9fO7fCi2vCP8ifWvlia7tGEQV9NaYh+IGwa/7Groy48Mt/UaYqMK9/zOtAWl20BUCf6RPqzJ32fRw33Q==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [win32]
 
-  '@oxlint/binding-win32-ia32-msvc@1.80.0':
-    resolution: {integrity: sha512-xhRWBMpLxZvgKAH6+DJZmpP+W8Y8UdQOSU1JfxSWNXsaBaRGW77j+1hCuNHlzj7OH4SPN8fYd1q0o2qrDtoVyw==}
+  '@oxlint/binding-win32-ia32-msvc@1.90.0':
+    resolution: {integrity: sha512-+x42rDHQGbTCuT3EzpWAzhP3NoVPE/cJsG4gnrakOSg0olV+GCdMpPU23Nvrl3zZMnXxFZdTtDv4D3SuaA5ZeQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ia32]
     os: [win32]
 
-  '@oxlint/binding-win32-x64-msvc@1.80.0':
-    resolution: {integrity: sha512-yAnO7lwBYQnz2pcfBPIGQQZWIX5zd5R/1aAKIF3oE+TVj7IhoHcROjOkz3sRDngzqhfPKfFaXqug5j5rE5dn6Q==}
+  '@oxlint/binding-win32-x64-msvc@1.90.0':
+    resolution: {integrity: sha512-30JiaFEBUB9peEOcvVM8ggo88SoN/IdSr9DW505JdBji/R6dM66gKEiG65hw6qcaF2f4mO0cEJ+RwRZprmun9g==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -963,66 +1099,87 @@ packages:
     engines: {node: '>=18.0.0'}
 
   '@softmax-foundation/client@https://github.com/softmax-universe/foundation-client/releases/download/client-v0.1.0/softmax-foundation-client-0.1.0.tgz':
-    resolution: {tarball: https://github.com/softmax-universe/foundation-client/releases/download/client-v0.1.0/softmax-foundation-client-0.1.0.tgz}
+    resolution: {integrity: sha512-tqXjao7djfILhdNV+lXRKsYUwRtqd94p9Tpt9ulQu6AnMzLC/r8hX0JzBMC+/1+LM5s4fFdETgE4bpnLHGnwFw==, tarball: https://github.com/softmax-universe/foundation-client/releases/download/client-v0.1.0/softmax-foundation-client-0.1.0.tgz}
     version: 0.1.0
 
-  '@softmax-universe/compatible-models@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-compatible-models-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-SmpOGPSP5iBcjkoOgFPL5w/f38D3EtPLJm2rU42Si+Y/meXpBn0xl+V7ld7Stwe1HOsrVPq00exJEv0EhGv39Q==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-compatible-models-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
+  '@softmax-universe/compatible-models@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-compatible-models-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-yWIjnW4KE4RdVMUul22IvvlEK7s7RIsbbi3B6p2DDU6YsqMtdWAxludQW6NZlOZytbonGDSUNcd6G8EMA1GnMg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-compatible-models-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
 
-  '@softmax-universe/console@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-console-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-SchdJIpToyykPle78HrRvT9x0/bfvEEI9FUvzCTG+FdrQx6LN5wYk9HeBRbOxj+ELRqNhpxmBEHxh+lQxVtfUw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-console-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
+  '@softmax-universe/console@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-console-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-CjjD5WORTqNc7tJQ2UtAzp03WZy8Lx2Lpv6E7tnyv6WBBmX07CCpIuCaw3lxNooRhqRho4h4LgnsT9G5YbF9Bw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-console-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
 
-  '@softmax-universe/execution@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-execution-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-HWgq7lzWO0C8K9k8oRG2vMRM6Qflx4B1RNRuJDRhwinKRRuKAd2zff/3/oi1shaA44iYGgYZmps0qIVb/Eqplg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-execution-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
-
-  '@softmax-universe/foundation@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-foundation-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-qYPkVvOCrC67fyug0hQkj8GIpqFsmItJebSOSsyd2bL7p4gk5kNBYRZFxYOhPRSpav2PRYMZejf9GTs+1yw4Mg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-foundation-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
-
-  '@softmax-universe/inspector@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-inspector-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-nklmyz59bw7dhz51UGAsBnoa7mJeWLOooxhSEgH0CtdmvpgqTZXjq9Xl8SgfSaY243ACi4PE0Zits+1RDTZPtg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-inspector-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
-    peerDependencies:
-      react: 19.3.0
-
-  '@softmax-universe/local-cli@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-local-cli-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-MuVugHNFnkKmvUYI0TxhGe/pf7EeLXik9HxtUlQrOUIBl1Tu82+mAVvUHdHoq+to/mwTkncFemf40NTmOnh2yA==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-local-cli-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
+  '@softmax-universe/distribution@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-distribution-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-kn9RJcEd4x+KotFZlc5NG2p0x6KUFe/ZfBOgyuU7mRCccHDgF7MAEmPFtfzmYic8G4CPEgB8AtxaPcHudsbMIQ==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-distribution-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
     engines: {node: 24.14.1}
-    hasBin: true
 
-  '@softmax-universe/model-policy@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-model-policy-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-Rg2pVXIp4KEV4LZ+bpd6ciEKjVJ1qBtYFjvg0x975hKWNkvMCOT1lmtGzkTDPkMoL4g8gC/qLOTHLEU/H0wTrQ==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-model-policy-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
-
-  '@softmax-universe/orchestration@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-orchestration-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-sDCLTu9YOA0Hr5jcF3pRMxoF7vpTy8HD9qSbXves/FrMunMdVoAFTZDPfgwZ/ebWGl7ChWeQ3JLbWIzQ2e2TlA==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-orchestration-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
-
-  '@softmax-universe/protocol@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-7WQm/9VrGI/rpIXWtEcLZ4GoPgS9qrhKEDpDco4cSOKx8co1yUnXuU5zdMwnBmchz9Io4sqAmtyBEXJNq3Azgg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
-
-  '@softmax-universe/runner@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runner-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-UaUezKr0cBmOUqWX2e1jY0/HgxpdZULVTHB3EeNMTssIAtx0Fi6oQjNlIizYONDfJpBCAApTqz83Q0xGHO492g==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runner-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
+  '@softmax-universe/environment-tools@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-environment-tools-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-/BmE2jmq8FYCxIRKWnXb7+IDx6aRs25Kl6cR0kFrWzxci6CjbedH1VhILqP0QQvfiexd2sfxRu1l5THkq9YOlw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-environment-tools-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
     engines: {node: '>=24.14.1'}
     hasBin: true
 
-  '@softmax-universe/runtime-client@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-client-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-+qIjQvqb9YFEbRfMncL/97C66fulzvUki2Hv02kHfoK3fMHI6sDj9MlrM/8qj4XzHbFHARolKCHiFw9E4ge8gw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-client-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
+  '@softmax-universe/execution@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-execution-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-IeSRPlzp1syFYBRfGn5oIWZhlDSQwEDzPHC3QAmyxZp2PE8tsu+nibya82Uod9AJj7hOo95FU1zdFcH5PC5EOg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-execution-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
 
-  '@softmax-universe/runtime@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-dS2z85kNnEBislrDabIVyKZLbPwg2mQREO6E4DuMqUiePH+Wc+14JzhL9jRJvJN1KZfke2PnqmMY2vjxOxLtiw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
+  '@softmax-universe/foundation@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-foundation-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-7+eqzS1YHPMY/pJhojgd8g+viQJ6KNO5tdIAJQgtg6Brq9Imm/8eRPX7yod25xwin6e3IOJKu7X+f67moyMl0w==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-foundation-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
 
-  '@softmax-universe/sdk@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-sdk-0.4.0-alpha.1.tgz':
-    resolution: {integrity: sha512-MbhhdW1Ko/wOrFjHHpVEtOrlAB+TuJfB48h1j9mietdembMZKqjEh41gI0qCSpqTHrMQO2f/me3vRgynbqK5IA==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-sdk-0.4.0-alpha.1.tgz}
-    version: 0.4.0-alpha.1
+  '@softmax-universe/inspector@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-inspector-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-R4ttfszO0RKZA50tC/U7Se3H5wiqrZ7kmkeoChK8RUqKjj+nMfRlqNpDb8gfsvTOJO9/TN8Od20o7vC8bpWC0Q==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-inspector-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
+    peerDependencies:
+      react: 19.3.0
+
+  '@softmax-universe/installation@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-installation-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-Dt4t6emNDA6HNLxjdmJ6vhyRWXY1oEV98QBjZe4wF66H7+/bZ0lo2yKXkWfJ2McG7wW9tvVzTJqDc90Zz9RfRg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-installation-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
+    engines: {node: 24.14.1}
+
+  '@softmax-universe/local-cli@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-local-cli-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-5J+Jg2Qe8k9KfJA5MVxf8FLm2By0cvlITmqBJScQoi//lpdVMVzGZbHAfarrd5/WDu/8ckAX4hVH0QGeflkapA==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-local-cli-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
+    engines: {node: 24.14.1}
+    hasBin: true
+
+  '@softmax-universe/model-policy@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-model-policy-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-LOM2/sw6v6aRfkPypP3cdAzm1ioWS5u3A45LLXTxfJAcNWYFS5AUxg9Fcdt8PNtA5qFG71VUJFyjIss8vY40kg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-model-policy-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
+
+  '@softmax-universe/orchestration@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-orchestration-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-rqMcIuJvZcfs/6bH96cOoOhOEV0m57pXAVsK3Dtk0sT288KXyd2FfedFKV+F3cy0Usf/HGwEKp7DPsubctMpyQ==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-orchestration-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
+
+  '@softmax-universe/protocol@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-tAa/+66A8ZeEjCwwD/LQ0jvL5IJ3E34baQ55TRVNGKEaTMJInow75RKP/vf56BnRk10jUuTdo6RujrfhWpeY/Q==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
+
+  '@softmax-universe/runner@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runner-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-oaTAui5QkNBeyT9ydBg7dimR8FvXXXWSNr4HhQ4/CmEMWemFFNa9YGiIUoXFf4sz7zjwHOlupMOl9FqLbnJ28g==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runner-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
+    engines: {node: '>=24.14.1'}
+    hasBin: true
+
+  '@softmax-universe/runtime-client@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-client-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-kfSPJD/xNcqq0u2ZWb/sWU6+wvxjwPGuUfLnX2XLC2Oq7YMpQLb1fFdXjmN3ZTcGESDq68rMbM/mr3pmIH3E7g==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-client-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
+
+  '@softmax-universe/runtime@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-T03jBQMtX9LcGRMIVNlllTdl2dk8sgGv6BdpGUv8vNxr194cKbpxoKstHwrLY2QEsHQ2yLkRvAjthUR1ph2ITA==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
+
+  '@softmax-universe/sdk@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-sdk-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-0adKXz+YwfEoD2UxjVow2vLotQ/V8yyHHh6MfdqZqtEvFbb0M+M9k5aZsZekwvYVo+ODNSPEG+t1ezinvwFgdg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-sdk-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
+
+  '@softmax-universe/workbench@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-workbench-0.5.0-alpha.1.tgz':
+    resolution: {integrity: sha512-A8NDzCnjlnzTES4yoN7lbZyRqlwxR7hmfQctcHmutArOxGU0quFo3AtZv4TzZe/a80SliHUuDD3sG3D+8btTJQ==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-workbench-0.5.0-alpha.1.tgz}
+    version: 0.5.0-alpha.1
+    engines: {node: 24.14.1}
 
   '@stablelib/base64@1.0.1':
     resolution: {integrity: sha512-1bnPQqSxSuc3Ii6MhBysoWCg58j97aUjuCSZrGSmDxNqtytIi0k8utUenAwTZN4V5mXXYGsVUI9zeBqy+jBOSQ==}
@@ -1030,11 +1187,20 @@ packages:
   '@tybys/wasm-util@0.10.4':
     resolution: {integrity: sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A==}
 
+  '@types/esrecurse@4.3.1':
+    resolution: {integrity: sha512-xJBAbDifo5hpffDBuHl0Y8ywswbiAp/Wi7Y/GtAgSlZyIABppyurxVueOPE8LUQOxdlgi6Zqce7uoEpqNTeiUw==}
+
+  '@types/estree@1.0.10':
+    resolution: {integrity: sha512-lTyOMnOcmRBzdCv6/4zUZCrEhV0xrqQiUZBZtVcbmLHBXKLnN8q89v/wKRF/Q0HbwVsqbIG3o5HDoFl9sduM+g==}
+
   '@types/gensync@1.0.5':
     resolution: {integrity: sha512-MbsRCT7mTikHwKZ0X+LVUTLRrZZRLipTuXEO9qOYO+zmjMVk81axyClMROf6uoPD9MRVu46bx8zoR0Ad9q3NAg==}
 
   '@types/jsesc@2.5.1':
     resolution: {integrity: sha512-9VN+6yxLOPLOav+7PwjZbxiID2bVaeq0ED4qSQmdQTdjnXJSaCVKTR58t15oqH1H5t8Ng2ZX1SabJVoN9Q34bw==}
+
+  '@types/json-schema@7.0.15':
+    resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
   '@types/node@24.13.6':
     resolution: {integrity: sha512-SGrw/h3KPFshy3OE6ZL53LMBG5vGQQ8/gIpiqz/kRZhPJ7HgwCEs8LBuNtWLa8dvGZVpSF7+Bf+c11HUrCb/yg==}
@@ -1170,6 +1336,131 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@unrs/resolver-binding-android-arm-eabi@1.13.0':
+    resolution: {integrity: sha512-60E5mvmIiW+i1E/HYeSX4iE4A8s9NJSGYPu7UM0DJght1c2tTkWwuyDyAwzsEXhKM/XbbndfnTiXdfrf27d2hw==}
+    cpu: [arm]
+    os: [android]
+
+  '@unrs/resolver-binding-android-arm64@1.13.0':
+    resolution: {integrity: sha512-qlh/JR3Tuy1cJ7xtf5pR4ykvLiK6os7X7EL2+zXZbrVc/s+yB8DoFdQrCAW9/a2TOxPVbR7QVNpkPWh7UWIsEQ==}
+    cpu: [arm64]
+    os: [android]
+
+  '@unrs/resolver-binding-darwin-arm64@1.13.0':
+    resolution: {integrity: sha512-yynnnnJXUC99WeD1GfvuXPKsKNfvgzGYC2eRayFnUfsHVROjqrbFOkFQLZiSx1H8+PLy5BzU8vqyPyLqbRfeBQ==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@unrs/resolver-binding-darwin-x64@1.13.0':
+    resolution: {integrity: sha512-t8PXE0Ip9tmGyhRlfVsnEbzGM5iSvJIeNIXciUACjzpg0mmPs13fGv2x7W8sBa0S8zbIiohxKXS9fL/LXW/ERQ==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@unrs/resolver-binding-freebsd-x64@1.13.0':
+    resolution: {integrity: sha512-qdtl9GDWDoDx6rhzF4RU5SJutV3lcLOiTiyqD6nBxYfEO6lAgLNukfrA+HJ2u2OiyWvV8JW5iEWD3LoONw7lYA==}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@unrs/resolver-binding-linux-arm-gnueabihf@1.13.0':
+    resolution: {integrity: sha512-VrMUVwdrScTarsh4B6aUhTtziUavSlglo4Hi8XZ6CpAe4+j3nquY+XoP+tYkiSBDsXZ8386ne4pv4YYYBNi02w==}
+    cpu: [arm]
+    os: [linux]
+
+  '@unrs/resolver-binding-linux-arm-musleabihf@1.13.0':
+    resolution: {integrity: sha512-zSbTVwaxiTC+zYJ9xVNTC6c+BYO/kOV/odcTI3bHuFFXa+XmjLoUkb/8UxsZeU5YF4K000m17wrXoTblNWuzOg==}
+    cpu: [arm]
+    os: [linux]
+
+  '@unrs/resolver-binding-linux-arm64-gnu@1.13.0':
+    resolution: {integrity: sha512-Z/Rax87moZHsuvJ8awdfP+zrMlsCt3d7mggUPIiPe32KpeagimyzJWnZSMQoV67an9uVQghyh92Pc0VprITnYA==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@unrs/resolver-binding-linux-arm64-musl@1.13.0':
+    resolution: {integrity: sha512-oUzXz8hNvFLNEAag8lBKJe1euiV2dmGHAR+eQ5fNpsZO0F1K7IMRb4J6pqYsd7uLMRQNPiu5A1WKUJHbFLWbbw==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@unrs/resolver-binding-linux-loong64-gnu@1.13.0':
+    resolution: {integrity: sha512-BxhGYvZBg0YrvNOeSEGR3eNklwXYy0mUJk7oeGJvZoQMKM68zYvbbf52+fQI3Le4X0fW276FTKIoTwjpMob80A==}
+    cpu: [loong64]
+    os: [linux]
+    libc: [glibc]
+
+  '@unrs/resolver-binding-linux-loong64-musl@1.13.0':
+    resolution: {integrity: sha512-nZcIuup9Ar3gAlqoZfX/KW6x83TMI11tLpCjldZG5M1KeY8qNUPNJJ71+sPvG8HMBpoh+ix1pAm5gkMFvcSAcQ==}
+    cpu: [loong64]
+    os: [linux]
+    libc: [musl]
+
+  '@unrs/resolver-binding-linux-ppc64-gnu@1.13.0':
+    resolution: {integrity: sha512-AG6AgdDrkRNjAPwD/cftFJGgZUWCiJX+E8vpYCDEnwFHLTHZ7ppBiU6/vyPPwrfjcPUPQCDbbxE/eZUXsx49jQ==}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@unrs/resolver-binding-linux-riscv64-gnu@1.13.0':
+    resolution: {integrity: sha512-6vOqYGcAmzpRWpUURWutzvpf1qJ6eOu5cfYObdtPJnzZ0+Kw4cw+ZkZJqIYEh8fPuTBwSYDL/FwlUhma1G/JVQ==}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [glibc]
+
+  '@unrs/resolver-binding-linux-riscv64-musl@1.13.0':
+    resolution: {integrity: sha512-4HeIn0S2KVUowK0A+EweXrDvZ8CKHEfTtif0kx9vt3ORNsqcXNFFIFnHE0tizma3/Gt5OGrU2ovYNuj+D/bN4g==}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [musl]
+
+  '@unrs/resolver-binding-linux-s390x-gnu@1.13.0':
+    resolution: {integrity: sha512-JfkvqY7NZbxyhexLE+g6Z8Hsx4utHOGaVazAVghPiBn8Upw2iERZPpKYnW1FBVU4WStv/BiIsoK/Muke0E7asA==}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
+  '@unrs/resolver-binding-linux-x64-gnu@1.13.0':
+    resolution: {integrity: sha512-iwjLeVdZo/8v5OKAeRIC+4VQV045t1EPZr5B/AVLgUQ04IdtNthWzg6not2cNjZgH2gHpSf4fOXMmN83aLO1FA==}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@unrs/resolver-binding-linux-x64-musl@1.13.0':
+    resolution: {integrity: sha512-TOh1fqOjyq1OPoht3BDLd7Y+HeMJRwd5g2VNmCQclknEbjp4py5GFRmT4L/rOybF5Af8q0LT9zHs2WGkwlqtrw==}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@unrs/resolver-binding-openharmony-arm64@1.13.0':
+    resolution: {integrity: sha512-3T2MNtF2dd1yjaXCVqrsi+/3VZeksEzU1hygPzqqkBLVVjn+2iJzXEkxxCKIVFrWnpmEbazeHJp/ruYD0RUVWA==}
+    cpu: [arm64]
+    os: [openharmony]
+
+  '@unrs/resolver-binding-win32-arm64-msvc@1.13.0':
+    resolution: {integrity: sha512-hKWfSLiN3L4cIxg0jrpyP/66AXLTcyD37jmSn//rGdOUYGlizYxTEFdJ+GZbp2NnaML3YS/A73nCysze8FaJdg==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@unrs/resolver-binding-win32-ia32-msvc@1.13.0':
+    resolution: {integrity: sha512-N4gDKkDoiyIQEcn3vTqe2ksRxUAtBvQ8c5TiT+WonSa6FHgCAY5+RggnZ134hXJoRj57JEjv4/m+i/pAKHWrTQ==}
+    cpu: [ia32]
+    os: [win32]
+
+  '@unrs/resolver-binding-win32-x64-msvc@1.13.0':
+    resolution: {integrity: sha512-DpLMlAqlrk4zBVK3DiDjwKD0oq7pZNy+8BiIBRuByqb6dm5jsdoLMhIiyh/xR7+WejaW/1Ui+XgbgMNa4+zWJg==}
+    cpu: [x64]
+    os: [win32]
+
+  acorn-jsx@5.3.2:
+    resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
+    peerDependencies:
+      acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
+
+  acorn@8.19.0:
+    resolution: {integrity: sha512-oJlA3XiRm7Cyk6qFD2Jn8ak9B7jSy0qy00ADO3+8dpT0LSjFihQYv4C02LFCSYJV3Q37xYwwRy5m+IpIiUzqWw==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
   agent-base@7.1.4:
     resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
     engines: {node: '>= 14'}
@@ -1243,6 +1534,17 @@ packages:
       vite:
         optional: true
 
+  ajv@6.15.0:
+    resolution: {integrity: sha512-fgFx7Hfoq60ytK2c7DhnF8jIvzYgOMxfugjLOSMHjLIPgenqa7S7oaagATUq99mV6IYvN2tRmC0wnTYX6iPbMw==}
+
+  ansi-styles@4.3.0:
+    resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
+    engines: {node: '>=8'}
+
+  balanced-match@4.0.4:
+    resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
+    engines: {node: 18 || 20 || >=22}
+
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
@@ -1257,6 +1559,10 @@ packages:
   bowser@2.15.0:
     resolution: {integrity: sha512-xic6KSZglg/I4ymp45fdM4GWfYpBK79Fxd/TOvJktlaPgQqqDxvmGwOPZl2V0dyeS3Lj5c180bLhXF43iyAjZQ==}
 
+  brace-expansion@5.0.12:
+    resolution: {integrity: sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==}
+    engines: {node: 20 || >=22}
+
   browserslist@4.29.5:
     resolution: {integrity: sha512-khTmKu5NGYTotqcYo8Bew2k4RAE9PuXRSFRXG2lQBrCEQHyeQ/vX6gKMxfokwywBsLiXZMnHsmWMG1pnO8J7uQ==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
@@ -1265,11 +1571,25 @@ packages:
   buffer-equal-constant-time@1.0.1:
     resolution: {integrity: sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA==}
 
+  cacheable@2.5.0:
+    resolution: {integrity: sha512-60cyAOytib/OzBw1JNSoSV/boK1AtHryDIjvVBk7XbN4ugfkM3+Sry7fEjNgPMGgOjuaZPAp8ruZ0Cxafwyq9g==}
+
   caniuse-lite@1.0.30001823:
     resolution: {integrity: sha512-TQ5s/djDjNk1axreUW+4rULH+BmdCMLiJkhaXnO5wqivG7tITkSUj4ItIdzqdZHKaXcHAV8dhH3JxOM7/7bwqw==}
 
   capnweb@0.12.0:
     resolution: {integrity: sha512-jgZ/LMtMVTi+RVlooIslH78Gg23XbDTdvcLghWx3oz17D6u5GuJARt+uhZk/wcTo+f81eeabfnow4d3zLBj+JQ==}
+
+  chalk@4.1.2:
+    resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
+    engines: {node: '>=10'}
+
+  color-convert@2.0.1:
+    resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
+    engines: {node: '>=7.0.0'}
+
+  color-name@1.1.4:
+    resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
@@ -1292,6 +1612,14 @@ packages:
     resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
     engines: {node: '>= 12'}
 
+  debug@3.2.7:
+    resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   debug@4.4.3:
     resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
     engines: {node: '>=6.0'}
@@ -1300,6 +1628,13 @@ packages:
     peerDependenciesMeta:
       supports-color:
         optional: true
+
+  deep-is@0.1.4:
+    resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
+
+  detect-libc@2.1.2:
+    resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
+    engines: {node: '>=8'}
 
   diff@8.0.4:
     resolution: {integrity: sha512-DPi0FmjiSU5EvQV0++GFDOJ9ASQUVFh5kD+OzOnYdi7n3Wpm9hWWGfB/O2blfHcMVTL5WkQXSnRiK9makhrcnw==}
@@ -1318,6 +1653,10 @@ packages:
     resolution: {integrity: sha512-AnfC1ATldl49/cvZdLPDjBfrRNwbDO05aibiOtzQu3qtlbJtomNLhF30HEtn/7iBz50dlMECqATo3fG0LrdEgw==}
     engines: {node: '>=14'}
 
+  es-errors@1.3.0:
+    resolution: {integrity: sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==}
+    engines: {node: '>= 0.4'}
+
   esbuild@0.28.2:
     resolution: {integrity: sha512-HKVLS8dvII+xoKW9kmqxbRKrnWEXfJJr/FZhhJmiqIB0e053QNYFqOBouTMO/k5sID4MvCiUCvv8b9M4h32wIA==}
     engines: {node: '>=18'}
@@ -1326,6 +1665,104 @@ packages:
   escalade@3.2.0:
     resolution: {integrity: sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==}
     engines: {node: '>=6'}
+
+  escape-string-regexp@4.0.0:
+    resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
+    engines: {node: '>=10'}
+
+  eslint-import-context@0.1.9:
+    resolution: {integrity: sha512-K9Hb+yRaGAGUbwjhFNHvSmmkZs9+zbuoe3kFQ4V1wYjrepUFYM2dZAfNtjbbj3qsPfUfsA68Bx/ICWQMi+C8Eg==}
+    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      unrs-resolver: ^1.0.0
+    peerDependenciesMeta:
+      unrs-resolver:
+        optional: true
+
+  eslint-import-resolver-node@0.3.9:
+    resolution: {integrity: sha512-WFj2isz22JahUv+B788TlO3N6zL3nNJGU8CcZbPZvVEkBPaJdCV4vy5wyghty5ROFbCRnm132v8BScu5/1BQ8g==}
+
+  eslint-import-resolver-typescript@4.4.5:
+    resolution: {integrity: sha512-nbE5XLph6TLtGYcu/U6e6ZVXyKBhbDWK5cLGk76eJ7NdZpwf1P9EFkpt1Z01mNZNrrilsAYWKH6zUkL4reoXbw==}
+    engines: {node: ^16.17.0 || >=18.6.0}
+    peerDependencies:
+      eslint: '*'
+      eslint-plugin-import: '*'
+      eslint-plugin-import-x: '*'
+    peerDependenciesMeta:
+      eslint-plugin-import:
+        optional: true
+      eslint-plugin-import-x:
+        optional: true
+
+  eslint-module-utils@2.14.0:
+    resolution: {integrity: sha512-W2WCRZ9Dqntd+2u8jJcVMV2PKulc6RdLgUUoh/yQr3uB6lo/ZOeGx11sv60/8S4QFFKNslAlWhr9u0Ef7ZW6Ig==}
+    engines: {node: '>=4'}
+    peerDependencies:
+      '@typescript-eslint/parser': '*'
+      eslint: '*'
+      eslint-import-resolver-node: '*'
+      eslint-import-resolver-typescript: '*'
+      eslint-import-resolver-webpack: '*'
+    peerDependenciesMeta:
+      '@typescript-eslint/parser':
+        optional: true
+      eslint:
+        optional: true
+      eslint-import-resolver-node:
+        optional: true
+      eslint-import-resolver-typescript:
+        optional: true
+      eslint-import-resolver-webpack:
+        optional: true
+
+  eslint-plugin-boundaries@7.3.0:
+    resolution: {integrity: sha512-NzzcW1FN7LEuHEdEPuPGzpqADfO0r6VL3z57gqDfasiU5pEUqKCF7PeUpbyuLW7qHfLR4QQcXSBRjJf/nYl5Bw==}
+    engines: {node: '>=18.18'}
+    peerDependencies:
+      eslint: '>=6.0.0'
+
+  eslint-scope@9.1.2:
+    resolution: {integrity: sha512-xS90H51cKw0jltxmvmHy2Iai1LIqrfbw57b79w/J7MfvDfkIkFZ+kj6zC3BjtUwh150HsSSdxXZcsuv72miDFQ==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
+  eslint-visitor-keys@3.4.3:
+    resolution: {integrity: sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  eslint-visitor-keys@5.0.1:
+    resolution: {integrity: sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
+  eslint@10.14.0:
+    resolution: {integrity: sha512-T0pNsxkb9IKmtQjhpK3d7nWOpFv+YHuMbTJnSVMoQblF0onvXfErrtp4V1jHtsQPan7dKaGVD0q1WCXnzMF31A==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+    hasBin: true
+    peerDependencies:
+      jiti: '*'
+    peerDependenciesMeta:
+      jiti:
+        optional: true
+
+  espree@11.2.0:
+    resolution: {integrity: sha512-7p3DrVEIopW1B1avAGLuCSh1jubc01H2JHc8B4qqGblmg5gI9yumBgACjWo4JlIc04ufug4xJ3SQI8HkS/Rgzw==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
+  esquery@1.7.0:
+    resolution: {integrity: sha512-Ap6G0WQwcU/LHsvLwON1fAQX9Zp0A2Y6Y/cJBl9r/JbW90Zyg4/zbG6zzKa2OTALELarYHmKu0GhpM5EO+7T0g==}
+    engines: {node: '>=0.10'}
+
+  esrecurse@4.3.0:
+    resolution: {integrity: sha512-KmfKL3b6G+RXvP8N1vr3Tq1kL/oCFgn2NYXEtqP8/L3pKapUA4G8cFVaoF3SU323CD4XypR/ffioHmkti6/Tag==}
+    engines: {node: '>=4.0'}
+
+  estraverse@5.3.0:
+    resolution: {integrity: sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==}
+    engines: {node: '>=4.0'}
+
+  esutils@2.0.3:
+    resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
+    engines: {node: '>=0.10.0'}
 
   event-target-polyfill@0.0.4:
     resolution: {integrity: sha512-Gs6RLjzlLRdT8X9ZipJdIZI/Y6/HhRLyq9RdDlCsnpxr/+Nn6bU2EFGuC94GjxqhM+Nmij2Vcq98yoHrU8uNFQ==}
@@ -1341,12 +1778,43 @@ packages:
   extend@3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
 
+  fast-deep-equal@3.1.3:
+    resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+
+  fast-json-stable-stringify@2.1.0:
+    resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
+
+  fast-levenshtein@2.0.6:
+    resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
+
   fast-sha256@1.3.0:
     resolution: {integrity: sha512-n11RGP/lrWEFI/bWdygLxhI+pVeo1ZYIVwvvPkW7azl/rOy+F3HYRZ2K5zeE9mmkhQppyv9sQFx0JM9UabnpPQ==}
+
+  fdir@6.5.0:
+    resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      picomatch: ^3 || ^4
+    peerDependenciesMeta:
+      picomatch:
+        optional: true
 
   fetch-blob@3.2.0:
     resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
     engines: {node: ^12.20 || >= 14.13}
+
+  file-entry-cache@11.1.5:
+    resolution: {integrity: sha512-+PFTHITI08JIGhnNpGNI8T8inUpgZfk3GNEqfT9R2zZV2iFXg3CvqzSl/uEhs7TSGujYRELEANyDvS8Fj7+S7Q==}
+
+  find-up@5.0.0:
+    resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
+    engines: {node: '>=10'}
+
+  flat-cache@6.1.23:
+    resolution: {integrity: sha512-f++BY9pTk+983xK1FLzlLpmM0i0z+jHmx3QESGkURMXujQZz1k5wzwX6hjnQ8goaD0B+sYnDK1yZ6MTyZfUaqA==}
+
+  flatted@3.4.4:
+    resolution: {integrity: sha512-5+ybhBZANEJxaH3X5evAFatUxLfEHSr7n6kYJ+1Qd0mUqr4eu9gIf6GDbWHf8RJijHrjjO8G+la14SlL2SeS1Q==}
 
   flru@1.0.2:
     resolution: {integrity: sha512-kWyh8ADvHBFz6ua5xYOPnUroZTT/bwWfrCeL0Wj1dzG4/YOmOcfJ99W8dOVyyynJN35rZ9aCOtHChqQovV7yog==}
@@ -1361,6 +1829,9 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
+  function-bind@1.1.2:
+    resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
+
   gaxios@7.3.1:
     resolution: {integrity: sha512-kB3rzJV7d9juLZh8/56QTXCwQfxyhdOMdyYk1HdQKFtF8TJTDTZQJtixWIwXdE9Jji91mC41DUNpjleo4L4eAQ==}
     engines: {node: '>=18'}
@@ -1373,6 +1844,13 @@ packages:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
     engines: {node: '>=6.9.0'}
 
+  get-tsconfig@4.14.3:
+    resolution: {integrity: sha512-++QEw4DIY7WGoukz+/+A/8dGYPT9l9yIadnmSgZ8Rjr3YVSVDipQSO9CdnJo9ePqFqUUqh+wk9uIaoiAwsiPkA==}
+
+  glob-parent@6.0.2:
+    resolution: {integrity: sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==}
+    engines: {node: '>=10.13.0'}
+
   google-auth-library@10.9.1:
     resolution: {integrity: sha512-i1ydyHrqcIxXkWh/uBmVkzCvIuq5yiK2ATndIe5XxKholrG/MTYP9xGYka4sQhrbIAgGjL2B6NOE7rFaiF3fXw==}
     engines: {node: '>=18'}
@@ -1380,6 +1858,29 @@ packages:
   google-logging-utils@1.1.3:
     resolution: {integrity: sha512-eAmLkjDjAFCVXg7A1unxHsLf961m6y17QFqXqAXGj/gVkKFrEICfStRfwUlGNfeCEjNRa32JEWOUTlYXPyyKvA==}
     engines: {node: '>=14'}
+
+  handlebars@4.7.10:
+    resolution: {integrity: sha512-P5VJMVM7qgBn6vjXMw8WG9uVI+ncf2pi72j4de4yz5ZULLj2RGqLYaKOYGsgyrViQ0tePOVlN1tDCCXXtFqXKg==}
+    engines: {node: '>=0.4.7'}
+    hasBin: true
+
+  has-flag@4.0.0:
+    resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
+    engines: {node: '>=8'}
+
+  hashery@1.5.1:
+    resolution: {integrity: sha512-iZyKG96/JwPz1N55vj2Ie2vXbhu440zfUfJvSwEqEbeLluk7NnapfGqa7LH0mOsnDxTF85Mx8/dyR6HfqcbmbQ==}
+    engines: {node: '>=20'}
+
+  hasown@2.0.4:
+    resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
+    engines: {node: '>= 0.4'}
+
+  hookified@1.15.1:
+    resolution: {integrity: sha512-MvG/clsADq1GPM2KGo2nyfaWVyn9naPiXrqIe4jYjXNZQt238kWyOGrsyc/DmRAQ+Re6yeo6yX/yoNCG5KAEVg==}
+
+  hookified@2.2.0:
+    resolution: {integrity: sha512-p/LgFzRN5FeoD3DLS6bkUapeye6E4SI6yJs6KetENd18S+FBthqYq2amJUWpt5z0EQwwHemidjY5OqJGEKm5uA==}
 
   http-proxy-agent@9.1.0:
     resolution: {integrity: sha512-2NxoveTT58mjYT4n3RPTEfCZGLMbidoO8XEieXfpSYxu+PQJ1qpx4ypwH6N+uF9twBPIvRRgvkvW5HUTYWENig==}
@@ -1393,8 +1894,35 @@ packages:
     resolution: {integrity: sha512-ag87y7cJJ9/3+GxFr8Oy4O5faDsGRGnBGsJj/YjOSsSx/5eadKLYTMPlzuR6obgoCDDm0abAAZitXXQkMOPSpA==}
     engines: {node: '>= 20'}
 
+  ignore@5.3.2:
+    resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
+    engines: {node: '>= 4'}
+
   import-meta-resolve@4.2.0:
     resolution: {integrity: sha512-Iqv2fzaTQN28s/FwZAoFq0ZSs/7hMAHJVX+w8PZl3cY19Pxk6jFFalxQoIfW2826i/fDLXv8IiEZRIT0lDuWcg==}
+
+  imurmurhash@0.1.4:
+    resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
+    engines: {node: '>=0.8.19'}
+
+  is-bun-module@2.0.0:
+    resolution: {integrity: sha512-gNCGbnnnnFAUGKeZ9PdbyeGYJqewpmc2aKHUEMO5nQPWU9lOmv7jcmQIv+qHD8fXW6W7qfuCwX4rY9LNRjXrkQ==}
+
+  is-core-module@2.17.0:
+    resolution: {integrity: sha512-J/vG0zBCbIKOQFfufSwyXdMrsohyJIUNkrnmo6WZGzoM7tr/lsbfW5b2BvisL6zsyMzK9UxV9L6c7AoFbyXHOA==}
+    engines: {node: '>= 0.4'}
+
+  is-core-module@2.18.0:
+    resolution: {integrity: sha512-qyax9fgaKOEC4qK8WZn7Q4IcoZC9RC1O1fFxRcRTq/oMMkWT/uXpqpXa12kzWR409zAt1drYN9N9BO26UmBCmw==}
+    engines: {node: '>= 0.4'}
+
+  is-extglob@2.1.1:
+    resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
+    engines: {node: '>=0.10.0'}
+
+  is-glob@4.0.3:
+    resolution: {integrity: sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==}
+    engines: {node: '>=0.10.0'}
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
@@ -1420,6 +1948,12 @@ packages:
     resolution: {integrity: sha512-+DWg8jCJG2TEnpy7kOm/7/AxaYoaRbjVB4LFZLySZlWn8exGs3A4OLJR966cVvU26N7X9TWxl+Jsw7dzAqKT6g==}
     engines: {node: '>=16'}
 
+  json-schema-traverse@0.4.1:
+    resolution: {integrity: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==}
+
+  json-stable-stringify-without-jsonify@1.0.1:
+    resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
+
   json5@2.2.3:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
     engines: {node: '>=6'}
@@ -1433,6 +1967,17 @@ packages:
 
   keypress@0.2.1:
     resolution: {integrity: sha512-HjorDJFNhnM4SicvaUXac0X77NiskggxJdesG72+O5zBKpSqKFCrqmndKVqpu3pFqkla0St6uGk8Ju0sCurrmg==}
+
+  keyv@5.6.0:
+    resolution: {integrity: sha512-CYDD3SOtsHtyXeEORYRx2qBtpDJFjRTGXUtmNEMGyzYOKj1TE3tycdlho7kA1Ufx9OYWZzg52QFBGALTirzDSw==}
+
+  levn@0.4.1:
+    resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
+    engines: {node: '>= 0.8.0'}
+
+  locate-path@6.0.0:
+    resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
+    engines: {node: '>=10'}
 
   lodash._basecallback@3.3.1:
     resolution: {integrity: sha512-LQffghuO63ufDY33KKO1ezGKbcFZK3ngYV7JpxaUomoM5acf0YeXU3Pm8csVE0girVs50TXzfNibl69Co3ggJA==}
@@ -1533,6 +2078,13 @@ packages:
   mimetext@3.0.28:
     resolution: {integrity: sha512-eQXpbNrtxLCjUtiVbR/qR09dbPgZ2o+KR1uA7QKqGhbn8QV7HIL16mXXsobBL4/8TqoYh1us31kfz+dNfCev9g==}
 
+  minimatch@10.2.6:
+    resolution: {integrity: sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A==}
+    engines: {node: 18 || 20 || >=22}
+
+  minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
@@ -1540,6 +2092,17 @@ packages:
     resolution: {integrity: sha512-kVrnsrJqMR8+oLJnGEmSWw9BivK5mt7H3FZatVRjrc5wGqFYuBxX1yG7+A7Gi5AefkX6t/oCkizcQgpu0cY1dQ==}
     engines: {node: ^18 || >=20}
     hasBin: true
+
+  napi-postinstall@0.3.8:
+    resolution: {integrity: sha512-dHbDC5V1g/EI8OLEtL4Iuwbu0fgzmyykxenn2KnlsX9XdhTXL3gWnfbbP+ab+oUcgV6CFpb8QGyQt/ZXA0UXig==}
+    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
+    hasBin: true
+
+  natural-compare@1.4.0:
+    resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
+
+  neo-async@2.6.2:
+    resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
@@ -1582,6 +2145,10 @@ packages:
       zod:
         optional: true
 
+  optionator@0.9.4:
+    resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
+    engines: {node: '>= 0.8.0'}
+
   oxfmt@0.65.0:
     resolution: {integrity: sha512-SgS5VgnP42T0zl3zWD+xoH8FCqg1SAFnSRoOT/qeoa6gxcYIqrDMOmcXIg/EWSN92Du4ogB4riuKhKd6Y4CGhw==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -1595,18 +2162,26 @@ packages:
       vite-plus:
         optional: true
 
-  oxlint@1.80.0:
-    resolution: {integrity: sha512-5nTiSps4qdbCWLbxzuO00alHkEO2exR9YMN/ig6QXWrLsYSG0KaObOAM+l6oU2LcKPWoSAGYbkZIGEu1ViiWKA==}
+  oxlint@1.90.0:
+    resolution: {integrity: sha512-RkTN9EmgIUpLuhNoLhO3OliMGJlvb3Dk7XVjBZnfoMCHrVpuz5ESd97klfiyYeV7XfA2lNLnDCPMkUI+Qw5How==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
-      oxlint-tsgolint: '>=7.0.2001'
+      oxlint-tsgolint: '>=7.0.2005'
       vite-plus: '*'
     peerDependenciesMeta:
       oxlint-tsgolint:
         optional: true
       vite-plus:
         optional: true
+
+  p-limit@3.1.0:
+    resolution: {integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==}
+    engines: {node: '>=10'}
+
+  p-locate@5.0.0:
+    resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
+    engines: {node: '>=10'}
 
   p-retry@4.6.2:
     resolution: {integrity: sha512-312Id396EbJdvRONlngUx0NydfrIQ5lsYu0znKVUzVvArzEIt08V1qhtyESbGVd1FGX7UKtiFp5uwKZdM8wIuQ==}
@@ -1623,12 +2198,23 @@ packages:
       react:
         optional: true
 
+  path-exists@4.0.0:
+    resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
+    engines: {node: '>=8'}
+
   path-key@3.1.1:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
     engines: {node: '>=8'}
 
+  path-parse@1.0.7:
+    resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
+
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+
+  picomatch@2.3.2:
+    resolution: {integrity: sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==}
+    engines: {node: '>=8.6'}
 
   picomatch@4.0.7:
     resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
@@ -1640,6 +2226,10 @@ packages:
 
   postal-mime@2.7.6:
     resolution: {integrity: sha512-UUlyE2KlxmvwMGq060onF/VWU3zD6dVW31FwokQ5v26jWd35fbs2MoTFzh+jXnPwAyV2MULMKXcBInGOl5TO6Q==}
+
+  prelude-ls@1.2.1:
+    resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
+    engines: {node: '>= 0.8.0'}
 
   protobufjs@7.6.6:
     resolution: {integrity: sha512-dYDWdjSl5RNb7SgPxGQcRU+GtvP7s2fpkrY0r432PcOIaZ0/rBcxEZnQN67iJhFuQiVw754JDoPruPCNdGsbjg==}
@@ -1654,6 +2244,14 @@ packages:
       kerberos:
         optional: true
 
+  punycode@2.3.1:
+    resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
+    engines: {node: '>=6'}
+
+  qified@0.10.1:
+    resolution: {integrity: sha512-+Owyggi9IxT1ePKGafcI87ubSmxol6smwJ+RAHDQlx9+9cPwFWDiKFFCPuWhr9ignlGpZ9vDQLw67N4dcTVFEA==}
+    engines: {node: '>=20'}
+
   quickjs-wasi@3.6.2:
     resolution: {integrity: sha512-FCqGtGOrMgzUiIrMNMA2YnsOxCNwo31dzqXvclXUC6xeT35NJLKXQJsvbeCTjvoFAwZgEAPg8U6+KAPDGXn8Mg==}
 
@@ -1665,6 +2263,14 @@ packages:
   react@19.3.0:
     resolution: {integrity: sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==}
     engines: {node: '>=0.10.0'}
+
+  resolve-pkg-maps@1.0.0:
+    resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
+
+  resolve@1.22.14:
+    resolution: {integrity: sha512-1ZjYvR9sbkiwC5+9QHetqW5HmA2pHRMaoupD01t2HlYnV/vydC2zPwLixhsMieSWVZt0JJRg5LVIk0Ow1D/TrA==}
+    engines: {node: '>= 0.4'}
+    hasBin: true
 
   retry@0.13.1:
     resolution: {integrity: sha512-XQBQ3I8W1Cge0Seh+6gjj03LbmRFWuoszgK9ooCpwYIrhhoO80pfq4cUkU5DkknwfOfFteRwlZ56PYOGYyFWdg==}
@@ -1686,6 +2292,11 @@ packages:
   scheduler@0.28.0:
     resolution: {integrity: sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==}
 
+  semver@7.8.6:
+    resolution: {integrity: sha512-9lpSSU4Mly3mrtruwLs1eLK6+gzbzqeBFwRNjIjE+9LuDpWdYctrQlQ3ej1Ilgi7gknpsTRnPoLP8DpCHqHIJw==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
     engines: {node: '>=8'}
@@ -1694,8 +2305,28 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
+  source-map@0.6.1:
+    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
+    engines: {node: '>=0.10.0'}
+
+  stable-hash-x@0.2.0:
+    resolution: {integrity: sha512-o3yWv49B/o4QZk5ZcsALc6t0+eCelPc44zZsLtCQnZPDwFpDYSWcDnrv2TtMmMbQ7uKo3J0HTURCqckw23czNQ==}
+    engines: {node: '>=12.0.0'}
+
   standardwebhooks@1.1.1:
     resolution: {integrity: sha512-bCbX9ZEyFkWPsRz7Bl3NuQUJohmwGSev/yhr7vhaGPlc4AfIrspIRa6cPTBuI1ItmrTDJ4d/S2hCsfe4+vQGnQ==}
+
+  supports-color@7.2.0:
+    resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
+    engines: {node: '>=8'}
+
+  supports-preserve-symlinks-flag@1.0.0:
+    resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
+    engines: {node: '>= 0.4'}
+
+  tinyglobby@0.2.17:
+    resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
+    engines: {node: '>=12.0.0'}
 
   tinypool@2.1.0:
     resolution: {integrity: sha512-Pugqs6M0m7Lv1I7FtxN4aoyToKg1C4tu+/381vH35y8oENM/Ai7f7C4StcoK4/+BSw9ebcS8jRiVrORFKCALLw==}
@@ -1712,19 +2343,34 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
+  type-check@0.4.0:
+    resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
+    engines: {node: '>= 0.8.0'}
+
   typescript@7.0.2:
     resolution: {integrity: sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==}
     engines: {node: '>=16.20.0'}
     hasBin: true
 
+  uglify-js@3.19.3:
+    resolution: {integrity: sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ==}
+    engines: {node: '>=0.8.0'}
+    hasBin: true
+
   undici-types@7.18.2:
     resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
+
+  unrs-resolver@1.13.0:
+    resolution: {integrity: sha512-mcPQo9Vm6kXd84d/WqMiYBi2CcA57QHBX/ev5PoUEb8b2oQzUvJ6xYsfseQblnCncgnVmCZGWiFwK7KkS5JZJA==}
 
   update-browserslist-db@1.3.4:
     resolution: {integrity: sha512-t8wonIOdQyOjtPd2VktlBu6QjTVTks6v8bSi7kd0r2Vll8TK1JYDZtRRdbmCHOAMphkZgrzK+L+vXK4pyZ8t4A==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
+
+  uri-js@4.4.1:
+    resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
   verkit@0.5.0:
     resolution: {integrity: sha512-u4J1hr6Y+C/hit34GwL3eIcUf3wngT8TlYUjK7tk0jxydKLAq3sYvifjdTDA6U3KCKRcQCQDGf/srjxfZF3l7g==}
@@ -1738,6 +2384,13 @@ packages:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
     engines: {node: '>= 8'}
     hasBin: true
+
+  word-wrap@1.2.5:
+    resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
+    engines: {node: '>=0.10.0'}
+
+  wordwrap@1.0.0:
+    resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
 
   ws@8.22.2:
     resolution: {integrity: sha512-/rEZ2ejown2N5gxVTHUu9bVVC7ttu0/Tgzf5hbTOixR3Fs7mbbXgn2DbdbcKgJOmpQMtrIUWivtYuVMnp/W/yA==}
@@ -1756,6 +2409,10 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
+  yocto-queue@0.1.0:
+    resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
+    engines: {node: '>=10'}
+
   zod@4.6.7:
     resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
@@ -1767,6 +2424,39 @@ snapshots:
       standardwebhooks: 1.1.1
     optionalDependencies:
       zod: 4.6.7
+
+  '@ast-grep/cli-darwin-arm64@0.51.0':
+    optional: true
+
+  '@ast-grep/cli-darwin-x64@0.51.0':
+    optional: true
+
+  '@ast-grep/cli-linux-arm64-gnu@0.51.0':
+    optional: true
+
+  '@ast-grep/cli-linux-x64-gnu@0.51.0':
+    optional: true
+
+  '@ast-grep/cli-win32-arm64-msvc@0.51.0':
+    optional: true
+
+  '@ast-grep/cli-win32-ia32-msvc@0.51.0':
+    optional: true
+
+  '@ast-grep/cli-win32-x64-msvc@0.51.0':
+    optional: true
+
+  '@ast-grep/cli@0.51.0':
+    dependencies:
+      detect-libc: 2.1.2
+    optionalDependencies:
+      '@ast-grep/cli-darwin-arm64': 0.51.0
+      '@ast-grep/cli-darwin-x64': 0.51.0
+      '@ast-grep/cli-linux-arm64-gnu': 0.51.0
+      '@ast-grep/cli-linux-x64-gnu': 0.51.0
+      '@ast-grep/cli-win32-arm64-msvc': 0.51.0
+      '@ast-grep/cli-win32-ia32-msvc': 0.51.0
+      '@ast-grep/cli-win32-x64-msvc': 0.51.0
 
   '@aws-sdk/client-bedrock-runtime@3.1127.0':
     dependencies:
@@ -2089,6 +2779,24 @@ snapshots:
       '@babel/helper-string-parser': 8.0.8
       '@babel/helper-validator-identifier': 8.0.6
 
+  '@boundaries/elements@3.2.0':
+    dependencies:
+      handlebars: 4.7.10
+      is-core-module: 2.17.0
+      picomatch: 2.3.2
+
+  '@cacheable/memory@2.2.0':
+    dependencies:
+      '@cacheable/utils': 2.5.0
+      '@keyv/bigmap': 1.3.1(keyv@5.6.0)
+      hookified: 1.15.1
+      keyv: 5.6.0
+
+  '@cacheable/utils@2.5.0':
+    dependencies:
+      hashery: 1.5.1
+      keyv: 5.6.0
+
   '@cfworker/json-schema@4.1.6': {}
 
   '@earendil-works/chord@1.5.1(esbuild@0.28.2)(react@19.3.0)':
@@ -2250,6 +2958,36 @@ snapshots:
   '@esbuild/win32-x64@0.28.2':
     optional: true
 
+  '@eslint-community/eslint-utils@4.10.1(eslint@10.14.0)':
+    dependencies:
+      eslint: 10.14.0
+      eslint-visitor-keys: 3.4.3
+
+  '@eslint-community/regexpp@4.12.3': {}
+
+  '@eslint/config-array@0.23.5':
+    dependencies:
+      '@eslint/object-schema': 3.0.5
+      debug: 4.4.3
+      minimatch: 10.2.6
+    transitivePeerDependencies:
+      - supports-color
+
+  '@eslint/config-helpers@0.7.0':
+    dependencies:
+      '@eslint/core': 1.2.1
+
+  '@eslint/core@1.2.1':
+    dependencies:
+      '@types/json-schema': 7.0.15
+
+  '@eslint/object-schema@3.0.5': {}
+
+  '@eslint/plugin-kit@0.7.3':
+    dependencies:
+      '@eslint/core': 1.2.1
+      levn: 0.4.1
+
   '@google/genai@2.21.0':
     dependencies:
       google-auth-library: 10.9.1
@@ -2260,6 +2998,22 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
+
+  '@humanfs/core@0.19.2':
+    dependencies:
+      '@humanfs/types': 0.15.0
+
+  '@humanfs/node@0.16.8':
+    dependencies:
+      '@humanfs/core': 0.19.2
+      '@humanfs/types': 0.15.0
+      '@humanwhocodes/retry': 0.4.3
+
+  '@humanfs/types@0.15.0': {}
+
+  '@humanwhocodes/module-importer@1.0.1': {}
+
+  '@humanwhocodes/retry@0.4.3': {}
 
   '@jridgewell/gen-mapping@0.4.0-beta.0':
     dependencies:
@@ -2274,6 +3028,14 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
+
+  '@keyv/bigmap@1.3.1(keyv@5.6.0)':
+    dependencies:
+      hashery: 1.5.1
+      hookified: 1.15.1
+      keyv: 5.6.0
+
+  '@keyv/serialize@1.1.1': {}
 
   '@modelcontextprotocol/client@2.4.0':
     dependencies:
@@ -2362,61 +3124,61 @@ snapshots:
   '@oxfmt/binding-win32-x64-msvc@0.65.0':
     optional: true
 
-  '@oxlint/binding-android-arm-eabi@1.80.0':
+  '@oxlint/binding-android-arm-eabi@1.90.0':
     optional: true
 
-  '@oxlint/binding-android-arm64@1.80.0':
+  '@oxlint/binding-android-arm64@1.90.0':
     optional: true
 
-  '@oxlint/binding-darwin-arm64@1.80.0':
+  '@oxlint/binding-darwin-arm64@1.90.0':
     optional: true
 
-  '@oxlint/binding-darwin-x64@1.80.0':
+  '@oxlint/binding-darwin-x64@1.90.0':
     optional: true
 
-  '@oxlint/binding-freebsd-x64@1.80.0':
+  '@oxlint/binding-freebsd-x64@1.90.0':
     optional: true
 
-  '@oxlint/binding-linux-arm-gnueabihf@1.80.0':
+  '@oxlint/binding-linux-arm-gnueabihf@1.90.0':
     optional: true
 
-  '@oxlint/binding-linux-arm-musleabihf@1.80.0':
+  '@oxlint/binding-linux-arm-musleabihf@1.90.0':
     optional: true
 
-  '@oxlint/binding-linux-arm64-gnu@1.80.0':
+  '@oxlint/binding-linux-arm64-gnu@1.90.0':
     optional: true
 
-  '@oxlint/binding-linux-arm64-musl@1.80.0':
+  '@oxlint/binding-linux-arm64-musl@1.90.0':
     optional: true
 
-  '@oxlint/binding-linux-ppc64-gnu@1.80.0':
+  '@oxlint/binding-linux-ppc64-gnu@1.90.0':
     optional: true
 
-  '@oxlint/binding-linux-riscv64-gnu@1.80.0':
+  '@oxlint/binding-linux-riscv64-gnu@1.90.0':
     optional: true
 
-  '@oxlint/binding-linux-riscv64-musl@1.80.0':
+  '@oxlint/binding-linux-riscv64-musl@1.90.0':
     optional: true
 
-  '@oxlint/binding-linux-s390x-gnu@1.80.0':
+  '@oxlint/binding-linux-s390x-gnu@1.90.0':
     optional: true
 
-  '@oxlint/binding-linux-x64-gnu@1.80.0':
+  '@oxlint/binding-linux-x64-gnu@1.90.0':
     optional: true
 
-  '@oxlint/binding-linux-x64-musl@1.80.0':
+  '@oxlint/binding-linux-x64-musl@1.90.0':
     optional: true
 
-  '@oxlint/binding-openharmony-arm64@1.80.0':
+  '@oxlint/binding-openharmony-arm64@1.90.0':
     optional: true
 
-  '@oxlint/binding-win32-arm64-msvc@1.80.0':
+  '@oxlint/binding-win32-arm64-msvc@1.90.0':
     optional: true
 
-  '@oxlint/binding-win32-ia32-msvc@1.80.0':
+  '@oxlint/binding-win32-ia32-msvc@1.90.0':
     optional: true
 
-  '@oxlint/binding-win32-x64-msvc@1.80.0':
+  '@oxlint/binding-win32-x64-msvc@1.90.0':
     optional: true
 
   '@protobufjs/aspromise@1.1.2': {}
@@ -2546,11 +3308,11 @@ snapshots:
     dependencies:
       effect: 4.0.7
 
-  '@softmax-universe/compatible-models@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-compatible-models-0.4.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)':
+  '@softmax-universe/compatible-models@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-compatible-models-0.5.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)':
     dependencies:
       '@earendil-works/pi-ai': 1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)
-      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-model-policy-0.4.0-alpha.1.tgz
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
+      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-model-policy-0.5.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
       effect: 4.0.7
     transitivePeerDependencies:
       - '@aws-sdk/credential-provider-node'
@@ -2565,49 +3327,69 @@ snapshots:
       - ws
       - zod
 
-  '@softmax-universe/console@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-console-0.4.0-alpha.1.tgz':
+  '@softmax-universe/console@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-console-0.5.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/inspector': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-inspector-0.4.0-alpha.1.tgz(react@19.3.0)
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
-      '@softmax-universe/runtime-client': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-client-0.4.0-alpha.1.tgz
+      '@softmax-universe/inspector': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-inspector-0.5.0-alpha.1.tgz(react@19.3.0)
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
+      '@softmax-universe/runtime-client': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-client-0.5.0-alpha.1.tgz
       react: 19.3.0
       react-dom: 19.3.0(react@19.3.0)
 
-  '@softmax-universe/execution@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-execution-0.4.0-alpha.1.tgz':
+  '@softmax-universe/distribution@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-distribution-0.5.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/foundation@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-foundation-0.4.0-alpha.1.tgz':
+  '@softmax-universe/environment-tools@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-environment-tools-0.5.0-alpha.1.tgz':
+    dependencies:
+      '@softmax-universe/distribution': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-distribution-0.5.0-alpha.1.tgz
+      effect: 4.0.7
+      esbuild: 0.28.2
+
+  '@softmax-universe/execution@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-execution-0.5.0-alpha.1.tgz':
+    dependencies:
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
+      effect: 4.0.7
+
+  '@softmax-universe/foundation@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-foundation-0.5.0-alpha.1.tgz':
     dependencies:
       '@softmax-foundation/client': https://github.com/softmax-universe/foundation-client/releases/download/client-v0.1.0/softmax-foundation-client-0.1.0.tgz
-      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-model-policy-0.4.0-alpha.1.tgz
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
+      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-model-policy-0.5.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/inspector@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-inspector-0.4.0-alpha.1.tgz(react@19.3.0)':
+  '@softmax-universe/inspector@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-inspector-0.5.0-alpha.1.tgz(react@19.3.0)':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
       react: 19.3.0
 
-  '@softmax-universe/local-cli@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-local-cli-0.4.0-alpha.1.tgz':
+  '@softmax-universe/installation@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-installation-0.5.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
-      '@softmax-universe/runtime-client': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-client-0.4.0-alpha.1.tgz
+      '@softmax-universe/distribution': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-distribution-0.5.0-alpha.1.tgz
+      '@softmax-universe/runtime-client': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-client-0.5.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/model-policy@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-model-policy-0.4.0-alpha.1.tgz':
+  '@softmax-universe/local-cli@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-local-cli-0.5.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
+      '@softmax-universe/distribution': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-distribution-0.5.0-alpha.1.tgz
+      '@softmax-universe/installation': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-installation-0.5.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
+      '@softmax-universe/runtime-client': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-client-0.5.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/orchestration@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-orchestration-0.4.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)':
+  '@softmax-universe/model-policy@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-model-policy-0.5.0-alpha.1.tgz':
+    dependencies:
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
+      effect: 4.0.7
+
+  '@softmax-universe/orchestration@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-orchestration-0.5.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)':
     dependencies:
       '@earendil-works/chord': 1.5.1(esbuild@0.28.2)(react@19.3.0)
       '@earendil-works/pi-ai': 1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)
       '@earendil-works/pi-durable': 1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)
       '@earendil-works/pi-schema': 1.5.1
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
+      '@softmax-universe/workbench': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-workbench-0.5.0-alpha.1.tgz
       effect: 4.0.7
     transitivePeerDependencies:
       - '@aws-sdk/credential-provider-node'
@@ -2624,33 +3406,34 @@ snapshots:
       - ws
       - zod
 
-  '@softmax-universe/protocol@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz':
+  '@softmax-universe/protocol@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz':
     dependencies:
       effect: 4.0.7
 
-  '@softmax-universe/runner@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runner-0.4.0-alpha.1.tgz':
+  '@softmax-universe/runner@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runner-0.5.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/execution': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-execution-0.4.0-alpha.1.tgz
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
-      '@softmax-universe/sdk': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-sdk-0.4.0-alpha.1.tgz
+      '@softmax-universe/execution': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-execution-0.5.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
+      '@softmax-universe/sdk': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-sdk-0.5.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/runtime-client@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-client-0.4.0-alpha.1.tgz':
+  '@softmax-universe/runtime-client@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-client-0.5.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/runtime@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-runtime-0.4.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@babel/core@8.1.0)(@babel/runtime@7.29.13)(@earendil-works/pi-schema@1.5.1)(@modelcontextprotocol/client@2.4.0)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.3.1)(zod@4.6.7)':
+  '@softmax-universe/runtime@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-runtime-0.5.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@babel/core@8.1.0)(@babel/runtime@7.29.13)(@earendil-works/pi-schema@1.5.1)(@modelcontextprotocol/client@2.4.0)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.3.1)(zod@4.6.7)':
     dependencies:
       '@earendil-works/chord': 1.5.1(esbuild@0.28.2)(react@19.3.0)
       '@earendil-works/pi-ai': 1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)
       '@earendil-works/pi-durable': 1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)
       '@modelcontextprotocol/server': 2.4.0
-      '@softmax-universe/compatible-models': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-compatible-models-0.4.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)
-      '@softmax-universe/execution': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-execution-0.4.0-alpha.1.tgz
-      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-model-policy-0.4.0-alpha.1.tgz
-      '@softmax-universe/orchestration': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-orchestration-0.4.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
+      '@softmax-universe/compatible-models': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-compatible-models-0.5.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)
+      '@softmax-universe/execution': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-execution-0.5.0-alpha.1.tgz
+      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-model-policy-0.5.0-alpha.1.tgz
+      '@softmax-universe/orchestration': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-orchestration-0.5.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
+      '@softmax-universe/workbench': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-workbench-0.5.0-alpha.1.tgz
       agents: 0.33.0(@babel/core@8.1.0)(@babel/runtime@7.29.13)(@earendil-works/chord@1.5.1(esbuild@0.28.2)(react@19.3.0))(@earendil-works/pi-ai@1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7))(@earendil-works/pi-durable@1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7))(@earendil-works/pi-schema@1.5.1)(@modelcontextprotocol/client@2.4.0)(@modelcontextprotocol/server@2.4.0)(react@19.3.0)(rolldown@1.3.1)(zod@4.6.7)
       effect: 4.0.7
     transitivePeerDependencies:
@@ -2686,9 +3469,16 @@ snapshots:
       - ws
       - zod
 
-  '@softmax-universe/sdk@https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-sdk-0.4.0-alpha.1.tgz':
+  '@softmax-universe/sdk@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-sdk-0.5.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
+      effect: 4.0.7
+
+  '@softmax-universe/workbench@https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-workbench-0.5.0-alpha.1.tgz':
+    dependencies:
+      '@softmax-universe/execution': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-execution-0.5.0-alpha.1.tgz
+      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-model-policy-0.5.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz
       effect: 4.0.7
 
   '@stablelib/base64@1.0.1': {}
@@ -2698,9 +3488,15 @@ snapshots:
       tslib: 2.9.1
     optional: true
 
+  '@types/esrecurse@4.3.1': {}
+
+  '@types/estree@1.0.10': {}
+
   '@types/gensync@1.0.5': {}
 
   '@types/jsesc@2.5.1': {}
+
+  '@types/json-schema@7.0.15': {}
 
   '@types/node@24.13.6':
     dependencies:
@@ -2776,6 +3572,75 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
+  '@unrs/resolver-binding-android-arm-eabi@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-android-arm64@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-darwin-arm64@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-darwin-x64@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-freebsd-x64@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-arm-gnueabihf@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-arm-musleabihf@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-arm64-gnu@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-arm64-musl@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-loong64-gnu@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-loong64-musl@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-ppc64-gnu@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-riscv64-gnu@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-riscv64-musl@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-s390x-gnu@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-x64-gnu@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-linux-x64-musl@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-openharmony-arm64@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-win32-arm64-msvc@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-win32-ia32-msvc@1.13.0':
+    optional: true
+
+  '@unrs/resolver-binding-win32-x64-msvc@1.13.0':
+    optional: true
+
+  acorn-jsx@5.3.2(acorn@8.19.0):
+    dependencies:
+      acorn: 8.19.0
+
+  acorn@8.19.0: {}
+
   agent-base@7.1.4: {}
 
   agent-base@9.0.0: {}
@@ -2808,6 +3673,19 @@ snapshots:
       - '@babel/runtime'
       - rolldown
 
+  ajv@6.15.0:
+    dependencies:
+      fast-deep-equal: 3.1.3
+      fast-json-stable-stringify: 2.1.0
+      json-schema-traverse: 0.4.1
+      uri-js: 4.4.1
+
+  ansi-styles@4.3.0:
+    dependencies:
+      color-convert: 2.0.1
+
+  balanced-match@4.0.4: {}
+
   base64-js@1.5.1: {}
 
   baseline-browser-mapping@2.11.35: {}
@@ -2815,6 +3693,10 @@ snapshots:
   bignumber.js@9.3.1: {}
 
   bowser@2.15.0: {}
+
+  brace-expansion@5.0.12:
+    dependencies:
+      balanced-match: 4.0.4
 
   browserslist@4.29.5:
     dependencies:
@@ -2826,9 +3708,28 @@ snapshots:
 
   buffer-equal-constant-time@1.0.1: {}
 
+  cacheable@2.5.0:
+    dependencies:
+      '@cacheable/memory': 2.2.0
+      '@cacheable/utils': 2.5.0
+      hookified: 1.15.1
+      keyv: 5.6.0
+      qified: 0.10.1
+
   caniuse-lite@1.0.30001823: {}
 
   capnweb@0.12.0: {}
+
+  chalk@4.1.2:
+    dependencies:
+      ansi-styles: 4.3.0
+      supports-color: 7.2.0
+
+  color-convert@2.0.1:
+    dependencies:
+      color-name: 1.1.4
+
+  color-name@1.1.4: {}
 
   convert-source-map@2.0.0: {}
 
@@ -2846,9 +3747,17 @@ snapshots:
 
   data-uri-to-buffer@4.0.1: {}
 
+  debug@3.2.7:
+    dependencies:
+      ms: 2.1.3
+
   debug@4.4.3:
     dependencies:
       ms: 2.1.3
+
+  deep-is@0.1.4: {}
+
+  detect-libc@2.1.2: {}
 
   diff@8.0.4: {}
 
@@ -2861,6 +3770,8 @@ snapshots:
   electron-to-chromium@1.5.478: {}
 
   empathic@2.1.0: {}
+
+  es-errors@1.3.0: {}
 
   esbuild@0.28.2:
     optionalDependencies:
@@ -2893,6 +3804,124 @@ snapshots:
 
   escalade@3.2.0: {}
 
+  escape-string-regexp@4.0.0: {}
+
+  eslint-import-context@0.1.9(unrs-resolver@1.13.0):
+    dependencies:
+      get-tsconfig: 4.14.3
+      stable-hash-x: 0.2.0
+    optionalDependencies:
+      unrs-resolver: 1.13.0
+
+  eslint-import-resolver-node@0.3.9:
+    dependencies:
+      debug: 3.2.7
+      is-core-module: 2.18.0
+      resolve: 1.22.14
+    transitivePeerDependencies:
+      - supports-color
+
+  eslint-import-resolver-typescript@4.4.5(eslint@10.14.0):
+    dependencies:
+      debug: 4.4.3
+      eslint: 10.14.0
+      eslint-import-context: 0.1.9(unrs-resolver@1.13.0)
+      get-tsconfig: 4.14.3
+      is-bun-module: 2.0.0
+      stable-hash-x: 0.2.0
+      tinyglobby: 0.2.17
+      unrs-resolver: 1.13.0
+    transitivePeerDependencies:
+      - supports-color
+
+  eslint-module-utils@2.14.0(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@4.4.5(eslint@10.14.0))(eslint@10.14.0):
+    dependencies:
+      debug: 3.2.7
+    optionalDependencies:
+      eslint: 10.14.0
+      eslint-import-resolver-node: 0.3.9
+      eslint-import-resolver-typescript: 4.4.5(eslint@10.14.0)
+    transitivePeerDependencies:
+      - supports-color
+
+  eslint-plugin-boundaries@7.3.0(eslint-import-resolver-typescript@4.4.5(eslint@10.14.0))(eslint@10.14.0):
+    dependencies:
+      '@boundaries/elements': 3.2.0
+      chalk: 4.1.2
+      eslint: 10.14.0
+      eslint-import-resolver-node: 0.3.9
+      eslint-module-utils: 2.14.0(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@4.4.5(eslint@10.14.0))(eslint@10.14.0)
+      handlebars: 4.7.10
+    transitivePeerDependencies:
+      - '@typescript-eslint/parser'
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - supports-color
+
+  eslint-scope@9.1.2:
+    dependencies:
+      '@types/esrecurse': 4.3.1
+      '@types/estree': 1.0.10
+      esrecurse: 4.3.0
+      estraverse: 5.3.0
+
+  eslint-visitor-keys@3.4.3: {}
+
+  eslint-visitor-keys@5.0.1: {}
+
+  eslint@10.14.0:
+    dependencies:
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.14.0)
+      '@eslint-community/regexpp': 4.12.3
+      '@eslint/config-array': 0.23.5
+      '@eslint/config-helpers': 0.7.0
+      '@eslint/core': 1.2.1
+      '@eslint/plugin-kit': 0.7.3
+      '@humanfs/node': 0.16.8
+      '@humanwhocodes/module-importer': 1.0.1
+      '@humanwhocodes/retry': 0.4.3
+      '@types/estree': 1.0.10
+      ajv: 6.15.0
+      cross-spawn: 7.0.6
+      debug: 4.4.3
+      escape-string-regexp: 4.0.0
+      eslint-scope: 9.1.2
+      eslint-visitor-keys: 5.0.1
+      espree: 11.2.0
+      esquery: 1.7.0
+      esutils: 2.0.3
+      fast-deep-equal: 3.1.3
+      file-entry-cache: 11.1.5
+      find-up: 5.0.0
+      glob-parent: 6.0.2
+      ignore: 5.3.2
+      imurmurhash: 0.1.4
+      is-glob: 4.0.3
+      json-stable-stringify-without-jsonify: 1.0.1
+      minimatch: 10.2.6
+      natural-compare: 1.4.0
+      optionator: 0.9.4
+    transitivePeerDependencies:
+      - supports-color
+
+  espree@11.2.0:
+    dependencies:
+      acorn: 8.19.0
+      acorn-jsx: 5.3.2(acorn@8.19.0)
+      eslint-visitor-keys: 5.0.1
+
+  esquery@1.7.0:
+    dependencies:
+      estraverse: 5.3.0
+
+  esrecurse@4.3.0:
+    dependencies:
+      estraverse: 5.3.0
+
+  estraverse@5.3.0: {}
+
+  esutils@2.0.3: {}
+
   event-target-polyfill@0.0.4: {}
 
   eventsource-parser@3.1.1: {}
@@ -2903,12 +3932,39 @@ snapshots:
 
   extend@3.0.2: {}
 
+  fast-deep-equal@3.1.3: {}
+
+  fast-json-stable-stringify@2.1.0: {}
+
+  fast-levenshtein@2.0.6: {}
+
   fast-sha256@1.3.0: {}
+
+  fdir@6.5.0(picomatch@4.0.7):
+    optionalDependencies:
+      picomatch: 4.0.7
 
   fetch-blob@3.2.0:
     dependencies:
       node-domexception: 1.0.0
       web-streams-polyfill: 3.3.3
+
+  file-entry-cache@11.1.5:
+    dependencies:
+      flat-cache: 6.1.23
+
+  find-up@5.0.0:
+    dependencies:
+      locate-path: 6.0.0
+      path-exists: 4.0.0
+
+  flat-cache@6.1.23:
+    dependencies:
+      cacheable: 2.5.0
+      flatted: 3.4.4
+      hookified: 1.15.1
+
+  flatted@3.4.4: {}
 
   flru@1.0.2: {}
 
@@ -2918,6 +3974,8 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
+
+  function-bind@1.1.2: {}
 
   gaxios@7.3.1:
     dependencies:
@@ -2937,6 +3995,14 @@ snapshots:
 
   gensync@1.0.0-beta.2: {}
 
+  get-tsconfig@4.14.3:
+    dependencies:
+      resolve-pkg-maps: 1.0.0
+
+  glob-parent@6.0.2:
+    dependencies:
+      is-glob: 4.0.3
+
   google-auth-library@10.9.1:
     dependencies:
       base64-js: 1.5.1
@@ -2949,6 +4015,29 @@ snapshots:
       - supports-color
 
   google-logging-utils@1.1.3: {}
+
+  handlebars@4.7.10:
+    dependencies:
+      minimist: 1.2.8
+      neo-async: 2.6.2
+      source-map: 0.6.1
+      wordwrap: 1.0.0
+    optionalDependencies:
+      uglify-js: 3.19.3
+
+  has-flag@4.0.0: {}
+
+  hashery@1.5.1:
+    dependencies:
+      hookified: 1.15.1
+
+  hasown@2.0.4:
+    dependencies:
+      function-bind: 1.1.2
+
+  hookified@1.15.1: {}
+
+  hookified@2.2.0: {}
 
   http-proxy-agent@9.1.0:
     dependencies:
@@ -2975,7 +4064,29 @@ snapshots:
       - kerberos
       - supports-color
 
+  ignore@5.3.2: {}
+
   import-meta-resolve@4.2.0: {}
+
+  imurmurhash@0.1.4: {}
+
+  is-bun-module@2.0.0:
+    dependencies:
+      semver: 7.8.6
+
+  is-core-module@2.17.0:
+    dependencies:
+      hasown: 2.0.4
+
+  is-core-module@2.18.0:
+    dependencies:
+      hasown: 2.0.4
+
+  is-extglob@2.1.1: {}
+
+  is-glob@4.0.3:
+    dependencies:
+      is-extglob: 2.1.1
 
   isexe@2.0.0: {}
 
@@ -2996,6 +4107,10 @@ snapshots:
       '@babel/runtime': 7.29.13
       ts-algebra: 2.0.0
 
+  json-schema-traverse@0.4.1: {}
+
+  json-stable-stringify-without-jsonify@1.0.1: {}
+
   json5@2.2.3: {}
 
   jwa@2.0.1:
@@ -3010,6 +4125,19 @@ snapshots:
       safe-buffer: 5.2.1
 
   keypress@0.2.1: {}
+
+  keyv@5.6.0:
+    dependencies:
+      '@keyv/serialize': 1.1.1
+
+  levn@0.4.1:
+    dependencies:
+      prelude-ls: 1.2.1
+      type-check: 0.4.0
+
+  locate-path@6.0.0:
+    dependencies:
+      p-locate: 5.0.0
 
   lodash._basecallback@3.3.1:
     dependencies:
@@ -3139,9 +4267,21 @@ snapshots:
       js-base64: 3.9.6
       mime-types: 2.1.35
 
+  minimatch@10.2.6:
+    dependencies:
+      brace-expansion: 5.0.12
+
+  minimist@1.2.8: {}
+
   ms@2.1.3: {}
 
   nanoid@5.1.16: {}
+
+  napi-postinstall@0.3.8: {}
+
+  natural-compare@1.4.0: {}
+
+  neo-async@2.6.2: {}
 
   node-domexception@1.0.0: {}
 
@@ -3160,6 +4300,15 @@ snapshots:
       '@aws-sdk/credential-provider-node': 3.972.95
       '@smithy/signature-v4': 5.7.5
       zod: 4.6.7
+
+  optionator@0.9.4:
+    dependencies:
+      deep-is: 0.1.4
+      fast-levenshtein: 2.0.6
+      levn: 0.4.1
+      prelude-ls: 1.2.1
+      type-check: 0.4.0
+      word-wrap: 1.2.5
 
   oxfmt@0.65.0:
     dependencies:
@@ -3185,27 +4334,35 @@ snapshots:
       '@oxfmt/binding-win32-ia32-msvc': 0.65.0
       '@oxfmt/binding-win32-x64-msvc': 0.65.0
 
-  oxlint@1.80.0:
+  oxlint@1.90.0:
     optionalDependencies:
-      '@oxlint/binding-android-arm-eabi': 1.80.0
-      '@oxlint/binding-android-arm64': 1.80.0
-      '@oxlint/binding-darwin-arm64': 1.80.0
-      '@oxlint/binding-darwin-x64': 1.80.0
-      '@oxlint/binding-freebsd-x64': 1.80.0
-      '@oxlint/binding-linux-arm-gnueabihf': 1.80.0
-      '@oxlint/binding-linux-arm-musleabihf': 1.80.0
-      '@oxlint/binding-linux-arm64-gnu': 1.80.0
-      '@oxlint/binding-linux-arm64-musl': 1.80.0
-      '@oxlint/binding-linux-ppc64-gnu': 1.80.0
-      '@oxlint/binding-linux-riscv64-gnu': 1.80.0
-      '@oxlint/binding-linux-riscv64-musl': 1.80.0
-      '@oxlint/binding-linux-s390x-gnu': 1.80.0
-      '@oxlint/binding-linux-x64-gnu': 1.80.0
-      '@oxlint/binding-linux-x64-musl': 1.80.0
-      '@oxlint/binding-openharmony-arm64': 1.80.0
-      '@oxlint/binding-win32-arm64-msvc': 1.80.0
-      '@oxlint/binding-win32-ia32-msvc': 1.80.0
-      '@oxlint/binding-win32-x64-msvc': 1.80.0
+      '@oxlint/binding-android-arm-eabi': 1.90.0
+      '@oxlint/binding-android-arm64': 1.90.0
+      '@oxlint/binding-darwin-arm64': 1.90.0
+      '@oxlint/binding-darwin-x64': 1.90.0
+      '@oxlint/binding-freebsd-x64': 1.90.0
+      '@oxlint/binding-linux-arm-gnueabihf': 1.90.0
+      '@oxlint/binding-linux-arm-musleabihf': 1.90.0
+      '@oxlint/binding-linux-arm64-gnu': 1.90.0
+      '@oxlint/binding-linux-arm64-musl': 1.90.0
+      '@oxlint/binding-linux-ppc64-gnu': 1.90.0
+      '@oxlint/binding-linux-riscv64-gnu': 1.90.0
+      '@oxlint/binding-linux-riscv64-musl': 1.90.0
+      '@oxlint/binding-linux-s390x-gnu': 1.90.0
+      '@oxlint/binding-linux-x64-gnu': 1.90.0
+      '@oxlint/binding-linux-x64-musl': 1.90.0
+      '@oxlint/binding-openharmony-arm64': 1.90.0
+      '@oxlint/binding-win32-arm64-msvc': 1.90.0
+      '@oxlint/binding-win32-ia32-msvc': 1.90.0
+      '@oxlint/binding-win32-x64-msvc': 1.90.0
+
+  p-limit@3.1.0:
+    dependencies:
+      yocto-queue: 0.1.0
+
+  p-locate@5.0.0:
+    dependencies:
+      p-limit: 3.1.0
 
   p-retry@4.6.2:
     dependencies:
@@ -3220,15 +4377,23 @@ snapshots:
     optionalDependencies:
       react: 19.3.0
 
+  path-exists@4.0.0: {}
+
   path-key@3.1.1: {}
 
+  path-parse@1.0.7: {}
+
   picocolors@1.1.1: {}
+
+  picomatch@2.3.2: {}
 
   picomatch@4.0.7: {}
 
   pkce-challenge@5.0.1: {}
 
   postal-mime@2.7.6: {}
+
+  prelude-ls@1.2.1: {}
 
   protobufjs@7.6.6:
     dependencies:
@@ -3246,6 +4411,12 @@ snapshots:
 
   proxy-agent-negotiate@1.1.0: {}
 
+  punycode@2.3.1: {}
+
+  qified@0.10.1:
+    dependencies:
+      hookified: 2.2.0
+
   quickjs-wasi@3.6.2: {}
 
   react-dom@19.3.0(react@19.3.0):
@@ -3254,6 +4425,15 @@ snapshots:
       scheduler: 0.28.0
 
   react@19.3.0: {}
+
+  resolve-pkg-maps@1.0.0: {}
+
+  resolve@1.22.14:
+    dependencies:
+      es-errors: 1.3.0
+      is-core-module: 2.18.0
+      path-parse: 1.0.7
+      supports-preserve-symlinks-flag: 1.0.0
 
   retry@0.13.1: {}
 
@@ -3292,16 +4472,33 @@ snapshots:
 
   scheduler@0.28.0: {}
 
+  semver@7.8.6: {}
+
   shebang-command@2.0.0:
     dependencies:
       shebang-regex: 3.0.0
 
   shebang-regex@3.0.0: {}
 
+  source-map@0.6.1: {}
+
+  stable-hash-x@0.2.0: {}
+
   standardwebhooks@1.1.1:
     dependencies:
       '@stablelib/base64': 1.0.1
       fast-sha256: 1.3.0
+
+  supports-color@7.2.0:
+    dependencies:
+      has-flag: 4.0.0
+
+  supports-preserve-symlinks-flag@1.0.0: {}
+
+  tinyglobby@0.2.17:
+    dependencies:
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
 
   tinypool@2.1.0: {}
 
@@ -3314,6 +4511,10 @@ snapshots:
       esbuild: 0.28.2
     optionalDependencies:
       fsevents: 2.3.3
+
+  type-check@0.4.0:
+    dependencies:
+      prelude-ls: 1.2.1
 
   typescript@7.0.2:
     optionalDependencies:
@@ -3338,13 +4539,46 @@ snapshots:
       '@typescript/typescript-win32-arm64': 7.0.2
       '@typescript/typescript-win32-x64': 7.0.2
 
+  uglify-js@3.19.3:
+    optional: true
+
   undici-types@7.18.2: {}
+
+  unrs-resolver@1.13.0:
+    dependencies:
+      napi-postinstall: 0.3.8
+    optionalDependencies:
+      '@unrs/resolver-binding-android-arm-eabi': 1.13.0
+      '@unrs/resolver-binding-android-arm64': 1.13.0
+      '@unrs/resolver-binding-darwin-arm64': 1.13.0
+      '@unrs/resolver-binding-darwin-x64': 1.13.0
+      '@unrs/resolver-binding-freebsd-x64': 1.13.0
+      '@unrs/resolver-binding-linux-arm-gnueabihf': 1.13.0
+      '@unrs/resolver-binding-linux-arm-musleabihf': 1.13.0
+      '@unrs/resolver-binding-linux-arm64-gnu': 1.13.0
+      '@unrs/resolver-binding-linux-arm64-musl': 1.13.0
+      '@unrs/resolver-binding-linux-loong64-gnu': 1.13.0
+      '@unrs/resolver-binding-linux-loong64-musl': 1.13.0
+      '@unrs/resolver-binding-linux-ppc64-gnu': 1.13.0
+      '@unrs/resolver-binding-linux-riscv64-gnu': 1.13.0
+      '@unrs/resolver-binding-linux-riscv64-musl': 1.13.0
+      '@unrs/resolver-binding-linux-s390x-gnu': 1.13.0
+      '@unrs/resolver-binding-linux-x64-gnu': 1.13.0
+      '@unrs/resolver-binding-linux-x64-musl': 1.13.0
+      '@unrs/resolver-binding-openharmony-arm64': 1.13.0
+      '@unrs/resolver-binding-win32-arm64-msvc': 1.13.0
+      '@unrs/resolver-binding-win32-ia32-msvc': 1.13.0
+      '@unrs/resolver-binding-win32-x64-msvc': 1.13.0
 
   update-browserslist-db@1.3.4(browserslist@4.29.5):
     dependencies:
       browserslist: 4.29.5
       escalade: 3.2.0
       picocolors: 1.1.1
+
+  uri-js@4.4.1:
+    dependencies:
+      punycode: 2.3.1
 
   verkit@0.5.0: {}
 
@@ -3354,8 +4588,14 @@ snapshots:
     dependencies:
       isexe: 2.0.0
 
+  word-wrap@1.2.5: {}
+
+  wordwrap@1.0.0: {}
+
   ws@8.22.2: {}
 
   yaml@2.9.1: {}
+
+  yocto-queue@0.1.0: {}
 
   zod@4.6.7: {}

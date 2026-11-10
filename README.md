@@ -7,16 +7,16 @@ for baseline use.
 
 ## Install
 
-Download a complete native archive from [release v0.1.0](https://github.com/softmax-universe/reversi-softmax/releases/tag/v0.1.0).
+Download a complete native archive from [release v0.2.0](https://github.com/softmax-universe/reversi-softmax/releases/tag/v0.2.0).
 Use `darwin-arm64` for an Apple silicon Mac or `linux-x64` for Linux on x86-64:
 
 ```sh
 target=darwin-arm64 # or linux-x64
-curl -fL -o "reversi-softmax-0.1.0-$target.tar.gz" \
-  "https://github.com/softmax-universe/reversi-softmax/releases/download/v0.1.0/reversi-softmax-0.1.0-$target.tar.gz"
-mkdir reversi-softmax-0.1.0
-tar -xzf "reversi-softmax-0.1.0-$target.tar.gz" -C reversi-softmax-0.1.0 --strip-components=1
-cd reversi-softmax-0.1.0
+curl -fL -o "reversi-softmax-0.2.0-$target.tar.gz" \
+  "https://github.com/softmax-universe/reversi-softmax/releases/download/v0.2.0/reversi-softmax-0.2.0-$target.tar.gz"
+mkdir reversi-softmax-0.2.0
+tar -xzf "reversi-softmax-0.2.0-$target.tar.gz" -C reversi-softmax-0.2.0 --strip-components=1
+cd reversi-softmax-0.2.0
 ./universe-local start --release ./release.json --state "$HOME/.local/share/reversi-softmax" --port 4328
 ```
 
@@ -28,8 +28,8 @@ Keep state outside the extracted installation, as in the command above. Starting
 replacing an installation preserves prior results. Treat the printed console URL as a credential.
 
 Model use is optional. To bring your own local or hosted OpenAI-compatible endpoint, follow
-[Universe Local's model configuration](https://github.com/softmax-universe/universe/blob/v0.4.0-alpha.1/apps/cli/README.md)
-and [compatible endpoint settings](https://github.com/softmax-universe/universe/blob/v0.4.0-alpha.1/adapters/compatible-models/README.md).
+[Universe Local's model configuration](https://github.com/softmax-universe/universe/blob/v0.5.0-alpha.1/apps/cli/README.md)
+and [compatible endpoint settings](https://github.com/softmax-universe/universe/blob/v0.5.0-alpha.1/adapters/compatible-models/README.md).
 Add `--models /absolute/path/to/private-models.json` to startup; the file must be owned by you with mode `600` or stricter.
 Credentials stay on the server. Foundation is an optional transport.
 
@@ -38,6 +38,7 @@ Credentials stay on the server. Foundation is an optional transport.
 ```sh
 mise install
 mise exec -- pnpm install --frozen-lockfile
+pnpm architecture:setup
 mise exec -- pnpm check
 ```
 
@@ -82,9 +83,14 @@ in this application. Model settings and credentials stay on the server.
 Source development uses the same launcher through `pnpm local start`. Use the release manifest from a complete
 checked installation.
 
+The shared environment-tools package builds browser assets, embeds them through universe:assets, and assembles
+checked native distributions. universe.json declares the compatibility date and optional Harbor command. The
+[package graph](package-boundaries.json) and source-lane checks keep the portable game, browser, Node, and Worker
+owners separate.
+
 ## Human play
 
-The existing human interface remains available:
+The standalone Node human interface lives in app/play and uses its own checkpoint store:
 
 ```sh
 pnpm play --port 4318 --directory .local/play

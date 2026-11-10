@@ -1,0 +1,69 @@
+{
+  "packages": [
+    {
+      "name": "@softmax-universe/reversi-environment",
+      "manifest": "package.json",
+      "manager": "npm",
+      "ownership": "Environment composition, renderer, human-play server, benchmarks, and external harnesses.",
+      "dependencies": [
+        {
+          "manifest": "packages/game/package.json",
+          "testOnly": false
+        }
+      ],
+      "testSources": ["test/**", "**/*.test.*"],
+      "testSupport": false,
+      "builtins": ["universe:assets"],
+      "tsconfig": "tsconfig.json"
+    },
+    {
+      "name": "@softmax-universe/reversi-game",
+      "manifest": "packages/game/package.json",
+      "manager": "npm",
+      "ownership": "Pinned engine, action and observation validation, and deterministic reference policies.",
+      "dependencies": [],
+      "testSources": ["test/**"],
+      "testSupport": false,
+      "builtins": [],
+      "tsconfig": "packages/game/tsconfig.json"
+    }
+  ],
+  "exclusions": [
+    {
+      "pattern": "**/node_modules/**",
+      "reason": "Installed dependencies are third-party source."
+    },
+    {
+      "pattern": "**/dist/**",
+      "reason": "Compilers generate distribution output here."
+    },
+    {
+      "pattern": "**/.git/**",
+      "reason": "Git metadata is repository data."
+    },
+    {
+      "pattern": ".local/**",
+      "reason": "Ignored developer proofs and temporary working data."
+    },
+    {
+      "pattern": ".contracts/**",
+      "reason": "Versioned contract assets contain their own tool manifests."
+    },
+    {
+      "pattern": "bazel-*/**",
+      "reason": "Bazel generates action outputs and dependency trees."
+    },
+    {
+      "pattern": "release-artifacts/**",
+      "reason": "Checked release artifacts are generated output."
+    },
+    {
+      "pattern": "**/.wrangler/**",
+      "reason": "Wrangler generates local runtime state."
+    },
+    {
+      "pattern": "harnesses/openenv/.venv/**",
+      "reason": "Locked external harness dependencies are third-party code."
+    }
+  ]
+}

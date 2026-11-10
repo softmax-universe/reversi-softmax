@@ -1,0 +1,60 @@
+{
+  "exclusions": [
+    {
+      "pattern": "**/node_modules/**",
+      "reason": "Installed dependencies are third-party source."
+    },
+    {
+      "pattern": "**/dist/**",
+      "reason": "Compilers generate distribution output here."
+    },
+    {
+      "pattern": "**/.git/**",
+      "reason": "Git metadata is repository data."
+    },
+    {
+      "pattern": ".local/**",
+      "reason": "Ignored developer proofs and temporary working data."
+    },
+    {
+      "pattern": "bazel-*/**",
+      "reason": "Bazel generates action outputs and dependency trees."
+    },
+    {
+      "pattern": "release-artifacts/**",
+      "reason": "Checked release artifacts are generated output."
+    },
+    {
+      "pattern": "**/.wrangler/**",
+      "reason": "Wrangler generates local runtime state."
+    },
+    {
+      "pattern": "**/fixtures/**",
+      "reason": "Fixture inputs are data consumed by tests."
+    },
+    {
+      "pattern": "harnesses/openenv/.venv/**",
+      "reason": "Locked Python environment is third-party code."
+    }
+  ],
+  "extensionlessSources": "shebang",
+  "maximumFilesPerExtension": 20,
+  "maximumFolderDepth": 4,
+  "maximumSourceLines": 300,
+  "sourceFiles": ["harnesses/openenv/qualify.py"],
+  "sourceRoots": ["app", "packages/game/src", "scripts", "test", "harnesses/openenv/src"],
+  "sourceSuffixes": [
+    ".cjs",
+    ".css",
+    ".cts",
+    ".js",
+    ".jsx",
+    ".mjs",
+    ".mts",
+    ".py",
+    ".rs",
+    ".sh",
+    ".ts",
+    ".tsx"
+  ]
+}

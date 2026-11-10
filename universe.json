@@ -1,0 +1,7 @@
+{
+  "format": 1,
+  "compatibilityDate": "2026-11-09",
+  "harbor": {
+    "command": "reversi-harbor-verify"
+  }
+}

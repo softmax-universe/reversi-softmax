@@ -4,7 +4,7 @@ import { createHash, randomUUID } from "node:crypto";
 import { chmod, copyFile, lstat, mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 import { parseArgs } from "node:util";
-import { verifyRelease } from "@softmax-universe/local-cli";
+import { verifyRelease } from "@softmax-universe/distribution";
 
 const { values } = parseArgs({
   options: {

@@ -1,0 +1,17 @@
+{
+  "id": "owned-re-exports-ts",
+  "language": "TypeScript",
+  "severity": "error",
+  "message": "Re-export through an index module, or import the symbol from its owner.",
+  "files": ["app/**/*.{ts,tsx}", "packages/game/src/**/*.ts", "scripts/**/*.mjs"],
+  "ignores":
+    [
+      "**/node_modules/**",
+      "**/dist/**",
+      ".contracts/**",
+      ".local/**",
+      "bazel-*/**",
+      "**/index.{ts,tsx,mts,js,mjs}",
+    ],
+  "rule": { "kind": "export_statement", "has": { "field": "source", "kind": "string" } },
+}

@@ -7,8 +7,8 @@ import { readRunDirectory, runBenchmark } from "@softmax-universe/runner";
 import { summarizeRun, type Run } from "@softmax-universe/protocol";
 import { firstLegalBaseline } from "@softmax-universe/reversi-game";
 import { ReversiGame } from "@softmax-universe/reversi-game";
-import { HumanPlay } from "../app/view/human.js";
-import { reversiEnvironment } from "../app/environment/index.js";
+import { HumanPlay } from "../app/play/index.js";
+import { environment } from "../app/environment/index.js";
 
 test("public-package benchmark records complete games that replay through the engine", async (context) => {
   const directory = await mkdtemp(join(tmpdir(), "reversi-benchmark-"));
@@ -19,9 +19,9 @@ test("public-package benchmark records complete games that replay through the en
     name: "Integration",
     createdAt: new Date().toISOString(),
     kind: "benchmark",
-    game: reversiEnvironment.manifest.game,
+    game: environment.manifest.game,
     configuration: {},
-    trials: reversiEnvironment.benchmarks["balanced-seeded-v1"]!.createTrials({
+    trials: environment.benchmarks["balanced-seeded-v1"]!.createTrials({
       pairs: 1,
       seed: 42,
       candidates: [{ id: "0", policy: "candidate-0", label: "First legal move" }],
@@ -40,8 +40,8 @@ test("public-package benchmark records complete games that replay through the en
   await runBenchmark({
     run,
     directory,
-    createGame: reversiEnvironment.createGame,
-    policies: { ...reversiEnvironment.policies, "candidate-0": firstLegalBaseline },
+    createGame: environment.createGame,
+    policies: { ...environment.policies, "candidate-0": firstLegalBaseline },
     limits: {
       maxDecisionsPerEpisode: 60,
       maxModelCalls: 0,

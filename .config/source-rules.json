@@ -1,0 +1,32 @@
+{
+  "forbidden": [
+    {
+      "name": "acyclic-source-imports",
+      "severity": "error",
+      "from": {},
+      "to": {
+        "circular": true
+      }
+    },
+    {
+      "name": "browser-is-portable",
+      "severity": "error",
+      "from": {
+        "path": "^app/view/"
+      },
+      "to": {
+        "path": "^node:|^cloudflare:|^app/(play|worker|benchmarks)/"
+      }
+    },
+    {
+      "name": "game-has-no-application-dependencies",
+      "severity": "error",
+      "from": {
+        "path": "^packages/game/src/"
+      },
+      "to": {
+        "path": "^app/|^node:|^cloudflare:"
+      }
+    }
+  ]
+}

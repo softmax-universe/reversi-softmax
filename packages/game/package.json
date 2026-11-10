@@ -1,6 +1,6 @@
 {
   "name": "@softmax-universe/reversi-game",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The pinned Reversi engine adapter and deterministic reference policies.",
   "license": "MIT",
   "files": [
@@ -15,6 +15,10 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./validation": {
+      "types": "./dist/validation/index.d.ts",
+      "import": "./dist/validation/index.js"
     }
   },
   "scripts": {
@@ -22,7 +26,7 @@
     "type-check": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@softmax-universe/protocol": "https://github.com/softmax-universe/universe/releases/download/v0.4.0-alpha.1/softmax-universe-protocol-0.4.0-alpha.1.tgz",
+    "@softmax-universe/protocol": "https://github.com/softmax-universe/universe/releases/download/v0.5.0-alpha.1/softmax-universe-protocol-0.5.0-alpha.1.tgz",
     "reversi": "3.0.0"
   }
 }

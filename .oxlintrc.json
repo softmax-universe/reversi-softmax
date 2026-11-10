@@ -1,0 +1,185 @@
+{
+  "extends": [
+    "./.contracts/009-code-typescript-module-boundaries/assets/oxlint/oxlintrc.json",
+    "./.contracts/011-code-module-file-roles/assets/oxlint/oxlintrc.json"
+  ],
+  "settings": {
+    "boundaries/additional-dependency-nodes": [
+      {
+        "kind": "type",
+        "name": "type-import",
+        "selector": "TSImportType > Literal"
+      },
+      {
+        "kind": "value",
+        "name": "import-equals",
+        "selector": "TSExternalModuleReference > Literal"
+      }
+    ],
+    "boundaries/elements": [
+      {
+        "pattern": "{.,}*",
+        "type": "folder"
+      }
+    ],
+    "boundaries/files": [
+      {
+        "category": "root",
+        "pattern": "{.,}*"
+      }
+    ],
+    "boundaries/ignore": [],
+    "import/resolver": {
+      "typescript": {
+        "exportsFields": [],
+        "symlinks": false,
+        "project": ["tsconfig.json", "packages/game/tsconfig.json"]
+      }
+    }
+  },
+  "ignorePatterns": [
+    ".contracts/**",
+    "**/dist/**",
+    ".local/**",
+    "bazel-*/**",
+    "release-artifacts/**"
+  ],
+  "plugins": ["import", "react", "typescript", "unicorn", "oxc"],
+  "rules": {
+    "boundaries/dependencies": [
+      "error",
+      {
+        "default": "allow",
+        "policies": [
+          {
+            "disallow": {
+              "dependency": {
+                "relationship": {
+                  "to": ["child", "descendant", "sibling", "uncle", "nephew", null]
+                }
+              },
+              "to": {
+                "element": {
+                  "fileInternalPath": "**/*.{ts,tsx,mts,cts,js,jsx,mjs,cjs}",
+                  "type": "folder"
+                }
+              }
+            }
+          },
+          {
+            "allow": {
+              "dependency": {
+                "relationship": {
+                  "to": ["child", "sibling", "uncle"]
+                }
+              },
+              "to": {
+                "element": {
+                  "fileInternalPath": "index.{ts,tsx,mts,cts,js,jsx,mjs,cjs}",
+                  "type": "folder"
+                }
+              }
+            }
+          },
+          {
+            "allow": {
+              "to": {
+                "element": {
+                  "fileInternalPath": "index.{ts,tsx,mts,cts,js,jsx,mjs,cjs}",
+                  "parent": null,
+                  "type": "folder"
+                }
+              }
+            }
+          },
+          {
+            "allow": {
+              "dependency": {
+                "relationship": {
+                  "to": ["child", "descendant"]
+                }
+              },
+              "from": {
+                "element": {
+                  "fileInternalPath": "index.{ts,tsx,mts,cts,js,jsx,mjs,cjs}",
+                  "type": "folder"
+                }
+              },
+              "to": {
+                "element": {
+                  "type": "folder"
+                }
+              }
+            }
+          },
+          {
+            "allow": {
+              "from": {
+                "element": {
+                  "path": "**/{test,tests,scripts,dev}/**"
+                }
+              },
+              "to": {
+                "element": {
+                  "fileInternalPath": "index.{ts,tsx,mts,cts,js,jsx,mjs,cjs}",
+                  "type": "folder"
+                }
+              }
+            }
+          },
+          {
+            "allow": {
+              "to": {
+                "element": {
+                  "fileInternalPath": "index.d.{ts,mts,cts}",
+                  "path": "**/dist/**",
+                  "type": "folder"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "import/max-dependencies": [
+      "error",
+      {
+        "ignoreTypeImports": false,
+        "max": 12
+      }
+    ],
+    "import/no-default-export": "error",
+    "import/no-self-import": "error"
+  },
+  "overrides": [
+    {
+      "files": ["app/worker/index.ts"],
+      "rules": {
+        "import/no-default-export": "off"
+      }
+    },
+    {
+      "files": [
+        "packages/game/src/**/*.ts",
+        "app/environment/**/*.ts",
+        "app/view/**/*.{ts,tsx}",
+        "app/worker/**/*.ts"
+      ],
+      "rules": {
+        "import/no-nodejs-modules": "error",
+        "no-restricted-globals": ["error", "process", "Buffer", "__dirname", "__filename"]
+      }
+    },
+    {
+      "files": ["packages/game/src/**/*.ts", "app/view/**/*.{ts,tsx}"],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": ["cloudflare:*"]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+{
+  "ignorePatterns": [".contracts/**/assets/**", "harnesses/openenv/src/reversi_openenv/schemas/**"]
+}

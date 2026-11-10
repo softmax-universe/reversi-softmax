@@ -2057,14 +2057,18 @@ wheels = [
 
 [[package]]
 name = "reversi-softmax-openenv"
-version = "0.1.0"
+version = "0.2.0"
 source = { editable = "." }
 dependencies = [
+    { name = "jsonschema" },
     { name = "openenv" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "openenv", specifier = "==0.12.0" }]
+requires-dist = [
+    { name = "jsonschema", specifier = "==4.26.0" },
+    { name = "openenv", specifier = "==0.12.0" },
+]
 
 [[package]]
 name = "rich"

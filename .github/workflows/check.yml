@@ -26,4 +26,5 @@ jobs:
           install: true
           cache: false
       - run: pnpm install --frozen-lockfile
+      - run: pnpm architecture:setup
       - run: pnpm check

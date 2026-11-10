@@ -7,9 +7,9 @@ import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { setTimeout } from "node:timers/promises";
 import { parseArgs, promisify } from "node:util";
-import { launchEnvironment } from "@softmax-universe/local-cli";
+import { launchEnvironment } from "@softmax-universe/installation";
 import { ReversiGame } from "@softmax-universe/reversi-game";
-import { verifyPolicy } from "../dist/benchmarks/verify-policy.js";
+import { verifyPolicy } from "../dist/verification/index.js";
 
 const { values } = parseArgs({
   options: { release: { type: "string" }, output: { type: "string" }, python: { type: "string" } },

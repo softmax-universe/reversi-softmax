@@ -1,6 +1,6 @@
 import { mountConsole } from "@softmax-universe/console";
 import type { ActionFormatter, ObservationRenderer } from "@softmax-universe/inspector";
-import { isAction, isObservation } from "./observation.js";
+import { isAction, isObservation } from "@softmax-universe/reversi-game/validation";
 import "@softmax-universe/console/styles.css";
 import "./console.css";
 

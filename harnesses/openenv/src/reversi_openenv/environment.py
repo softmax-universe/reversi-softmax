@@ -1,3 +1,4 @@
+from importlib.resources import files
 import json
 import os
 from threading import RLock
@@ -11,6 +12,12 @@ os.environ.setdefault("GRADIO_ANALYTICS_ENABLED", "False")
 
 from openenv.core.env_server import Action, Environment, Observation, State
 from pydantic import Field
+from jsonschema import Draft202012Validator, FormatChecker, ValidationError
+
+_SESSION_VALIDATOR = Draft202012Validator(
+    json.loads(files("reversi_openenv").joinpath("schemas/direct-session.schema.json").read_text()),
+    format_checker=FormatChecker(),
+)
 
 
 class ReversiAction(Action):
@@ -164,15 +171,10 @@ class ReversiEnvironment(Environment[ReversiAction, ReversiObservation, State]):
         request = Request(self.endpoint + path, data=payload, headers=headers, method=method)
         with self._http.open(request, timeout=timeout_s or 30) as response:
             value = json.load(response)
-        if (
-            not isinstance(value, dict)
-            or not isinstance(value.get("id"), str)
-            or not isinstance(value.get("episode"), dict)
-            or not isinstance(value["episode"].get("decisions"), list)
-            or not isinstance(value["episode"].get("outcome"), dict)
-            or "turn" not in value
-        ):
-            raise ValueError("The local runtime returned an invalid session receipt.")
+        try:
+            _SESSION_VALIDATOR.validate(value)
+        except ValidationError:
+            raise ValueError("The local runtime returned an invalid session receipt.") from None
         if path == "/api/v1/sessions":
             if value.get("submissionId") != body["submissionId"]:
                 raise ValueError("The runtime returned a different session submission.")

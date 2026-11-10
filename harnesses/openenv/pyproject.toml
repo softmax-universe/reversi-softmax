@@ -4,13 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "reversi-softmax-openenv"
-version = "0.1.0"
+version = "0.2.0"
 description = "OpenEnv direct stepping over the local Reversi runtime."
 requires-python = ">=3.12"
-dependencies = ["openenv==0.12.0"]
+dependencies = ["openenv==0.12.0", "jsonschema==4.26.0"]
 
 [project.scripts]
 reversi-openenv = "reversi_openenv.server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+reversi_openenv = ["schemas/*.json"]

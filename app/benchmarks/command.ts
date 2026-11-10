@@ -14,7 +14,7 @@ import { createFoundationInference } from "@softmax-universe/foundation";
 import { Schema } from "effect";
 import { baselineName, firstLegalBaseline, seededBaseline } from "@softmax-universe/reversi-game";
 import { gameIdentity, ReversiGame } from "@softmax-universe/reversi-game";
-import { benchmarkTrials, type Candidate } from "./runs.js";
+import { benchmarkTrials, type Candidate } from "./index.js";
 
 class CommandError extends Error {}
 

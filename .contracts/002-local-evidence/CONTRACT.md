@@ -1,6 +1,6 @@
 ---
-title: Local evidence
-description: Save truthful game records and bound the local interface and model work.
+name: reversi-local-evidence
+message: Preserve accepted and incomplete recordings with bounded local work.
 ---
 
 # Local evidence
