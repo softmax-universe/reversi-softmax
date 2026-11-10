@@ -88,6 +88,9 @@ checked native distributions. universe.json declares the compatibility date and 
 [package graph](package-boundaries.json) and source-lane checks keep the portable game, browser, Node, and Worker
 owners separate.
 
+Use `mise install --locked` to keep the checked toolchain. Regenerate `mise.lock` with Mise `2026.8.12`,
+matching the workflow manager.
+
 ## Human play
 
 The standalone Node human interface lives in app/play and uses its own checkpoint store:
