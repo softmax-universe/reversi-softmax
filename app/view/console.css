@@ -1,0 +1,44 @@
+.reversi-position {
+  margin: 1rem 0;
+}
+
+.reversi-board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  max-width: 24rem;
+  aspect-ratio: 1;
+  border: 0.3rem solid #173d2c;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.reversi-square {
+  display: grid;
+  place-items: center;
+  background: #317151;
+  border: 1px solid #204b37;
+}
+
+.reversi-square.last-move {
+  box-shadow: inset 0 0 0 3px #f2c96e;
+}
+
+.reversi-piece {
+  display: block;
+  width: 76%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px #0005;
+}
+
+.reversi-piece.black {
+  background: #182320;
+}
+
+.reversi-piece.white {
+  background: #f7f1df;
+}
+
+.reversi-position figcaption {
+  margin-top: 0.5rem;
+}

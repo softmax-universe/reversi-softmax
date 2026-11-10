@@ -1,0 +1,25 @@
+schema_version = "1.4"
+artifacts = ["/workspace/policy.js"]
+
+[task]
+name = "softmax-universe/reversi-write-policy"
+
+[metadata]
+category = "programming"
+difficulty = "medium"
+
+[verifier]
+timeout_sec = 180.0
+environment_mode = "shared"
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+docker_image = "{{IMAGE}}"
+workdir = "/workspace"
+network_mode = "allowlist"
+allowed_hosts = []
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
