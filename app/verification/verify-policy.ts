@@ -43,9 +43,12 @@ export async function verifyPolicy(options: {
       submissionId: `evaluation-${identity}`,
       experimentId: experiment.id,
       benchmarkId: "balanced-seeded-v1",
-      policy: { kind: "artifact", hash: artifact.hash },
+      policies: {
+        candidate: { kind: "artifact", hash: artifact.hash },
+        reference: { kind: "baseline", policyId: baselineName },
+      },
       seed: 42,
-      pairs: 4,
+      configuration: { pairs: 4 },
       limits: {
         maxDecisionsPerEpisode: 60,
         maxModelCalls: 0,
@@ -78,7 +81,9 @@ export async function verifyPolicy(options: {
     recording.episodes.length === 8 &&
     recording.run.trials.length === 8;
   for (const trial of recording.run.trials) {
-    const candidate = trial.participants.find((participant) => participant.policy !== baselineName);
+    const candidate = trial.participants.find(
+      (participant) => participant.policy === evaluation.manifest.policies.candidate!.policyKey,
+    );
     const episode = recording.episodes.find((item) => item.trialId === trial.id);
     if (candidate === undefined || episode?.outcome.kind !== "terminated") {
       completed = false;

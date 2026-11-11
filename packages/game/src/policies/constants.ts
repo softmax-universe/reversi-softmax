@@ -1,1 +1,1 @@
-export const baselineName = "seeded-uniform-v1";
+export const baselineName = "seeded-uniform-v2";

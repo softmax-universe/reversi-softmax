@@ -8,12 +8,16 @@ declare module "reversi" {
     pieceType: PieceType;
   };
 
-  class Game {
-    readonly board: {
-      readonly squares: Square[][];
-      getPlaceableSquares(pieceType: Player): Square[];
-      countByPieceType(): Record<PieceType, number>;
-    };
+  interface Board {
+    readonly squares: Square[][];
+    getPlaceableSquares(pieceType: Player): Square[];
+    countByPieceType(): Record<PieceType, number>;
+    isPlaceableSquare(row: number, column: number, pieceType: Player): boolean;
+    placePiece(row: number, column: number, pieceType: Player): unknown;
+    hasPlacableSquare(pieceType: Player): boolean;
+  }
+  interface Game {
+    readonly board: Board;
     readonly isEnded: boolean;
     proceed(
       rowIndex: number,
@@ -27,6 +31,6 @@ declare module "reversi" {
     getHighScorer(): Player | null;
   }
 
-  const reversi: { Game: typeof Game };
+  const reversi: { Game: new () => Game; Board: new (options: { mapText: string }) => Board };
   export default reversi;
 }

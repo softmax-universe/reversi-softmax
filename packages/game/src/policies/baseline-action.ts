@@ -1,4 +1,5 @@
 import type { Json } from "@softmax-universe/protocol/game";
+import { canonicalJson } from "@softmax-universe/protocol";
 export function baselineAction(input: {
   seed: number;
   participantId: string;
@@ -6,7 +7,7 @@ export function baselineAction(input: {
   legalActions: Json[];
 }): Json {
   if (input.legalActions.length === 0) throw new Error("No legal action is available.");
-  const key = JSON.stringify([input.seed, input.participantId, input.observation]);
+  const key = canonicalJson([input.seed, input.participantId, input.observation]);
   let hash = 2166136261;
   for (let index = 0; index < key.length; index += 1) {
     hash = Math.imul(hash ^ key.charCodeAt(index), 16777619);

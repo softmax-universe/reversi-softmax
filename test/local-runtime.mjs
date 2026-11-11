@@ -12,7 +12,12 @@ import { ReversiGame } from "@softmax-universe/reversi-game";
 import { verifyPolicy } from "../dist/verification/index.js";
 
 const { values } = parseArgs({
-  options: { release: { type: "string" }, output: { type: "string" }, python: { type: "string" } },
+  options: {
+    release: { type: "string" },
+    output: { type: "string" },
+    python: { type: "string" },
+    "pettingzoo-python": { type: "string" },
+  },
 });
 if (!values.release || !values.output)
   throw new Error(
@@ -47,9 +52,12 @@ try {
     submissionId: "native-reversi-baseline",
     experimentId: experiment.id,
     benchmarkId: "balanced-seeded-v1",
-    policy: { kind: "baseline", policyId: "first-legal" },
+    policies: {
+      candidate: { kind: "baseline", policyId: "first-legal" },
+      reference: { kind: "baseline", policyId: "seeded-uniform-v2" },
+    },
     seed: 42,
-    pairs: 1,
+    configuration: { pairs: 1 },
     limits: {
       maxDecisionsPerEpisode: 60,
       maxModelCalls: 0,
@@ -74,9 +82,9 @@ try {
     const game = new ReversiGame();
     for (const decision of episode.decisions) {
       assert.deepEqual(game.observe(), decision.observation);
-      const transition = game.apply(decision.attemptedAction);
+      const transition = game.step({ [decision.participantId]: decision.attemptedAction });
       assert.equal(transition.accepted, true);
-      assert.deepEqual(transition.nextObservation, decision.nextObservation);
+      assert.deepEqual(transition.observations[decision.participantId], decision.nextObservation);
       assert.equal(decision.modelCalls.length, 0);
     }
     assert.deepEqual(episode.outcome, { kind: "terminated", ...game.getOutcome() });
@@ -92,8 +100,8 @@ try {
   let session = await client.createSession({ submissionId: "native-reversi-session", seed: 42 });
   const step = {
     submissionId: "native-reversi-step",
-    expectedDecisionIndex: 0,
-    action: session.turn.legalActions[0],
+    expectedFrameIndex: 0,
+    actions: { black: session.frame.requests.black.actionSpace.actions[0] },
   };
   session = await client.stepSession(session.id, step);
   assert.deepEqual(await client.stepSession(session.id, step), session);
@@ -109,38 +117,62 @@ try {
   );
   const code = solution.split("<<'POLICY'\n")[1].split("\nPOLICY")[0];
   const verified = await verifyPolicy({ client, code });
-  assert.equal(verified.passed, true);
-  assert.equal(verified.recording.episodes.length, 8);
   await writeFile(
     join(output, "policy-recording.json"),
     `${JSON.stringify(verified.recording, null, 2)}\n`,
     { flag: "wx" },
   );
+  assert.equal(
+    verified.passed,
+    true,
+    JSON.stringify({
+      averageScore: verified.averageScore,
+      episodes: verified.recording.episodes.map(({ trialId, outcome }) => ({ trialId, outcome })),
+    }),
+  );
+  assert.equal(verified.recording.episodes.length, 8);
   report.averageScore = verified.averageScore;
   report.checks.push(
     "the Harbor verifier evaluates its frozen policy through the real restricted Worker",
   );
-  if (values.python) {
+  if (values.python || values["pettingzoo-python"]) {
     const capability = new URLSearchParams(new URL(runtime.consoleUrl).hash.slice(1)).get(
       "capability",
     );
     assert.ok(capability);
-    const script = fileURLToPath(new URL("../harnesses/openenv/qualify.py", import.meta.url));
-    const result = await promisify(execFile)(resolve(values.python), [script], {
-      timeout: 60000,
-      env: {
-        PATH: "/usr/bin:/bin",
-        HOME: process.env.HOME,
-        UNIVERSE_RUNTIME_ENDPOINT: runtime.origin,
-        UNIVERSE_INSTALLATION_CAPABILITY: capability,
-        GRADIO_ANALYTICS_ENABLED: "False",
-        HF_HUB_OFFLINE: "1",
-      },
-    });
-    assert.match(result.stdout, /OpenEnv native session passed/);
-    report.checks.push(
-      "OpenEnv native WebSocket reset, step, state, and close use the retained game session",
-    );
+    for (const [python, script, marker, check] of [
+      [
+        values.python,
+        "openenv",
+        /OpenEnv native session passed/,
+        "OpenEnv native WebSocket stepping and retained close",
+      ],
+      [
+        values["pettingzoo-python"],
+        "pettingzoo",
+        /PettingZoo native session passed/,
+        "PettingZoo official AEC conformance and terminal-game trace",
+      ],
+    ]) {
+      if (!python) continue;
+      const result = await promisify(execFile)(
+        resolve(python),
+        [fileURLToPath(new URL(`../harnesses/${script}/qualify.py`, import.meta.url))],
+        {
+          timeout: 180000,
+          env: {
+            PATH: "/usr/bin:/bin",
+            HOME: process.env.HOME,
+            UNIVERSE_RUNTIME_ENDPOINT: runtime.origin,
+            UNIVERSE_INSTALLATION_CAPABILITY: capability,
+            GRADIO_ANALYTICS_ENABLED: "False",
+            HF_HUB_OFFLINE: "1",
+          },
+        },
+      );
+      assert.match(result.stdout, marker);
+      report.checks.push(check);
+    }
   }
   await runtime.close();
   runtime = await launchEnvironment(options);

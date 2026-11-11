@@ -7,10 +7,10 @@ and exports the accepted recording. It reserves no model calls and never starts 
 Load the checked Reversi Linux OCI archive, then inspect the image name printed by Docker to obtain its immutable ID:
 
 ```sh
-docker load --input reversi-softmax-0.1.0-linux-x64.oci.tar
+docker load --input reversi-softmax-0.3.0-linux-x64.oci.tar
 docker image inspect <image-name-printed-by-load> --format '{{.Id}}'
 pnpm harbor:prepare --to /tmp/reversi-write-policy --image sha256:<loaded-image-id>
-harbor run --path /tmp/reversi-write-policy --agent oracle
+uv run --no-project --with harbor==0.25.0 harbor run --path /tmp/reversi-write-policy --agent oracle --env docker --n-concurrent 1 --max-retries 0
 ```
 
 The prepared task pins that exact image ID. A registry image pinned by manifest digest is also accepted. The image

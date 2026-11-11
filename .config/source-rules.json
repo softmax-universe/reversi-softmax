@@ -15,7 +15,7 @@
         "path": "^app/view/"
       },
       "to": {
-        "path": "^node:|^cloudflare:|^app/(play|worker|benchmarks)/"
+        "path": "^node:|^cloudflare:|^app/(worker|benchmarks)/"
       }
     },
     {

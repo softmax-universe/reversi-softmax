@@ -4,17 +4,16 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import test from "node:test";
 import { readRunDirectory, runBenchmark } from "@softmax-universe/runner";
-import { summarizeRun, type Run } from "@softmax-universe/protocol";
+import { canonicalJson, summarizeRun, type Run } from "@softmax-universe/protocol";
 import { firstLegalBaseline } from "@softmax-universe/reversi-game";
 import { ReversiGame } from "@softmax-universe/reversi-game";
-import { HumanPlay } from "../app/play/index.js";
 import { environment } from "../app/environment/index.js";
 
 test("public-package benchmark records complete games that replay through the engine", async (context) => {
   const directory = await mkdtemp(join(tmpdir(), "reversi-benchmark-"));
   context.after(() => rm(directory, { recursive: true, force: true }));
   const run: Run = {
-    schemaVersion: 2,
+    schemaVersion: 3,
     id: "integration",
     name: "Integration",
     createdAt: new Date().toISOString(),
@@ -22,9 +21,12 @@ test("public-package benchmark records complete games that replay through the en
     game: environment.manifest.game,
     configuration: {},
     trials: environment.benchmarks["balanced-seeded-v1"]!.createTrials({
-      pairs: 1,
+      configuration: { pairs: 1 },
       seed: 42,
-      candidates: [{ id: "0", policy: "candidate-0", label: "First legal move" }],
+      bindings: {
+        candidate: { id: "0", policy: "candidate-0", label: "First legal move" },
+        reference: { id: "reference", policy: "seeded-uniform-v2" },
+      },
     }),
   };
   assert.deepEqual(
@@ -59,14 +61,14 @@ test("public-package benchmark records complete games that replay through the en
     const game = new ReversiGame();
     for (const decision of episode.decisions) {
       assert.deepEqual(decision.observation, game.observe());
-      const result = game.apply(decision.attemptedAction);
+      const result = game.step({ [decision.participantId]: decision.attemptedAction });
       assert.equal(result.accepted, true);
-      assert.deepEqual(decision.acceptedAction, result.action);
-      assert.deepEqual(decision.nextObservation, result.nextObservation);
+      assert.deepEqual(decision.acceptedAction, result.actions[decision.participantId]);
+      assert.deepEqual(decision.nextObservation, result.observations[decision.participantId]);
     }
     assert.deepEqual(episode.outcome, { kind: "terminated", ...game.getOutcome() });
     const finalBoard = game.observe();
-    assert.equal(game.apply({ row: 0, column: 0 }).accepted, false);
+    assert.equal(game.step({ black: { row: 0, column: 0 } }).accepted, false);
     assert.deepEqual(game.observe(), finalBoard);
   }
 });
@@ -79,39 +81,26 @@ test("rejected moves preserve the observation and cannot claim an accepted actio
     { row: 0, column: 0 },
     { row: 2.5, column: 3 },
   ]) {
-    assert.deepEqual(game.apply(action), {
-      accepted: false,
-      action: null,
-      nextObservation: before,
-    });
+    const result = game.step({ black: action });
+    assert.equal(result.accepted, false);
+    assert.deepEqual(result.actions, {});
+    assert.deepEqual(game.observe(), before);
   }
 });
 
-test("human moves produce an uploadable completed recording and abandoned moves remain incomplete", async (context) => {
-  const directory = await mkdtemp(join(tmpdir(), "reversi-human-"));
-  context.after(() => rm(directory, { recursive: true, force: true }));
-  const play = new HumanPlay(directory);
-  await play.recover();
-  let game = await play.start("white", 42);
-  assert.ok(game);
-  while (game.outcome === null) {
-    const action = game.observation.legalActions[0];
-    assert.ok(action);
-    game = await play.move({ gameId: game.id, revision: game.revision, action });
-    assert.ok(game);
+test("checkpoints preserve the next actor, legal moves, and outcome through a full game", () => {
+  let game = new ReversiGame();
+  for (let moves = 0; moves < 60 && game.getFrame(); moves++) {
+    const restored = new ReversiGame();
+    restored.restore(JSON.parse(canonicalJson(game.snapshot())));
+    assert.deepEqual(restored.getFrame(), game.getFrame());
+    const frame = game.getFrame()!;
+    const [agent, request] = Object.entries(frame.requests)[0]!;
+    assert.equal(request.actionSpace.kind, "enumerated");
+    if (request.actionSpace.kind !== "enumerated") throw new Error("Expected enumerated actions");
+    const actions = { [agent]: request.actionSpace.actions[0]! };
+    assert.deepEqual(restored.step(actions), game.step(actions));
+    game = restored;
   }
-  const completed = await readRunDirectory(game.recordingDirectory);
-  assert.equal(completed.episodes[0]?.outcome.kind, "terminated");
-  assert.deepEqual(completed.episodes, play.recording().episodes);
-
-  const active = await play.start("white", 43);
-  assert.ok(active);
-  const beforeInterruption = play.recording().episodes[0];
-  assert.notEqual(beforeInterruption?.id, completed.episodes[0]?.id);
-  const restarted = new HumanPlay(directory);
-  await restarted.recover();
-  const interrupted = await readRunDirectory(active.recordingDirectory);
-  assert.deepEqual(interrupted.episodes, [beforeInterruption]);
-  assert.equal(interrupted.episodes[0]?.outcome.kind, "incomplete");
-  assert.equal(restarted.view(), null);
+  assert.ok(game.getOutcome());
 });

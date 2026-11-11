@@ -17,10 +17,13 @@ uv run reversi-openenv
 
 `ReversiEnvironment` can also be imported by a training harness. The external harness supplies the action for the
 reported participant on each turn, including both seats during self-play. The engine performs automatic passes.
-The selected reward seat defaults to black. Reward is unknown until a terminated episode supplies its authoritative
-score. Cancelled or interrupted sessions never become a zero-score loss.
+The selected reward seat defaults to black. Reset has no preceding reward; each applied step reports that seat's
+actual transition reward. Final scores come from the terminated game. Cancelled or interrupted sessions never
+receive a synthetic terminal reward or become a zero-score loss.
 
-Closing a WebSocket cancels its unfinished session while retaining its evidence. A lost runtime mutation response
+Cleanly closing a WebSocket cancels its unfinished session while retaining its evidence. Wait for the server's close
+frame before treating cancellation as confirmed. An abrupt disconnect or process failure can leave an incomplete
+session; inspect its retained status instead of inferring a result. A lost runtime mutation response
 blocks new work on that environment instance. Native OpenEnv messages do not expose reconciliation: stop the trial
 and inspect the retained session through the runtime's standard session client. Store the returned session ID so
 accepted work remains inspectable after the wrapper process exits.
@@ -28,3 +31,8 @@ accepted work remains inspectable after the wrapper process exits.
 When importing the Python `ReversiEnvironment` directly, call `close()` to cancel unfinished work and `reconcile()`
 to repeat an unresolved idempotent request with its original submission identity. Reconciliation never chooses a
 replacement move or starts another session silently.
+
+The wrapper declares both controllers as bots under its external harness policy ID. Pass `controllers` at construction
+for per-seat metadata, for example `{"black": {"kind": "bot", "policy": "candidate", "model": "your-model"},
+"white": {"kind": "human", "policy": "human"}}`. These identities are caller-declared and fixed at reset; the
+runtime does not invent evidence about inference performed outside it.

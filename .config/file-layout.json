@@ -35,14 +35,25 @@
     {
       "pattern": "harnesses/openenv/.venv/**",
       "reason": "Locked Python environment is third-party code."
+    },
+    {
+      "pattern": "harnesses/pettingzoo/.venv/**",
+      "reason": "Locked Python environment is third-party code."
     }
   ],
   "extensionlessSources": "shebang",
   "maximumFilesPerExtension": 20,
   "maximumFolderDepth": 4,
   "maximumSourceLines": 300,
-  "sourceFiles": ["harnesses/openenv/qualify.py"],
-  "sourceRoots": ["app", "packages/game/src", "scripts", "test", "harnesses/openenv/src"],
+  "sourceFiles": ["harnesses/openenv/qualify.py", "harnesses/pettingzoo/qualify.py"],
+  "sourceRoots": [
+    "app",
+    "packages/game/src",
+    "scripts",
+    "test",
+    "harnesses/openenv/src",
+    "harnesses/pettingzoo/src"
+  ],
   "sourceSuffixes": [
     ".cjs",
     ".css",

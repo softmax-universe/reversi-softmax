@@ -114,7 +114,7 @@ Existing recordings in the same directory are skipped, including incomplete tria
     values.directory ?? join(".local", "benchmarks", id),
   );
   let run: Run = {
-    schemaVersion: 2,
+    schemaVersion: 3,
     id,
     name:
       values.name ??
@@ -125,7 +125,16 @@ Existing recordings in the same directory are skipped, including incomplete tria
     kind: "benchmark",
     game: gameIdentity,
     configuration,
-    trials: benchmarkTrials({ pairs, seed, candidates }),
+    trials: candidates.flatMap((candidate) =>
+      benchmarkTrials({
+        seed,
+        configuration: { pairs },
+        bindings: {
+          candidate,
+          reference: { id: "reference", policy: baselineName, label: "Seeded baseline" },
+        },
+      }),
+    ),
   };
   if (existsSync(join(directory, "run.json"))) {
     const saved = await readRunDirectory(directory);

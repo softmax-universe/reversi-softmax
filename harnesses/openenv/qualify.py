@@ -1,25 +1,15 @@
 import json
 import os
-from urllib.parse import quote
-from urllib.request import ProxyHandler, Request, build_opener
-
 from fastapi.testclient import TestClient
-
+from softmax_universe import RuntimeClient
 from reversi_openenv.server import app
 
 
 def runtime_session(session_id):
-    request = Request(
-        os.environ["UNIVERSE_RUNTIME_ENDPOINT"]
-        + "/api/v1/sessions/"
-        + quote(session_id, safe=""),
-        headers={
-            "Authorization": "Bearer " + os.environ["UNIVERSE_INSTALLATION_CAPABILITY"],
-            "Origin": os.environ["UNIVERSE_RUNTIME_ENDPOINT"],
-        },
-    )
-    with build_opener(ProxyHandler({})).open(request, timeout=30) as response:
-        return json.load(response)
+    return RuntimeClient(
+        os.environ["UNIVERSE_RUNTIME_ENDPOINT"],
+        os.environ["UNIVERSE_INSTALLATION_CAPABILITY"],
+    ).get_session(session_id)
 
 
 def assert_http_controls_absent(client):
@@ -47,6 +37,10 @@ with TestClient(app) as client:
         assert reset["data"]["done"] is False
         session_id = observation["session_id"]
         before = runtime_session(session_id)
+        assert all(
+            player["kind"] == "bot" and player["policy"] == "external-openenv"
+            for player in before["episode"]["participants"]
+        )
         assert before["episode"]["decisions"] == []
         assert before["episode"]["outcome"]["kind"] == "incomplete"
         assert_http_controls_absent(client)
@@ -59,6 +53,7 @@ with TestClient(app) as client:
             other_id = other_reset["data"]["observation"]["session_id"]
             assert other_id != session_id
             other.send_json({"type": "close"})
+            assert other.receive()["type"] == "websocket.close"
         assert runtime_session(other_id)["episode"]["outcome"]["kind"] == "cancelled"
         assert runtime_session(session_id) == before
 
@@ -66,7 +61,7 @@ with TestClient(app) as client:
         session.send_json({"type": "step", "data": action})
         step = session.receive_json()
         assert step["type"] == "observation", step
-        assert step["data"]["reward"] is None
+        assert step["data"]["reward"] == 0
         session.send_json({"type": "state"})
         state = session.receive_json()
         assert state["type"] == "state", state
@@ -79,6 +74,7 @@ with TestClient(app) as client:
         assert_http_controls_absent(client)
         assert runtime_session(session_id) == stepped
         session.send_json({"type": "close"})
+        assert session.receive()["type"] == "websocket.close"
     closed = runtime_session(session_id)
     assert closed["episode"]["outcome"]["kind"] == "cancelled"
     assert closed["episode"]["decisions"] == stepped["episode"]["decisions"]
@@ -87,7 +83,13 @@ print(
     json.dumps(
         {
             "status": "passed",
-            "http": {"health": 200, "schema": 200, "reset": 404, "step": 404, "state": 404},
+            "http": {
+                "health": 200,
+                "schema": 200,
+                "reset": 404,
+                "step": 404,
+                "state": 404,
+            },
             "session_id": session_id,
             "other_session_id": other_id,
             "decisions": len(closed["episode"]["decisions"]),

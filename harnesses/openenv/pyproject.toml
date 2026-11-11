@@ -4,16 +4,18 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "reversi-softmax-openenv"
-version = "0.2.0"
+version = "0.3.0"
 description = "OpenEnv direct stepping over the local Reversi runtime."
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.12"
-dependencies = ["openenv==0.12.0", "jsonschema==4.26.0"]
+dependencies = [
+  "openenv==0.12.0",
+  "softmax-universe-client @ https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax_universe_client-0.6.0a2-py3-none-any.whl",
+]
 
 [project.scripts]
 reversi-openenv = "reversi_openenv.server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[tool.setuptools.package-data]
-reversi_openenv = ["schemas/*.json"]

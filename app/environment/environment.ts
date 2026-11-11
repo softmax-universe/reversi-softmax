@@ -11,9 +11,19 @@ import { benchmarkTrials } from "../benchmarks/index.js";
 export const environment: EnvironmentDefinition = {
   manifest: {
     id: "reversi-softmax",
-    version: "0.2.0",
+    version: "0.3.0",
     game: gameIdentity,
-    benchmarks: [{ id: "balanced-seeded-v1", revision: "1" }],
+    benchmarks: [
+      {
+        id: "balanced-seeded-v1",
+        revision: "2",
+        policySlots: [
+          { id: "candidate", label: "Candidate", defaultPolicy: "first-legal" },
+          { id: "reference", label: "Reference", defaultPolicy: baselineName },
+        ],
+        defaults: { pairs: 1 },
+      },
+    ],
     requiredCapabilities: [],
   },
   createGame(_trial, signal) {
@@ -24,7 +34,7 @@ export const environment: EnvironmentDefinition = {
   benchmarks: {
     "balanced-seeded-v1": {
       id: "balanced-seeded-v1",
-      revision: "1",
+      revision: "2",
       createTrials: benchmarkTrials,
     },
   },

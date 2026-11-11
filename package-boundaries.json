@@ -4,7 +4,7 @@
       "name": "@softmax-universe/reversi-environment",
       "manifest": "package.json",
       "manager": "npm",
-      "ownership": "Environment composition, renderer, human-play server, benchmarks, and external harnesses.",
+      "ownership": "Environment composition, renderer, benchmarks, and external harnesses.",
       "dependencies": [
         {
           "manifest": "packages/game/package.json",
@@ -63,6 +63,10 @@
     },
     {
       "pattern": "harnesses/openenv/.venv/**",
+      "reason": "Locked external harness dependencies are third-party code."
+    },
+    {
+      "pattern": "harnesses/pettingzoo/.venv/**",
       "reason": "Locked external harness dependencies are third-party code."
     }
   ]
