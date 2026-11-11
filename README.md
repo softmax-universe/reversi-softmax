@@ -7,16 +7,16 @@ for baseline use.
 
 ## Install
 
-Download a complete native archive from [release v0.3.0](https://github.com/softmax-universe/reversi-softmax/releases/tag/v0.3.0).
+Download a complete native archive from [release v0.4.0](https://github.com/softmax-universe/reversi-softmax/releases/tag/v0.4.0).
 Use `darwin-arm64` for an Apple silicon Mac or `linux-x64` for Linux on x86-64:
 
 ```sh
 target=darwin-arm64 # or linux-x64
-curl -fL -o "reversi-softmax-0.3.0-$target.tar.gz" \
-  "https://github.com/softmax-universe/reversi-softmax/releases/download/v0.3.0/reversi-softmax-0.3.0-$target.tar.gz"
-mkdir reversi-softmax-0.3.0
-tar -xzf "reversi-softmax-0.3.0-$target.tar.gz" -C reversi-softmax-0.3.0 --strip-components=1
-cd reversi-softmax-0.3.0
+curl -fL -o "reversi-softmax-0.4.0-$target.tar.gz" \
+  "https://github.com/softmax-universe/reversi-softmax/releases/download/v0.4.0/reversi-softmax-0.4.0-$target.tar.gz"
+mkdir reversi-softmax-0.4.0
+tar -xzf "reversi-softmax-0.4.0-$target.tar.gz" -C reversi-softmax-0.4.0 --strip-components=1
+cd reversi-softmax-0.4.0
 ./universe-local start --release ./release.json --state "$HOME/.local/share/reversi-softmax" --port 4328
 ```
 
@@ -29,8 +29,8 @@ Keep state outside the extracted installation, as in the command above. Starting
 replacing an installation preserves prior results. Treat the printed console URL as a credential.
 
 Model use is optional. To bring your own local or hosted OpenAI-compatible endpoint, follow
-[Universe Local's model configuration](https://github.com/softmax-universe/universe/blob/v0.6.0-alpha.2/apps/cli/README.md)
-and [compatible endpoint settings](https://github.com/softmax-universe/universe/blob/v0.6.0-alpha.2/adapters/compatible-models/README.md).
+[Universe Local's model configuration](https://github.com/softmax-universe/universe/blob/v0.7.0-alpha.1/apps/cli/README.md)
+and [compatible endpoint settings](https://github.com/softmax-universe/universe/blob/v0.7.0-alpha.1/adapters/compatible-models/README.md).
 Add `--models /absolute/path/to/private-models.json` to startup; the file must be owned by you with mode `600` or stricter.
 Credentials stay on the server. Foundation is an optional transport.
 
@@ -55,28 +55,35 @@ and the exact verified Universe runtime assets. It does not rebuild the runtime 
 
 ## Evaluate
 
-The default benchmark plays first-legal-move against the seeded reference. Every candidate plays both seats for
-each seed, through the same engine and scoring path used by runtime evaluations:
+The benchmark command submits evaluations to the installed local runtime. Each candidate plays both seats against the
+seeded reference. Connect to a running installation:
 
 ```sh
-pnpm benchmark --directory .local/baseline --pairs 2 --seed 42
+pnpm benchmark --state .local/reversi --pairs 2 --seed 42
 ```
 
-The source benchmark command also supports the optional Foundation adapter. That path requires an explicit endpoint,
-token, model, and call budget:
+To start and close the installation for this command, supply its release manifest:
 
 ```sh
-export FOUNDATION_ENDPOINT=https://foundation.softmax.nexus
-pnpm benchmark --directory .local/models --pairs 1 --seed 42 \
-  --model openai/gpt-4.1-mini --max-model-calls 128 --max-output-tokens 64
+pnpm benchmark --state .local/reversi --release /path/to/release.json --port 4328
 ```
 
-The model command spends its supplied grant. Set `FOUNDATION_TOKEN` in the terminal environment using a bounded
-grant. `pnpm benchmark --help` lists decision, token, time, and total limits. Local baseline use makes no model calls.
-A win scores 1, a draw 0.5, and a loss 0. Incomplete work retains its status and never receives an invented score.
-Reusing the same directory retains completed evidence and resumes supported incomplete episodes from checkpoints.
-Unknown model calls keep their original identity and never trigger replacement paid work. Choose a new directory for a new
-attempt or different bounds. Model inference is injected through the public Foundation adapter.
+Model candidates use IDs from the installation's private model configuration. The runtime owns inference transport,
+credentials, and call evidence. Supply an explicit total allowance:
+
+```sh
+pnpm benchmark --state .local/reversi --model candidate-a --model candidate-b \
+  --max-model-calls 256 --max-output-tokens 64 --submission-id comparison-1
+```
+
+The allowance is divided evenly across candidates within one experiment. Repeating the same submission ID and inputs
+reattaches to its evaluations. The command prints each evaluation ID before waiting. Inspect or export those IDs with
+the local console or universe-local commands. The runtime retains results and supported checkpoints after the command
+disconnects.
+
+A win scores 1, a draw 0.5, and a loss 0. Incomplete work retains its status. Unknown model calls keep their original
+identity and consume their reserved allowance. Baseline evaluation requires no provider credential. Use a new
+submission ID for a deliberate new comparison.
 
 The installed local runtime console uses the same environment manifest, policy artifacts, and benchmark definition.
 It reads retained evaluation and call evidence through the public runtime-client. The game-specific renderer stays

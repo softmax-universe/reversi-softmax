@@ -152,7 +152,7 @@ wheels = [
 
 [[package]]
 name = "reversi-softmax-pettingzoo"
-version = "0.3.0"
+version = "0.4.0"
 source = { editable = "." }
 dependencies = [
     { name = "gymnasium" },
@@ -166,7 +166,7 @@ requires-dist = [
     { name = "gymnasium", specifier = "==1.4.0" },
     { name = "numpy", specifier = "==2.5.4" },
     { name = "pettingzoo", specifier = "==1.27.0" },
-    { name = "softmax-universe-client", url = "https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax_universe_client-0.6.0a2-py3-none-any.whl" },
+    { name = "softmax-universe-client", url = "https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax_universe_client-0.7.0a1-py3-none-any.whl" },
 ]
 
 [[package]]
@@ -250,13 +250,13 @@ wheels = [
 
 [[package]]
 name = "softmax-universe-client"
-version = "0.6.0a2"
-source = { url = "https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax_universe_client-0.6.0a2-py3-none-any.whl" }
+version = "0.7.0a1"
+source = { url = "https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax_universe_client-0.7.0a1-py3-none-any.whl" }
 dependencies = [
     { name = "jsonschema" },
 ]
 wheels = [
-    { url = "https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax_universe_client-0.6.0a2-py3-none-any.whl", hash = "sha256:c11a78a53811c407db89bfe548c0fdcdd5c742d75c47d23d13aaffb941328dea" },
+    { url = "https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax_universe_client-0.7.0a1-py3-none-any.whl", hash = "sha256:db5d7ca6f3e74e9389c87b8f6b886f04a4f6038f37c4077bc95387da9dcf12d5" },
 ]
 
 [package.metadata]

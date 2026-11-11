@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { setTimeout } from "node:timers/promises";
+import { RuntimeApiError } from "@softmax-universe/runtime-client";
 import { isDeepStrictEqual } from "node:util";
 import type { RuntimeClient } from "@softmax-universe/runtime-client";
 import { baselineName } from "@softmax-universe/reversi-game";
@@ -30,18 +30,10 @@ export async function verifyPolicy(options: {
     { submissionId: `policy-${identity}`, code: options.code },
     { signal },
   );
-  const experiment = await client.createExperiment(
-    {
-      submissionId: `experiment-${identity}`,
-      name: "Harbor policy verification",
-      budget: { maxModelCalls: 0 },
-    },
-    { signal },
-  );
-  let evaluation = await client.submitEvaluation(
+  let evaluation = await client.evaluations.start(
     {
       submissionId: `evaluation-${identity}`,
-      experimentId: experiment.id,
+      name: "Harbor policy verification",
       benchmarkId: "balanced-seeded-v1",
       policies: {
         candidate: { kind: "artifact", hash: artifact.hash },
@@ -61,20 +53,20 @@ export async function verifyPolicy(options: {
     },
     { signal },
   );
-  const deadline = Date.now() + 150_000;
-  while (evaluation.status === "pending" || evaluation.status === "running") {
-    if (Date.now() >= deadline) {
-      evaluation = await client.cancelEvaluation(
-        evaluation.id,
-        { submissionId: `cancel-${identity}` },
-        { signal },
-      );
-      break;
-    }
-    await setTimeout(100, undefined, { signal });
-    evaluation = await client.getEvaluation(evaluation.id, { signal });
+  try {
+    evaluation = await client.evaluations.wait(evaluation.id, {
+      deadlineAt: Date.now() + 150_000,
+      signal,
+    });
+  } catch (error) {
+    if (!(error instanceof RuntimeApiError) || error.code !== "deadline_exceeded") throw error;
+    evaluation = await client.evaluations.cancel(
+      evaluation.id,
+      { submissionId: `cancel-${identity}` },
+      { signal },
+    );
   }
-  const recording = await client.exportEvaluation(evaluation.id, { signal });
+  const recording = await client.evaluations.export(evaluation.id, { signal });
   let score = 0;
   let completed =
     evaluation.status === "completed" &&

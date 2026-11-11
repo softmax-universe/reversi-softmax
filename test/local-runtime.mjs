@@ -48,7 +48,7 @@ try {
     name: "Offline Reversi qualification",
     budget: { maxModelCalls: 0 },
   });
-  let evaluation = await client.submitEvaluation({
+  let evaluation = await client.evaluations.submit({
     submissionId: "native-reversi-baseline",
     experimentId: experiment.id,
     benchmarkId: "balanced-seeded-v1",
@@ -72,10 +72,10 @@ try {
   while (["pending", "running"].includes(evaluation.status)) {
     assert.ok(Date.now() < deadline, "The bounded baseline did not finish.");
     await setTimeout(100);
-    evaluation = await client.getEvaluation(evaluation.id);
+    evaluation = await client.evaluations.get(evaluation.id);
   }
   assert.equal(evaluation.status, "completed");
-  const recording = await client.exportEvaluation(evaluation.id);
+  const recording = await client.evaluations.export(evaluation.id);
   assert.equal(recording.episodes.length, 2);
   for (const episode of recording.episodes) {
     assert.equal(episode.outcome.kind, "terminated");
@@ -97,19 +97,79 @@ try {
   report.checks.push(
     "complete baseline episodes replay through the pinned engine with zero inference",
   );
-  let session = await client.createSession({ submissionId: "native-reversi-session", seed: 42 });
+  let session = await client.sessions.create({ submissionId: "native-reversi-session", seed: 42 });
   const step = {
     submissionId: "native-reversi-step",
-    expectedFrameIndex: 0,
+    expectedRevision: 0,
     actions: { black: session.frame.requests.black.actionSpace.actions[0] },
   };
-  session = await client.stepSession(session.id, step);
-  assert.deepEqual(await client.stepSession(session.id, step), session);
-  assert.equal(session.episode.decisions.length, 1);
-  session = await client.closeSession(session.id, { submissionId: "native-reversi-close" });
-  assert.equal(session.episode.outcome.kind, "cancelled");
+  session = await client.sessions.step(session.id, step);
+  assert.deepEqual(await client.sessions.step(session.id, step), session);
+  assert.equal(session.decisionCount, 1);
+  session = await client.sessions.close(session.id, { submissionId: "native-reversi-close" });
+  assert.equal(session.outcome.kind, "cancelled");
   report.checks.push(
     "direct stepping records once for duplicate submissions and preserves cancellation",
+  );
+  const source = recording.episodes[0];
+  let replaySession = await client.sessions.create({
+    submissionId: "native-parity-session",
+    seed: source.seed,
+  });
+  for (const frame of source.frames) {
+    replaySession = await client.sessions.step(replaySession.id, {
+      submissionId: `parity-${frame.index}`,
+      expectedRevision: replaySession.revision,
+      actions: Object.fromEntries(
+        Object.entries(frame.decisions).map(([agent, index]) => [
+          agent,
+          source.decisions[index].attemptedAction,
+        ]),
+      ),
+    });
+  }
+  const replayed = await client.sessions.recording(replaySession.id);
+  assert.deepEqual(replayed.episodes[0].outcome, source.outcome);
+  assert.deepEqual(
+    replayed.episodes[0].frames.map(({ tick, nextTick, observations, rewards }) => ({
+      tick,
+      nextTick,
+      observations,
+      rewards,
+    })),
+    source.frames.map(({ tick, nextTick, observations, rewards }) => ({
+      tick,
+      nextTick,
+      observations,
+      rewards,
+    })),
+  );
+  report.checks.push(
+    "direct and managed execution preserve identical game transitions and rewards",
+  );
+
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const command = await promisify(execFile)(
+      process.execPath,
+      [
+        "--import",
+        "tsx",
+        fileURLToPath(new URL("../app/benchmarks/command.ts", import.meta.url)),
+        "--state",
+        options.stateDirectory,
+        "--submission-id",
+        "native-benchmark-command",
+      ],
+      { cwd: fileURLToPath(new URL("..", import.meta.url)), timeout: 150000, maxBuffer: 1000000 },
+    );
+    assert.match(command.stdout, /Evaluation:/);
+  }
+  const commandExperiment = (await client.listExperiments()).find(
+    (item) => item.submissionId === "native-benchmark-command",
+  );
+  assert.equal((await client.evaluations.list(commandExperiment.id)).length, 1);
+  report.checks.push(
+    "benchmark command uses native evaluation and reattaches without duplicating work",
   );
   const solution = await readFile(
     new URL("../harnesses/harbor/write-policy/solution/solve.sh", import.meta.url),
@@ -177,7 +237,7 @@ try {
   await runtime.close();
   runtime = await launchEnvironment(options);
   assert.deepEqual(
-    (await runtime.client.exportEvaluation(evaluation.id)).episodes,
+    (await runtime.client.evaluations.export(evaluation.id)).episodes,
     recording.episodes,
   );
   report.checks.push("the installation restarts without changing confirmed episodes");

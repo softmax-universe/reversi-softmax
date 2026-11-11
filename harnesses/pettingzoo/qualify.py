@@ -10,7 +10,7 @@ environment = ReversiEnvironment()
 try:
     api_test(environment, num_cycles=100)
     environment.reset(seed=42)
-    session_id = environment._session["id"]
+    session_id = environment.session.state["id"]
     for agent in environment.agent_iter(200):
         observation, reward, terminated, truncated, _ = environment.last()
         action = (
@@ -19,7 +19,7 @@ try:
             else int(np.flatnonzero(observation["action_mask"])[0])
         )
         environment.step(action)
-    retained = environment.client.get_session(session_id)
+    retained = {"episode": environment.client.get_recording(session_id)["episodes"][0]}
     assert retained["episode"]["outcome"]["kind"] == "terminated"
     assert all(
         player["kind"] == "bot" and player["policy"] == "external-pettingzoo"

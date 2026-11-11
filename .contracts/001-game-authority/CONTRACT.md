@@ -15,7 +15,7 @@ Validate restored board counts, actor, terminal state, and derived observation b
 Keep the browser and benchmark on the same adapter path. Normalize observations to black/white/null without changing
 the engine's legal actions. Preserve actual attempted and accepted actions in recordings.
 
-Import Universe through its public protocol, SDK, runner, and policy packages. Install packed or published packages
+Import Universe through its public protocol and runtime-client packages. Install packed or published packages
 without repository source imports or workspace links. Preserve the engine's attribution and original executable.
 
 ## Checks

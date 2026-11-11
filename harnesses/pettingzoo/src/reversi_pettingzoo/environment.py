@@ -4,7 +4,7 @@ from copy import deepcopy
 import numpy as np
 from gymnasium import spaces
 from pettingzoo import AECEnv
-from softmax_universe import RuntimeClient, UncertainMutation
+from softmax_universe import RuntimeClient
 
 
 class ReversiEnvironment(AECEnv):
@@ -32,8 +32,7 @@ class ReversiEnvironment(AECEnv):
         )
         self.render_mode = render_mode
         self.agents = []
-        self._session = None
-        self._pending = None
+        self.session = self.client.session()
         self._positions = {}
         self._action_spaces = {
             agent: spaces.Discrete(64) for agent in self.possible_agents
@@ -55,13 +54,9 @@ class ReversiEnvironment(AECEnv):
         return self._observation_spaces[agent]
 
     def reset(self, seed=None, options=None):
-        self._require_resolved()
-        self.close()
-        self._mutate(
-            lambda: self.client.create_session(
-                seed=0 if seed is None else seed,
-                configuration={"controllers": self._controllers},
-            )
+        self.session.reset(
+            seed=0 if seed is None else seed,
+            configuration={"controllers": self._controllers},
         )
         self._start_episode()
 
@@ -72,7 +67,7 @@ class ReversiEnvironment(AECEnv):
         self.terminations = {agent: False for agent in self.agents}
         self.truncations = {agent: False for agent in self.agents}
         self.infos = {
-            agent: {"session_id": self._session["id"]} for agent in self.agents
+            agent: {"session_id": self.session.state["id"]} for agent in self.agents
         }
         self._skip_agent_selection = None
         self._synchronize()
@@ -88,8 +83,8 @@ class ReversiEnvironment(AECEnv):
         )
         mask = np.zeros(64, dtype=np.int8)
         request = (
-            self._session["frame"]["requests"].get(agent)
-            if self._session["frame"]
+            self.session.state["frame"]["requests"].get(agent)
+            if self.session.state["frame"]
             else None
         )
         if request:
@@ -98,7 +93,6 @@ class ReversiEnvironment(AECEnv):
         return {"observation": board, "action_mask": mask}
 
     def step(self, action):
-        self._require_resolved()
         agent = self.agent_selection
         if self.terminations[agent] or self.truncations[agent]:
             return self._was_dead_step(action)
@@ -108,38 +102,25 @@ class ReversiEnvironment(AECEnv):
         ):
             raise ValueError("Choose an available board square.")
         self._cumulative_rewards[agent] = 0
-        self._mutate(
-            lambda: self.client.step_session(
-                self._session["id"],
-                actions={agent: {"row": int(action) // 8, "column": int(action) % 8}},
-                expected_frame_index=len(self._session["episode"]["frames"]),
-            )
-        )
+        self.session.step({agent: {"row": int(action) // 8, "column": int(action) % 8}})
         self._synchronize()
         self._accumulate_rewards()
 
     def reconcile(self):
-        if self._pending is None:
+        pending = self.session.pending
+        if pending is None:
             raise RuntimeError("There is no unresolved command.")
-        operation = self._pending.operation
-        self._mutate(lambda: self.client.reconcile(self._pending))
-        if operation == "close":
-            self._session = None
+        self.session.reconcile()
+        if pending.operation == "close":
             self.agents = []
-        elif operation == "create":
+        elif pending.operation == "create":
             self._start_episode()
         else:
             self._synchronize()
             self._accumulate_rewards()
 
     def close(self):
-        self._require_resolved()
-        if (
-            self._session is not None
-            and self._session["episode"]["outcome"]["kind"] == "incomplete"
-        ):
-            self._mutate(lambda: self.client.close_session(self._session["id"]))
-        self._session = None
+        self.session.close()
         self.agents = []
 
     def render(self):
@@ -153,30 +134,18 @@ class ReversiEnvironment(AECEnv):
             for row in self._positions["black"]["board"]
         )
 
-    def _mutate(self, operation):
-        try:
-            self._session = operation()
-            self._pending = None
-        except UncertainMutation as error:
-            self._pending = error.command
-            raise
-
-    def _require_resolved(self):
-        if self._pending is not None:
-            raise RuntimeError("Reconcile the original command before new work.")
-
     def _synchronize(self):
-        episode = self._session["episode"]
-        frame = self._session["frame"]
+        state = self.session.state
+        frame = state["frame"]
         self._clear_rewards()
-        if episode["frames"]:
-            transition = episode["frames"][-1]
+        if state["transition"]:
+            transition = state["transition"]
             self._positions = transition["observations"]
             self.rewards.update(transition["rewards"])
         elif frame:
             position = next(iter(frame["requests"].values()))["observation"]
             self._positions = {agent: position for agent in self.possible_agents}
-        outcome = episode["outcome"]["kind"]
+        outcome = state["outcome"]["kind"]
         if outcome not in ("incomplete", "terminated", "truncated"):
             raise RuntimeError("The runtime ended without a game result: " + outcome)
         if frame:

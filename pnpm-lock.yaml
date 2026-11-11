@@ -9,44 +9,35 @@ importers:
   .:
     dependencies:
       '@softmax-universe/console':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-console-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-console-0.6.0-alpha.2.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-console-0.7.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-console-0.7.0-alpha.1.tgz
       '@softmax-universe/distribution':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-distribution-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-distribution-0.6.0-alpha.2.tgz
-      '@softmax-universe/foundation':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-foundation-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-foundation-0.6.0-alpha.2.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-distribution-0.7.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-distribution-0.7.0-alpha.1.tgz
       '@softmax-universe/inspector':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-inspector-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-inspector-0.6.0-alpha.2.tgz(react@19.3.0)
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-inspector-0.7.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-inspector-0.7.0-alpha.1.tgz(react@19.3.0)
       '@softmax-universe/installation':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-installation-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-installation-0.6.0-alpha.2.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-installation-0.7.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-installation-0.7.0-alpha.1.tgz
       '@softmax-universe/local-cli':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-local-cli-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-local-cli-0.6.0-alpha.2.tgz
-      '@softmax-universe/model-policy':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-model-policy-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-model-policy-0.6.0-alpha.2.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-local-cli-0.7.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-local-cli-0.7.0-alpha.1.tgz
       '@softmax-universe/protocol':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
       '@softmax-universe/reversi-game':
         specifier: workspace:*
         version: link:packages/game
       '@softmax-universe/runner':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runner-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runner-0.6.0-alpha.2.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runner-0.7.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runner-0.7.0-alpha.1.tgz
       '@softmax-universe/runtime':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-0.6.0-alpha.2.tgz(@aws-sdk/credential-provider-node@3.972.95)(@babel/core@8.1.0)(@babel/runtime@7.29.13)(@earendil-works/pi-schema@1.5.1)(@modelcontextprotocol/client@2.4.0)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.3.1)(zod@4.6.7)
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-0.7.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-0.7.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@babel/core@8.1.0)(@babel/runtime@7.29.13)(@earendil-works/pi-schema@1.5.1)(@modelcontextprotocol/client@2.4.0)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.3.1)(zod@4.6.7)
       '@softmax-universe/runtime-client':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-client-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-client-0.6.0-alpha.2.tgz
-      '@softmax-universe/sdk':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-sdk-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-sdk-0.6.0-alpha.2.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-client-0.7.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-client-0.7.0-alpha.1.tgz
       effect:
         specifier: 4.0.7
         version: 4.0.7
@@ -61,8 +52,8 @@ importers:
         specifier: 0.51.0
         version: 0.51.0
       '@softmax-universe/environment-tools':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-environment-tools-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-environment-tools-0.6.0-alpha.2.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-environment-tools-0.7.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-environment-tools-0.7.0-alpha.1.tgz
       '@types/node':
         specifier: 24.13.6
         version: 24.13.6
@@ -97,8 +88,8 @@ importers:
   packages/game:
     dependencies:
       '@softmax-universe/protocol':
-        specifier: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
-        version: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
+        specifier: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
+        version: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
       reversi:
         specifier: 3.0.0
         version: 3.0.0
@@ -1102,83 +1093,83 @@ packages:
     resolution: {tarball: https://github.com/softmax-universe/foundation-client/releases/download/client-v0.1.0/softmax-foundation-client-0.1.0.tgz}
     version: 0.1.0
 
-  '@softmax-universe/compatible-models@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-compatible-models-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-CKumAsYLwP//aebaTFS/iYpx2Gv0nbeE9Uk4V1E5s7D/vZh3E6CFmuR7hqhL2K+rxQYfsTquzgv8Xr2aYmCgxw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-compatible-models-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/compatible-models@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-compatible-models-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-YsXj7WpQ00NQXavwnT4L1ipU29gF7IK3VxCCgYbmXApMda7JGsLUz7LwSN7yXWeudocVQKgPKu4M0657sSoA4Q==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-compatible-models-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
 
-  '@softmax-universe/console@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-console-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-aolVQbDQ+ebEyvXEobOuoamRcTzvvM+qFAkxW24GOuXgeFiErN0PxI5Y91rJZYmhFhTDpzRYFMP1luifsbLnmA==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-console-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/console@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-console-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-rYBQ8/7DhlmdL2W5sgS3Av/3P72COSJoV2WchI7IvaYDyiLah4otnsY4+laFn+zheyLdoz6v9tGIwVzmANDwiQ==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-console-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
 
-  '@softmax-universe/distribution@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-distribution-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-D455wqxQhqDn9nw042r6gUol5LPmokG7DbbX6YoHJfVmSFZXj9m1SygO6Mf1xMFJ5VXFd83Vb5LATOsRKDMwGw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-distribution-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/distribution@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-distribution-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-o2K/FasUBgr16v4SyxAFUi8pINiL7mWVT+U7LG2pqGAV9SzW1nIWs97KdAogXF8G4RCll0pMDgNGkZe611pMEQ==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-distribution-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
     engines: {node: 24.14.1}
 
-  '@softmax-universe/environment-tools@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-environment-tools-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-87VgQMrOSLvfSbQbVxyrdWzms2uVL7yR2tWbF6AAUTYA6pu679HqKsIWjR1kHLZpXMh4/aCRq4cV+sxochcsiA==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-environment-tools-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/environment-tools@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-environment-tools-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-F4b4UK4pdTbRaJMDwFFzmB0FRtoRvjCHzGgjPvLwLXYi3XY9c9/qsuGV/KvonmXhMXujzgHb17vUrwVboF3ueg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-environment-tools-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
     engines: {node: '>=24.14.1'}
     hasBin: true
 
-  '@softmax-universe/execution@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-execution-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-b5C0drdPWOpfykkMacHma4BT908fIM1GrSVjcfMWBIvSMkG89AhWNgLRXC0xqzErUK2hjFm+rpKPt3T63+YvMw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-execution-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/execution@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-execution-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-YD745aoIW482moYXjnpNAZ55wXwguwjy4YfuCXOi2n0oMqap76dEEXMIQ1/UCVZvPwWUZGaptDMsfdtu9SOBPA==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-execution-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
 
-  '@softmax-universe/foundation@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-foundation-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-HfVJAwnnUDLQhrzsZPosgoIt45GPKj8sGseugj4O0UefsUrqCjIlHAnsY+RkDFhFTXGX9rvpr4P/Gw0E28m4Pw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-foundation-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/foundation@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-foundation-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-hbFA6tvG3M4Hs8V3su95wjmGTxuDFqkePvZWFhrxFRM6+zgtnK90XNKodysaODIz3PzdoBh5DwYqqITt6aED1Q==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-foundation-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
 
-  '@softmax-universe/inspector@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-inspector-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-qMCi9Yn6DjIBbm3CNOXm3ySbPG6SL4QBs9LQZ2RWNK1tKvqtvuyraJWJ+Ri7C2sidLo6UxTYAOVZiN3dYr5duQ==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-inspector-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/inspector@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-inspector-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-ACeCpXjAmrcdqnmwdlFH1z3m+GnnJ9NhDYFbHkk5opvM/GSSgTcf2K5WPL17oLDwJxfCSSs9CDxntkpzdm9UJg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-inspector-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
     peerDependencies:
       react: 19.3.0
 
-  '@softmax-universe/installation@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-installation-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-XT3LJYNYQv6sOTPNerbNJNNbZxGlxS5PZYwMsbFvqFH/ev0uGo2vf/xb0P5N47HV0BepaZLrCl0K4xEBwKpK6g==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-installation-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/installation@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-installation-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-SWefKyTauI2/mTODdvpzazKM3S1l8SS2CIfWbcogCe1UeEmlfgEtJgPz3i4nDSsIXMWUD8fydqsQVOurKpRWww==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-installation-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
     engines: {node: 24.14.1}
 
-  '@softmax-universe/local-cli@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-local-cli-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-DzRrw2F6Mt8lbd4wbALsYb6GcY2CoMQjpOXRIKLo3GkAb/WXIWNjVto6syu4msWPIuDA6KtecAXx1BEzhmYuzQ==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-local-cli-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/local-cli@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-local-cli-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-anRZhSZe79byrRF0FxMHeTCY2rJGxLlx1kOGwqP3jxGOaftGHHw8V2lUxOcizDBxl9x8F97J3EyahVEOyR6UIg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-local-cli-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
     engines: {node: 24.14.1}
     hasBin: true
 
-  '@softmax-universe/model-policy@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-model-policy-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-umjv8ODS64GVgSCxeOGrW6uB6IahJb05WNSSm0s2kbb71LeEnsJbh6wRkxsUxbVzABJAH0u00Me2tJt9k13I+w==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-model-policy-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/model-policy@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-model-policy-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-Jg6JAWSBY2mY/jwLAX7tbye8XCTE5TB6iMXEO+CMbSFQu5xtfF3ERha5J34TCm2xM2GhcLXVAZhfdilnSImrnw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-model-policy-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
 
-  '@softmax-universe/orchestration@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-orchestration-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-70KTAitiG6sQFVb4MwvhIbCFmdV6Yc5jKEdRVXgoM1ELUS0dz/qkSoyL0Na4XxjqhcBDdWodYAnYQytDzKbNfA==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-orchestration-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/orchestration@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-orchestration-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-9tNTlv5034BEFA/uizMA7x/8rvxJBd+1GQqhGPkROAzsLKPPBbhYnUXNUpIMZHT54zHx1//k3vMszEQDF5G3RQ==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-orchestration-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
 
-  '@softmax-universe/protocol@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-M5zU29KxW6MwTZsgfUphsGC2L6VaU9e6eN1iKjTDyMTiP3r0iGGqUuYvnEDxPE9uetu28Z9j++Oqz8jR5b9RGg==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/protocol@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-lqGEPdNDhWfUINOUrwVCqk1wx7O82Y6w9p73qip1HXyegUyrLNbQcGJtYS2qBe9zKQAmh7mg770n3FB9ZP5r/Q==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
 
-  '@softmax-universe/runner@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runner-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-IWCJPaTBbJW3v4q5LB8VuCUCl+Xka9i9BcTrGgvr/rQiZX8/QH9TFG4PCQjyerXK0aoa0Cbm0IRyOSJoI0Vq/w==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runner-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/runner@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runner-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-dZ1FJyykAftEG6a/su+xr1f2OAjcw1gbk0Gc2kZUP08x9Ee5gW9JnGd2P6+6cKjrESPYoy+5Up+SVG6Clr2s0g==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runner-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
     engines: {node: '>=24.14.1'}
     hasBin: true
 
-  '@softmax-universe/runtime-client@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-client-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-OIP4TQ1apiOWfXwfUFbSd0a4BF3kGjgAS16bpcpsHCv5FNJ1XfLbJoG3cE6JTqC/lc1DTjt1AQ/05RgKUsl1DA==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-client-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/runtime-client@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-client-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-YbMx4NW/VnihJem5PKkLBmANRc5EIjU2GxCFgUG7qhw8A+CurNYhr7mGdymYEWULoRpjnjeTKy7ZjfCVfFv7ng==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-client-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
 
-  '@softmax-universe/runtime@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-lpN5Ui7DXWwEmIO/n5uSdqyrL/1Hpv+qsu63vtLJAqhn+Z16P+Ai8rylB8P2Bt3Vy+BmRvflC2yvgJVs9v21rA==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/runtime@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-rXvnZ4apvkpPZKn+W+DbsH72pL+56npeGR6e6427YcK9hzYHdHvabMuMiZWReqNJHc1wDxNShKrUFcKmUf47/g==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
 
-  '@softmax-universe/sdk@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-sdk-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-4vWcsfym9N05E53dSGRry8ca80Hv4c3gyNkJuVzonQmuZJ8kkFuoJdTbfVG4qlqZ2JSPFT5wXAs/7ZZ6d6tDvw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-sdk-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/sdk@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-sdk-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-xAZjYBBFZz0tzqsK2t+/ctHr5Dx+5NYych93zJ6/mxn1y2NM1Ttd2J8mwpr/HomAPqvS60GvqOEcYWZo+64gqw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-sdk-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
 
-  '@softmax-universe/workbench@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-workbench-0.6.0-alpha.2.tgz':
-    resolution: {integrity: sha512-yYrUJyDx/gwmxUScUJxF/SWm0RGI7PsQNrx6U5jXSBLynVVGFez5rAqtEcJlr/L0SvigJshcXwqM84i+qw27ow==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-workbench-0.6.0-alpha.2.tgz}
-    version: 0.6.0-alpha.2
+  '@softmax-universe/workbench@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-workbench-0.7.0-alpha.1.tgz':
+    resolution: {integrity: sha512-dQyvc8SlH6JrUwV1ivVuW6IcFQ9tDAiGxxIk1XAaX6qjiXNYeuNB36BVrUZozAJDF6AjFbSksw1UprNNW98xIw==, tarball: https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-workbench-0.7.0-alpha.1.tgz}
+    version: 0.7.0-alpha.1
     engines: {node: 24.14.1}
 
   '@stablelib/base64@1.0.1':
@@ -3308,11 +3299,11 @@ snapshots:
     dependencies:
       effect: 4.0.7
 
-  '@softmax-universe/compatible-models@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-compatible-models-0.6.0-alpha.2.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)':
+  '@softmax-universe/compatible-models@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-compatible-models-0.7.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)':
     dependencies:
       '@earendil-works/pi-ai': 1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)
-      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-model-policy-0.6.0-alpha.2.tgz
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
+      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-model-policy-0.7.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
       effect: 4.0.7
     transitivePeerDependencies:
       - '@aws-sdk/credential-provider-node'
@@ -3327,69 +3318,69 @@ snapshots:
       - ws
       - zod
 
-  '@softmax-universe/console@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-console-0.6.0-alpha.2.tgz':
+  '@softmax-universe/console@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-console-0.7.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/inspector': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-inspector-0.6.0-alpha.2.tgz(react@19.3.0)
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
-      '@softmax-universe/runtime-client': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-client-0.6.0-alpha.2.tgz
+      '@softmax-universe/inspector': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-inspector-0.7.0-alpha.1.tgz(react@19.3.0)
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
+      '@softmax-universe/runtime-client': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-client-0.7.0-alpha.1.tgz
       react: 19.3.0
       react-dom: 19.3.0(react@19.3.0)
 
-  '@softmax-universe/distribution@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-distribution-0.6.0-alpha.2.tgz':
+  '@softmax-universe/distribution@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-distribution-0.7.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/environment-tools@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-environment-tools-0.6.0-alpha.2.tgz':
+  '@softmax-universe/environment-tools@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-environment-tools-0.7.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/distribution': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-distribution-0.6.0-alpha.2.tgz
+      '@softmax-universe/distribution': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-distribution-0.7.0-alpha.1.tgz
       effect: 4.0.7
       esbuild: 0.28.2
 
-  '@softmax-universe/execution@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-execution-0.6.0-alpha.2.tgz':
+  '@softmax-universe/execution@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-execution-0.7.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/foundation@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-foundation-0.6.0-alpha.2.tgz':
+  '@softmax-universe/foundation@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-foundation-0.7.0-alpha.1.tgz':
     dependencies:
       '@softmax-foundation/client': https://github.com/softmax-universe/foundation-client/releases/download/client-v0.1.0/softmax-foundation-client-0.1.0.tgz
-      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-model-policy-0.6.0-alpha.2.tgz
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
+      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-model-policy-0.7.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/inspector@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-inspector-0.6.0-alpha.2.tgz(react@19.3.0)':
+  '@softmax-universe/inspector@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-inspector-0.7.0-alpha.1.tgz(react@19.3.0)':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
       react: 19.3.0
 
-  '@softmax-universe/installation@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-installation-0.6.0-alpha.2.tgz':
+  '@softmax-universe/installation@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-installation-0.7.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/distribution': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-distribution-0.6.0-alpha.2.tgz
-      '@softmax-universe/runtime-client': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-client-0.6.0-alpha.2.tgz
+      '@softmax-universe/distribution': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-distribution-0.7.0-alpha.1.tgz
+      '@softmax-universe/runtime-client': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-client-0.7.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/local-cli@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-local-cli-0.6.0-alpha.2.tgz':
+  '@softmax-universe/local-cli@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-local-cli-0.7.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/distribution': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-distribution-0.6.0-alpha.2.tgz
-      '@softmax-universe/installation': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-installation-0.6.0-alpha.2.tgz
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
-      '@softmax-universe/runtime-client': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-client-0.6.0-alpha.2.tgz
+      '@softmax-universe/distribution': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-distribution-0.7.0-alpha.1.tgz
+      '@softmax-universe/installation': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-installation-0.7.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
+      '@softmax-universe/runtime-client': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-client-0.7.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/model-policy@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-model-policy-0.6.0-alpha.2.tgz':
+  '@softmax-universe/model-policy@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-model-policy-0.7.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/orchestration@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-orchestration-0.6.0-alpha.2.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)':
+  '@softmax-universe/orchestration@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-orchestration-0.7.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)':
     dependencies:
       '@earendil-works/chord': 1.5.1(esbuild@0.28.2)(react@19.3.0)
       '@earendil-works/pi-ai': 1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)
       '@earendil-works/pi-durable': 1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)
       '@earendil-works/pi-schema': 1.5.1
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
-      '@softmax-universe/workbench': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-workbench-0.6.0-alpha.2.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
+      '@softmax-universe/workbench': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-workbench-0.7.0-alpha.1.tgz
       effect: 4.0.7
     transitivePeerDependencies:
       - '@aws-sdk/credential-provider-node'
@@ -3406,35 +3397,35 @@ snapshots:
       - ws
       - zod
 
-  '@softmax-universe/protocol@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz':
+  '@softmax-universe/protocol@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz':
     dependencies:
       effect: 4.0.7
 
-  '@softmax-universe/runner@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runner-0.6.0-alpha.2.tgz':
+  '@softmax-universe/runner@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runner-0.7.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/execution': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-execution-0.6.0-alpha.2.tgz
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
-      '@softmax-universe/sdk': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-sdk-0.6.0-alpha.2.tgz
+      '@softmax-universe/execution': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-execution-0.7.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
+      '@softmax-universe/sdk': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-sdk-0.7.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/runtime-client@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-client-0.6.0-alpha.2.tgz':
+  '@softmax-universe/runtime-client@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-client-0.7.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/runtime@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-runtime-0.6.0-alpha.2.tgz(@aws-sdk/credential-provider-node@3.972.95)(@babel/core@8.1.0)(@babel/runtime@7.29.13)(@earendil-works/pi-schema@1.5.1)(@modelcontextprotocol/client@2.4.0)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.3.1)(zod@4.6.7)':
+  '@softmax-universe/runtime@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-runtime-0.7.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@babel/core@8.1.0)(@babel/runtime@7.29.13)(@earendil-works/pi-schema@1.5.1)(@modelcontextprotocol/client@2.4.0)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.3.1)(zod@4.6.7)':
     dependencies:
       '@earendil-works/chord': 1.5.1(esbuild@0.28.2)(react@19.3.0)
       '@earendil-works/pi-ai': 1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)
       '@earendil-works/pi-durable': 1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)
       '@modelcontextprotocol/server': 2.4.0
-      '@softmax-universe/compatible-models': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-compatible-models-0.6.0-alpha.2.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)
-      '@softmax-universe/execution': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-execution-0.6.0-alpha.2.tgz
-      '@softmax-universe/foundation': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-foundation-0.6.0-alpha.2.tgz
-      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-model-policy-0.6.0-alpha.2.tgz
-      '@softmax-universe/orchestration': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-orchestration-0.6.0-alpha.2.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
-      '@softmax-universe/workbench': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-workbench-0.6.0-alpha.2.tgz
+      '@softmax-universe/compatible-models': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-compatible-models-0.7.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7)
+      '@softmax-universe/execution': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-execution-0.7.0-alpha.1.tgz
+      '@softmax-universe/foundation': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-foundation-0.7.0-alpha.1.tgz
+      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-model-policy-0.7.0-alpha.1.tgz
+      '@softmax-universe/orchestration': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-orchestration-0.7.0-alpha.1.tgz(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7)
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
+      '@softmax-universe/workbench': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-workbench-0.7.0-alpha.1.tgz
       agents: 0.33.0(@babel/core@8.1.0)(@babel/runtime@7.29.13)(@earendil-works/chord@1.5.1(esbuild@0.28.2)(react@19.3.0))(@earendil-works/pi-ai@1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(zod@4.6.7))(@earendil-works/pi-durable@1.5.1(@aws-sdk/credential-provider-node@3.972.95)(@smithy/signature-v4@5.7.5)(esbuild@0.28.2)(react@19.3.0)(zod@4.6.7))(@earendil-works/pi-schema@1.5.1)(@modelcontextprotocol/client@2.4.0)(@modelcontextprotocol/server@2.4.0)(react@19.3.0)(rolldown@1.3.1)(zod@4.6.7)
       effect: 4.0.7
     transitivePeerDependencies:
@@ -3470,16 +3461,16 @@ snapshots:
       - ws
       - zod
 
-  '@softmax-universe/sdk@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-sdk-0.6.0-alpha.2.tgz':
+  '@softmax-universe/sdk@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-sdk-0.7.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
       effect: 4.0.7
 
-  '@softmax-universe/workbench@https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-workbench-0.6.0-alpha.2.tgz':
+  '@softmax-universe/workbench@https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-workbench-0.7.0-alpha.1.tgz':
     dependencies:
-      '@softmax-universe/execution': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-execution-0.6.0-alpha.2.tgz
-      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-model-policy-0.6.0-alpha.2.tgz
-      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.6.0-alpha.2/softmax-universe-protocol-0.6.0-alpha.2.tgz
+      '@softmax-universe/execution': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-execution-0.7.0-alpha.1.tgz
+      '@softmax-universe/model-policy': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-model-policy-0.7.0-alpha.1.tgz
+      '@softmax-universe/protocol': https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax-universe-protocol-0.7.0-alpha.1.tgz
       effect: 4.0.7
 
   '@stablelib/base64@1.0.1': {}

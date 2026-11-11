@@ -10,8 +10,7 @@ message: Preserve accepted and incomplete recordings with bounded local work.
 Checkpoint human decisions before returning success. Preserve completed episodes and interrupted checkpoints.
 Distinguish completed, failed, cancelled, truncated, and incomplete play. Upload existing files without replaying a game.
 
-Balance benchmark candidates across both seats with the same seeded reference configuration. Declare model budgets
-and endpoints explicitly. Keep provider and upload credentials out of recordings, logs, and browser code.
+Balance benchmark candidates across both seats with the same seeded reference configuration. Declare model budgets explicitly and select models from the runtime's explicit endpoint configuration. Keep provider and upload credentials out of recordings, logs, and browser code.
 
 Use the Universe installation and direct-session operations for local play. Preserve exact command identities after
 uncertain delivery. Reattach to saved sessions; do not reconstruct games by replaying the entire history. The runtime

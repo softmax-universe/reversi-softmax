@@ -6,10 +6,13 @@ from reversi_openenv.server import app
 
 
 def runtime_session(session_id):
-    return RuntimeClient(
+    client = RuntimeClient(
         os.environ["UNIVERSE_RUNTIME_ENDPOINT"],
         os.environ["UNIVERSE_INSTALLATION_CAPABILITY"],
-    ).get_session(session_id)
+    )
+    state = client.get_session(session_id)
+    state["episode"] = client.get_recording(session_id)["episodes"][0]
+    return state
 
 
 def assert_http_controls_absent(client):
