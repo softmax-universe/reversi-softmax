@@ -2057,7 +2057,7 @@ wheels = [
 
 [[package]]
 name = "reversi-softmax-openenv"
-version = "0.4.0"
+version = "0.4.1"
 source = { editable = "." }
 dependencies = [
     { name = "openenv" },
@@ -2067,7 +2067,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "openenv", specifier = "==0.12.0" },
-    { name = "softmax-universe-client", url = "https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax_universe_client-0.7.0a1-py3-none-any.whl" },
+    { name = "softmax-universe-client", path = "../../.local/runtime-packages/softmax_universe_client-0.7.0a2-py3-none-any.whl" },
 ]
 
 [[package]]
@@ -2258,13 +2258,13 @@ wheels = [
 
 [[package]]
 name = "softmax-universe-client"
-version = "0.7.0a1"
-source = { url = "https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax_universe_client-0.7.0a1-py3-none-any.whl" }
+version = "0.7.0a2"
+source = { path = "../../.local/runtime-packages/softmax_universe_client-0.7.0a2-py3-none-any.whl" }
 dependencies = [
     { name = "jsonschema" },
 ]
 wheels = [
-    { url = "https://github.com/softmax-universe/universe/releases/download/v0.7.0-alpha.1/softmax_universe_client-0.7.0a1-py3-none-any.whl", hash = "sha256:db5d7ca6f3e74e9389c87b8f6b886f04a4f6038f37c4077bc95387da9dcf12d5" },
+    { filename = "softmax_universe_client-0.7.0a2-py3-none-any.whl", hash = "sha256:01bc643ed6f16943aabeb3557fc76051e8e41b4de9d3c5b24d625d34943669db" },
 ]
 
 [package.metadata]

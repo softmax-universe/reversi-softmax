@@ -1,6 +1,6 @@
 ---
 name: reversi-environment-composition
-message: Compose the game through immutable public Universe packages and shared environment tooling.
+message: Compose the game through verified private Universe releases and shared environment tooling.
 ---
 
 # Environment composition
@@ -18,8 +18,10 @@ game-owned pair count. Treat an incomplete episode as incomplete evidence, with 
 Keep public scenarios and their verifier inside this workspace. The benchmark command and Harbor verifier submit
 evaluations through the local runtime client. They never open games, configure inference transports, or write checkpoints.
 
-Import Universe through public exports from packed or immutable published artifacts. Release source uses immutable
-release URLs and locked integrity. Keep private directories and sibling source imports outside the application.
+Import Universe through its named exports from immutable release artifacts. Pin runtime-release.json by repository
+identity, version and manifest checksum. Authenticate the explicit runtime bootstrap, verify every archive, and install
+the locked local archives through the root's declared overrides. Keep credentials outside package-manager inputs,
+application bundles and recordings. Keep sibling source imports outside the application.
 
 Keep browser code in app/view and Worker composition in app/worker. Use the shared local console for human play.
 Declare the two packages and their exact internal edge in package-boundaries.json. External Python harnesses use the

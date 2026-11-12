@@ -2,21 +2,21 @@
 
 Run Reversi locally, evaluate a JavaScript or model policy, and inspect retained episodes and model evidence.
 The pinned [reversi](https://github.com/kjirou/reversi) engine owns legal moves, automatic passes, and terminal scores.
-The environment consumes public Universe packages. It needs no private source checkout, hosted API, or cloud account
-for baseline use.
+The environment consumes released Universe packages. Installed baseline play needs no hosted API or cloud account.
+Source development requires GitHub read access to the private `softmax-universe/scott-demo-environments` releases.
 
 ## Install
 
-Download a complete native archive from [release v0.4.0](https://github.com/softmax-universe/reversi-softmax/releases/tag/v0.4.0).
+Download a complete native archive from [release v0.4.1](https://github.com/softmax-universe/reversi-softmax/releases/tag/v0.4.1).
 Use `darwin-arm64` for an Apple silicon Mac or `linux-x64` for Linux on x86-64:
 
 ```sh
 target=darwin-arm64 # or linux-x64
-curl -fL -o "reversi-softmax-0.4.0-$target.tar.gz" \
-  "https://github.com/softmax-universe/reversi-softmax/releases/download/v0.4.0/reversi-softmax-0.4.0-$target.tar.gz"
-mkdir reversi-softmax-0.4.0
-tar -xzf "reversi-softmax-0.4.0-$target.tar.gz" -C reversi-softmax-0.4.0 --strip-components=1
-cd reversi-softmax-0.4.0
+curl -fL -o "reversi-softmax-0.4.1-$target.tar.gz" \
+  "https://github.com/softmax-universe/reversi-softmax/releases/download/v0.4.1/reversi-softmax-0.4.1-$target.tar.gz"
+mkdir reversi-softmax-0.4.1
+tar -xzf "reversi-softmax-0.4.1-$target.tar.gz" -C reversi-softmax-0.4.1 --strip-components=1
+cd reversi-softmax-0.4.1
 ./universe-local start --release ./release.json --state "$HOME/.local/share/reversi-softmax" --port 4328
 ```
 
@@ -29,8 +29,8 @@ Keep state outside the extracted installation, as in the command above. Starting
 replacing an installation preserves prior results. Treat the printed console URL as a credential.
 
 Model use is optional. To bring your own local or hosted OpenAI-compatible endpoint, follow
-[Universe Local's model configuration](https://github.com/softmax-universe/universe/blob/v0.7.0-alpha.1/apps/cli/README.md)
-and [compatible endpoint settings](https://github.com/softmax-universe/universe/blob/v0.7.0-alpha.1/adapters/compatible-models/README.md).
+[Universe Local's model configuration](https://github.com/softmax-universe/scott-demo-environments/blob/v0.7.0-alpha.2/apps/cli/README.md)
+and [compatible endpoint settings](https://github.com/softmax-universe/scott-demo-environments/blob/v0.7.0-alpha.2/adapters/compatible-models/README.md).
 Add `--models /absolute/path/to/private-models.json` to startup; the file must be owned by you with mode `600` or stricter.
 Credentials stay on the server. Foundation is an optional transport.
 
@@ -38,8 +38,8 @@ Credentials stay on the server. Foundation is an optional transport.
 
 ```sh
 mise install
-mise exec -- pnpm install --frozen-lockfile
-pnpm architecture:setup
+gh auth login
+mise exec -- pnpm run setup
 mise exec -- pnpm check
 ```
 
@@ -47,7 +47,7 @@ The game package lives in [packages/game](packages/game/README.md). The applicat
 [app/environment](app/environment/index.ts), balanced scenarios in [app/benchmarks](app/benchmarks/index.ts),
 the game renderer in [app/view](app/view/console.tsx), and a fixed Worker in [app/worker](app/worker/index.ts).
 There is one engine adapter. The runtime, recorder, model transports, policy isolation, and local launcher come
-from Universe's public artifacts. No hot plugin loader or sibling source imports are used.
+from Universe's checked release artifacts. No hot plugin loader or sibling source imports are used.
 
 `pnpm build` compiles the independent game package, Worker, browser assets, and Harbor verifier. It writes
 `dist/application.json` with their byte counts and SHA-256 digests. Release packaging uses these checked outputs
@@ -88,6 +88,10 @@ submission ID for a deliberate new comparison.
 The installed local runtime console uses the same environment manifest, policy artifacts, and benchmark definition.
 It reads retained evaluation and call evidence through the public runtime-client. The game-specific renderer stays
 in this application. Model settings and credentials stay on the server.
+
+`pnpm run setup` authenticates with GitHub through `gh`, verifies the pinned release manifest and every package/wheel,
+then installs the checked local archives. Tokens never enter the lockfile. Already installed baseline play stays offline.
+The public mirror checks only trusted main pushes; private Factory checks exercise proposed changes.
 
 Source development uses the same launcher through `pnpm local start`. Use the release manifest from a complete
 checked installation.
@@ -155,7 +159,7 @@ human recordings. They do not duplicate the engine's rules suite.
 
 Recording v3 includes frame boundaries, stable decisions, all-agent transition observations, and rewards. The local
 console and `universe-local export --format trajectories` project per-agent JSONL using that agent's next decision
-boundary and accumulated intervening rewards. Historical v2 recordings remain readable; local control is `/api/v2`.
+boundary and accumulated intervening rewards. Historical v2 recordings remain readable; local control is `/api/v3`.
 
 A private model file can bind a local compatible endpoint without any Softmax account:
 

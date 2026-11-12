@@ -11,7 +11,7 @@ import { benchmarkTrials } from "../benchmarks/index.js";
 export const environment: EnvironmentDefinition = {
   manifest: {
     id: "reversi-softmax",
-    version: "0.4.0",
+    version: "0.4.1",
     game: gameIdentity,
     benchmarks: [
       {

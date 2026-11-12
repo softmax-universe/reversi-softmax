@@ -14,6 +14,8 @@ concurrency:
 
 jobs:
   check:
+    if: github.event_name == 'push'
+    environment: runtime-dependencies
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -25,6 +27,16 @@ jobs:
           version: 2026.8.12
           install: true
           cache: false
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm architecture:setup
+      - name: Mint a read-only runtime download token
+        id: runtime-reader
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510
+        with:
+          client-id: ${{ vars.CORE_READER_APP_CLIENT_ID }}
+          private-key: ${{ secrets.CORE_READER_APP_PRIVATE_KEY }}
+          owner: softmax-universe
+          repositories: scott-demo-environments
+          permission-contents: read
+      - run: pnpm run setup
+        env:
+          GH_TOKEN: ${{ steps.runtime-reader.outputs.token }}
       - run: pnpm check

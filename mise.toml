@@ -1,4 +1,5 @@
 [tools]
+gh = "2.92.0"
 python = "3.14.7"
 "github:macromackie/tenet" = "0.13.0"
 uv = "0.12.9"
